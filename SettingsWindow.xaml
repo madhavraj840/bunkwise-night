@@ -1,0 +1,297 @@
+<Window x:Class="NightMode.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:NightMode"
+        Title="Night mode settings" Width="780" Height="580" MinWidth="620" MinHeight="420"
+        WindowStartupLocation="CenterScreen" UseLayoutRounding="True"
+        Icon="pack://application:,,,/Assets/NightMode.ico"
+        FontFamily="{StaticResource Ui}" FontSize="14"
+        Background="{DynamicResource Nm.Bg}"
+        Foreground="{DynamicResource Nm.Text}">
+    <Window.Resources>
+        <Style x:Key="SetTitle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14" />
+        </Style>
+    </Window.Resources>
+    <Border BorderThickness="0,1,0,0" BorderBrush="{DynamicResource Nm.Line}">
+    <TabControl x:Name="Pages" Style="{StaticResource Sidebar}">
+
+        <!-- Dimming -->
+        <TabItem Header="Dimming" Tag="dimming">
+            <StackPanel>
+                <TextBlock Style="{StaticResource PageTitle}" Text="Dimming" />
+                <TextBlock Style="{StaticResource PageLede}" Text="How Night mode makes the screen darker." />
+
+                <Border Style="{StaticResource SettingRow}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Margin="0,0,16,0">
+                            <TextBlock Style="{StaticResource SetTitle}" Text="Use the laptop's own backlight first" />
+                            <TextBlock x:Name="BacklightHelp" Style="{StaticResource Help}" />
+                        </StackPanel>
+                        <ToggleButton x:Name="BacklightSwitch" Grid.Column="1" Style="{StaticResource Switch}" VerticalAlignment="Center"
+                                      AutomationProperties.Name="Use the laptop's own backlight first" Checked="Backlight_Click" Unchecked="Backlight_Click" />
+                    </Grid>
+                </Border>
+                <Border Style="{StaticResource SettingRow}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Margin="0,0,16,0">
+                            <TextBlock Style="{StaticResource SetTitle}" Text="Method" />
+                            <TextBlock Style="{StaticResource Help}"
+                                       Text="Colour filter dims everything, including the taskbar and pointer. Overlay keeps screenshots at normal brightness and works alongside Windows Magnifier." />
+                        </StackPanel>
+                        <Border Grid.Column="1" Style="{StaticResource SegBox}">
+                            <StackPanel Orientation="Horizontal">
+                                <RadioButton x:Name="FilterRadio" Style="{StaticResource SegChoice}" GroupName="Method" Content="Colour filter" Checked="Method_Checked" />
+                                <RadioButton x:Name="OverlayRadio" Style="{StaticResource SegChoice}" GroupName="Method" Content="Overlay" Margin="0" Checked="Method_Checked" />
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </Border>
+                <Border Style="{StaticResource SettingRow}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Margin="0,0,16,0">
+                            <TextBlock Style="{StaticResource SetTitle}" Text="Remember after restart" />
+                            <TextBlock Style="{StaticResource Help}" Text="If Night mode was on when Windows shut down, it turns back on at the same level." />
+                        </StackPanel>
+                        <ToggleButton x:Name="RememberSwitch" Grid.Column="1" Style="{StaticResource Switch}" VerticalAlignment="Center"
+                                      AutomationProperties.Name="Remember after restart" Checked="Remember_Click" Unchecked="Remember_Click" />
+                    </Grid>
+                </Border>
+                <Border Style="{StaticResource SettingRow}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Margin="0,0,16,0">
+                            <TextBlock Style="{StaticResource SetTitle}" Text="Start with Windows" />
+                            <TextBlock Style="{StaticResource Help}" Text="Opens quietly in the tray when you sign in." />
+                        </StackPanel>
+                        <ToggleButton x:Name="StartupSwitch" Grid.Column="1" Style="{StaticResource Switch}" VerticalAlignment="Center"
+                                      AutomationProperties.Name="Start with Windows" Checked="Startup_Click" Unchecked="Startup_Click" />
+                    </Grid>
+                </Border>
+                <Border Style="{StaticResource Hairline}" />
+            </StackPanel>
+        </TabItem>
+
+        <!-- Schedule -->
+        <TabItem Header="Schedule" Tag="schedule">
+            <StackPanel>
+                <TextBlock Style="{StaticResource PageTitle}" Text="Schedule" />
+                <TextBlock Style="{StaticResource PageLede}" Text="Night mode eases in at the start time and turns off at the end. You can still switch it whenever you like." />
+
+                <Border Style="{StaticResource SettingRow}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Margin="0,0,16,0">
+                            <TextBlock Style="{StaticResource SetTitle}" Text="Turn on automatically" />
+                            <TextBlock Style="{StaticResource Help}" Text="Uses the times below every day." />
+                        </StackPanel>
+                        <ToggleButton x:Name="ScheduleSwitch" Grid.Column="1" Style="{StaticResource Switch}" VerticalAlignment="Center"
+                                      AutomationProperties.Name="Turn on automatically" Checked="Schedule_Changed" Unchecked="Schedule_Changed" />
+                    </Grid>
+                </Border>
+
+                <StackPanel IsEnabled="{Binding IsChecked, ElementName=ScheduleSwitch}">
+                    <local:Timeline x:Name="Strip" Margin="0,8,0,10" AutomationProperties.Name="Schedule on a 24-hour strip" />
+
+                    <Border Style="{StaticResource SettingRow}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Margin="0,0,16,0">
+                                <TextBlock Style="{StaticResource SetTitle}" Text="From" />
+                                <TextBlock Style="{StaticResource Help}" Text="Starts easing in at this time. 24-hour clock, like 22:00." />
+                            </StackPanel>
+                            <TextBox x:Name="FromBox" Grid.Column="1" Style="{StaticResource TimeBox}" AutomationProperties.Name="Start time"
+                                     LostKeyboardFocus="Time_Commit" KeyDown="Time_KeyDown" />
+                        </Grid>
+                    </Border>
+                    <Border Style="{StaticResource SettingRow}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Margin="0,0,16,0">
+                                <TextBlock Style="{StaticResource SetTitle}" Text="To" />
+                                <TextBlock Style="{StaticResource Help}" Text="Back to normal brightness." />
+                            </StackPanel>
+                            <TextBox x:Name="ToBox" Grid.Column="1" Style="{StaticResource TimeBox}" AutomationProperties.Name="End time"
+                                     LostKeyboardFocus="Time_Commit" KeyDown="Time_KeyDown" />
+                        </Grid>
+                    </Border>
+                    <TextBlock x:Name="TimeError" FontSize="12" Margin="0,0,0,10" Visibility="Collapsed" TextWrapping="Wrap"
+                               Foreground="{DynamicResource Nm.Danger}" />
+                    <Border Style="{StaticResource SettingRow}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Margin="0,0,16,0">
+                                <TextBlock Style="{StaticResource SetTitle}" Text="Ease in over" />
+                                <TextBlock Style="{StaticResource Help}" Text="Gets darker gradually so the change is hardly noticed." />
+                            </StackPanel>
+                            <Border Grid.Column="1" Style="{StaticResource SegBox}">
+                                <StackPanel x:Name="EasePanel" Orientation="Horizontal" />
+                            </Border>
+                        </Grid>
+                    </Border>
+                    <Border Style="{StaticResource SettingRow}">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="200" />
+                                <ColumnDefinition Width="44" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Margin="0,0,16,0">
+                                <TextBlock Style="{StaticResource SetTitle}" Text="Level" />
+                                <TextBlock Style="{StaticResource Help}" Text="How dark it gets at the scheduled time." />
+                            </StackPanel>
+                            <Slider x:Name="LevelSlider" Grid.Column="1" Style="{StaticResource MiniSlider}" VerticalAlignment="Center"
+                                    AutomationProperties.Name="Scheduled dim level, percent" ValueChanged="Schedule_Changed" />
+                            <TextBlock x:Name="LevelValue" Grid.Column="2" TextAlignment="Right" VerticalAlignment="Center"
+                                       FontFamily="{StaticResource Mono}" FontSize="13" />
+                        </Grid>
+                    </Border>
+                    <Border Style="{StaticResource Hairline}" />
+                </StackPanel>
+            </StackPanel>
+        </TabItem>
+
+        <!-- App rules -->
+        <TabItem Header="App rules" Tag="apps">
+            <StackPanel>
+                <TextBlock Style="{StaticResource PageTitle}" Text="App rules" />
+                <TextBlock Style="{StaticResource PageLede}" Text="Dimming pauses while one of these apps is in front, and comes back when you switch away. Useful for photo editing, video calls and games." />
+                <ItemsControl x:Name="RuleList">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Style="{StaticResource SettingRow}" Padding="0,12">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="28" />
+                                        <ColumnDefinition />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Border Width="28" Height="28" CornerRadius="6" BorderThickness="1"
+                                            Background="{DynamicResource Nm.Raised}" BorderBrush="{DynamicResource Nm.LineStrong}">
+                                        <TextBlock Text="{Binding Mono}" FontFamily="{StaticResource Mono}" FontSize="11" FontWeight="Medium"
+                                                   HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    </Border>
+                                    <StackPanel Grid.Column="1" Margin="12,0" VerticalAlignment="Center">
+                                        <TextBlock Text="{Binding Name}" />
+                                        <TextBlock Text="{Binding Exe}" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{DynamicResource Nm.Text3}" />
+                                    </StackPanel>
+                                    <Button Grid.Column="2" Style="{StaticResource Ghost}" Content="Remove" Tag="{Binding Key}" Click="RemoveRule_Click"
+                                            AutomationProperties.Name="{Binding RemoveName}" />
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+                <Border Style="{StaticResource Hairline}" />
+                <TextBlock x:Name="NoRules" Text="No apps yet. Switch to the app, then come back here and add it." FontSize="13" Margin="0,12,0,0"
+                           TextWrapping="Wrap" Foreground="{DynamicResource Nm.Text2}" />
+                <Button x:Name="AddRule" Style="{StaticResource Ghost}" HorizontalAlignment="Left" Margin="0,16,0,0" Click="AddRule_Click" />
+            </StackPanel>
+        </TabItem>
+
+        <!-- Shortcuts -->
+        <TabItem Header="Shortcuts" Tag="keys">
+            <StackPanel>
+                <TextBlock Style="{StaticResource PageTitle}" Text="Shortcuts" />
+                <TextBlock Style="{StaticResource PageLede}" Text="Work from anywhere, even with the panel closed." />
+                <ItemsControl x:Name="ShortcutList">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Style="{StaticResource SettingRow}">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <StackPanel VerticalAlignment="Center" Margin="0,0,16,0">
+                                        <TextBlock Text="{Binding Action}">
+                                            <TextBlock.Style>
+                                                <Style TargetType="TextBlock">
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Danger}" Value="True">
+                                                            <Setter Property="Foreground" Value="{DynamicResource Nm.Danger}" />
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </TextBlock.Style>
+                                        </TextBlock>
+                                        <TextBlock Text="{Binding Note}" FontSize="12" Foreground="{DynamicResource Nm.Danger}">
+                                            <TextBlock.Style>
+                                                <Style TargetType="TextBlock">
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding Note}" Value="{x:Null}">
+                                                            <Setter Property="Visibility" Value="Collapsed" />
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </TextBlock.Style>
+                                        </TextBlock>
+                                    </StackPanel>
+                                    <ItemsControl Grid.Column="1" ItemsSource="{Binding Caps}" VerticalAlignment="Center"
+                                                  AutomationProperties.Name="{Binding Keys}">
+                                        <ItemsControl.ItemsPanel>
+                                            <ItemsPanelTemplate>
+                                                <StackPanel Orientation="Horizontal" />
+                                            </ItemsPanelTemplate>
+                                        </ItemsControl.ItemsPanel>
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Border Style="{StaticResource Kbd}" Margin="4,0,0,0" Padding="7,2">
+                                                    <TextBlock Text="{Binding}" FontSize="12" />
+                                                </Border>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+                <Border Style="{StaticResource Hairline}" />
+                <TextBlock Style="{StaticResource Help}" Margin="0,12,0,0"
+                           Text="Middle-click the moon in the tray to turn Night mode on or off." />
+            </StackPanel>
+        </TabItem>
+
+        <!-- Privacy -->
+        <TabItem Header="Privacy" Tag="privacy">
+            <StackPanel>
+                <TextBlock Style="{StaticResource PageTitle}" Text="Privacy" />
+                <TextBlock Style="{StaticResource PageLede}"
+                           Text="Works fully offline. No account, no ads, and nothing is collected or sent anywhere. Your settings stay on this PC." />
+                <Border Style="{StaticResource Hairline}" />
+                <TextBlock x:Name="VersionText" Margin="0,14,0,0" FontFamily="{StaticResource Mono}" FontSize="12" Foreground="{DynamicResource Nm.Text2}" />
+                <TextBlock Style="{StaticResource Help}" Margin="0,6,0,0"
+                           Text="Type: Geist and Geist Mono by the Geist Project Authors, under the SIL Open Font License 1.1." />
+            </StackPanel>
+        </TabItem>
+    </TabControl>
+    </Border>
+</Window>
