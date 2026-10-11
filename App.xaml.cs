@@ -14,7 +14,7 @@ namespace NightMode;
 
 public sealed record Shortcut(string Action, string Keys, string? Note)
 {
-    public string[] Caps => Keys.Replace("Minus", "−").Replace("Plus", "+").Split(" + ");
+    public string[] Caps => Keys.Replace("Minus", "−").Replace("Plus", "+").Split(new[] { " + " }, StringSplitOptions.None);
     public bool Danger => Action.Contains("emergency");
 }
 
@@ -129,6 +129,7 @@ public partial class App : Application
 
     // Taskbar, tray overflow, Start, search and the snipping overlay pass through on the way to something
     // else; treating them as "the app in front" would flicker app rules on every tray click.
+    static readonly uint OwnPid = (uint)System.Diagnostics.Process.GetCurrentProcess().Id;
     static readonly HashSet<string> TransientClasses = new() { "Shell_TrayWnd", "Shell_SecondaryTrayWnd", "NotifyIconOverflowWindow", "TopLevelWindowForOverflowXamlIsland", "XamlExplorerHostIslandWindow" };
     static readonly HashSet<string> TransientApps = new(StringComparer.OrdinalIgnoreCase) { "ShellExperienceHost", "StartMenuExperienceHost", "SearchHost", "SearchApp", "ScreenClippingHost", "SnippingTool", "LockApp" };
 
@@ -136,7 +137,7 @@ public partial class App : Application
     {
         Engine.OnForeground();
         Native.GetWindowThreadProcessId(hwnd, out uint pid);
-        if (pid == 0 || pid == Environment.ProcessId) return; // our own panel doesn't count
+        if (pid == 0 || pid == OwnPid) return; // our own panel doesn't count
         var cls = new System.Text.StringBuilder(256);
         Native.GetClassName(hwnd, cls, cls.Capacity);
         if (TransientClasses.Contains(cls.ToString())) return;
@@ -203,7 +204,7 @@ public partial class App : Application
         set
         {
             using var k = Registry.CurrentUser.CreateSubKey(RunKey);
-            if (value) k.SetValue("NightMode", $"\"{Environment.ProcessPath}\" --startup");
+            if (value) k.SetValue("NightMode", $"\"{System.Reflection.Assembly.GetEntryAssembly()!.Location}\" --startup");
             else k.DeleteValue("NightMode", false);
         }
     }

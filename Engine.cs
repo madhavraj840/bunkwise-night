@@ -45,7 +45,7 @@ sealed class Backlight
         var obj = set.ItemIndex(0);
         var args = obj.Methods_.Item("WmiSetBrightness").InParameters.SpawnInstance_();
         args.Properties_.Item("Timeout").Value = 1;
-        args.Properties_.Item("Brightness").Value = (byte)Math.Clamp(value, 0, 100);
+        args.Properties_.Item("Brightness").Value = (byte)DimMath.Clamp(value, 0, 100);
         obj.ExecMethod_("WmiSetBrightness", args);
     }
 
@@ -239,14 +239,14 @@ sealed class Engine
 
     public void SetDim(double dim, bool fade = false)
     {
-        _s.Dim = Math.Clamp(Math.Round(dim), 0, 100);
+        _s.Dim = DimMath.Clamp(Math.Round(dim), 0, 100);
         _s.Save();
         Apply(fade);
     }
 
     public void SetWarmth(double warmth)
     {
-        _s.Warmth = Math.Clamp(Math.Round(warmth), 0, 100);
+        _s.Warmth = DimMath.Clamp(Math.Round(warmth), 0, 100);
         _s.Save();
         Apply(false);
     }

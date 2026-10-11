@@ -116,7 +116,7 @@ sealed class Scale : Slider
     }
 
     void SetFrom(MouseEventArgs e) =>
-        Value = Math.Round(Math.Clamp((e.GetPosition(this).X - Pad) / (ActualWidth - 2 * Pad) * 100, 0, 100));
+        Value = Math.Round(DimMath.Clamp((e.GetPosition(this).X - Pad) / (ActualWidth - 2 * Pad) * 100, 0, 100));
 
     protected override void OnPreviewMouseLeftButtonDown(MouseButtonEventArgs e)
     {

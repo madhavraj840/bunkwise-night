@@ -1,12 +1,11 @@
 <Application x:Class="NightMode.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             ThemeMode="System"
              ShutdownMode="OnExplicitShutdown">
     <Application.Resources>
         <ResourceDictionary>
             <!-- Nm.* colour brushes are set by Theme.cs (graphite, follows Windows light/dark).
-                 The accent is Fluent's AccentFillColorDefaultBrush, i.e. the Windows accent colour. -->
+                 The Accent* brushes and SymbolThemeFontFamily are also set there, from the Windows accent colour. -->
 
             <FontFamily x:Key="Ui">pack://application:,,,/Assets/Fonts/#Geist, Segoe UI Variable Text, Segoe UI</FontFamily>
             <FontFamily x:Key="Mono">pack://application:,,,/Assets/Fonts/#Geist Mono, Cascadia Mono, Consolas</FontFamily>

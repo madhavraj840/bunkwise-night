@@ -5,6 +5,8 @@ namespace NightMode;
 /// Pure maths, no Windows calls, so checks/ can run it.
 public static class DimMath
 {
+    public static double Clamp(double v, double lo, double hi) => v < lo ? lo : v > hi ? hi : v;
+
     /// Dim % at which the laptop backlight reaches its hardware minimum.
     public const double Boundary = 40;
 
@@ -15,7 +17,7 @@ public static class DimMath
     /// factor: on-screen light multiplier.
     public static (double hw, double factor) Map(double dim, bool backlight)
     {
-        dim = Math.Clamp(dim, 0, 100);
+        dim = Clamp(dim, 0, 100);
         if (!backlight) return (-1, Math.Pow(Floor, dim / 100));
         if (dim <= Boundary) return (1 - dim / Boundary, 1);
         // exponential so each step past the hardware minimum looks equally darker
@@ -26,7 +28,7 @@ public static class DimMath
     /// Greyscale first (luma weights), then dim and warm each output channel.
     public static float[] Matrix(double factor, double warmth, bool grey = false)
     {
-        double w = Math.Clamp(warmth, 0, 100) / 100;
+        double w = Clamp(warmth, 0, 100) / 100;
         var d = new[] { factor, factor * (1 - 0.18 * w), factor * (1 - 0.6 * w) };
         var m = new float[25];
         for (int i = 0; i < 3; i++)       // input channel (row)
@@ -41,7 +43,7 @@ public static class DimMath
     public static string? ParseTime(string text)
     {
         var t = text.Trim().Replace('.', ':');
-        if (!t.Contains(':')) t = t.Length <= 2 ? t + ":00" : t.Length is 3 or 4 ? t[..^2] + ":" + t[^2..] : t;
+        if (t.IndexOf(':') < 0) t = t.Length <= 2 ? t + ":00" : t.Length is 3 or 4 ? t.Substring(0, t.Length - 2) + ":" + t.Substring(t.Length - 2) : t;
         var parts = t.Split(':');
         if (parts.Length == 2 && int.TryParse(parts[0], System.Globalization.NumberStyles.None, null, out int h)
             && int.TryParse(parts[1], System.Globalization.NumberStyles.None, null, out int m) && h < 24 && m < 60)
@@ -57,7 +59,7 @@ public static class DimMath
         if (minutes <= 0) return 1;
         var start = now.Date + on;
         if (start > now) start = start.AddDays(-1);
-        return Math.Clamp((now - start).TotalMinutes / minutes, 0, 1);
+        return Clamp((now - start).TotalMinutes / minutes, 0, 1);
     }
 
     /// True when `now` falls inside the on..off window, including windows that cross midnight.

@@ -152,10 +152,10 @@ public partial class SettingsWindow : Window
     {
         RuleList.ItemsSource = _app.S.AppRules.Select(a => new
         {
-            Name = a.Length > 0 ? char.ToUpper(a[0]) + a[1..] : a,
+            Name = a.Length > 0 ? char.ToUpper(a[0]) + a.Substring(1) : a,
             Exe = a + ".exe",
             Key = a,
-            Mono = a.Length >= 2 ? char.ToUpper(a[0]) + a[1..2] : a.ToUpper(),
+            Mono = a.Length >= 2 ? char.ToUpper(a[0]) + a.Substring(1, 1) : a.ToUpper(),
             RemoveName = $"Remove {a}",
         }).ToList();
         NoRules.Visibility = _app.S.AppRules.Count == 0 ? Visibility.Visible : Visibility.Collapsed;

@@ -13,25 +13,21 @@ Website: **[nightmode.bunkwise.in](https://nightmode.bunkwise.in)**. There is al
 
 ## Download
 
-Two versions are available, with the same app in each:
+**[NightMode-1.1.0-win-x64.zip](https://github.com/madhavraj840/bunkwise-night/releases/download/v1.1.0/NightMode-1.1.0-win-x64.zip)** (0.4 MB). It runs on any 64-bit Windows 10 or 11 PC with nothing else to install.
 
-| Download | Size | Use it when |
-|---|---|---|
-| **[NightMode-1.0.0-win-x64-full.zip](https://github.com/madhavraj840/bunkwise-night/releases/download/v1.0.0/NightMode-1.0.0-win-x64-full.zip)** | 61 MB | You aren't sure which to pick. It runs on any 64-bit Windows 10 or 11 PC with nothing else to install. |
-| [NightMode-1.0.0-win-x64.zip](https://github.com/madhavraj840/bunkwise-night/releases/download/v1.0.0/NightMode-1.0.0-win-x64.zip) | 0.4 MB | You already have the [.NET 10 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0) installed. |
+Night mode uses **.NET Framework 4.8**, which is already part of Windows 11 and Windows 10 (May 2019 Update or later). On an older Windows 10, install [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) first.
 
 All versions are listed on the **[Releases page](https://github.com/madhavraj840/bunkwise-night/releases/latest)**.
 
-SHA-256 checksums for v1.0.0:
+SHA-256 checksum for v1.1.0:
 
 ```
-d18b77f56e8ccf3d5505aaf729c4ae648116b874cf876535c3115d3b4139cfb7  NightMode-1.0.0-win-x64-full.zip
-5e8caa85bf063343f856e4addb3d84764a95917335e047e45eae35363ff94799  NightMode-1.0.0-win-x64.zip
+0b865d87cbd3dac5ad828da213372b9a040e660e0cb6ed9f8aeaea0fe1a103fb  NightMode-1.1.0-win-x64.zip
 ```
 
 ## Install
 
-1. **Download** one of the zips above.
+1. **Download** the zip above.
 2. **Unzip it:** right-click the zip, choose **Extract All…**, then **Extract**. You can move the folder anywhere you like, for example into Documents.
 3. **Run** `NightMode.exe`. You may see **"Windows protected your PC"**. This happens because the app is new and not code-signed yet. Click **More info**, then **Run anyway**. Windows only asks once.
 4. **Find it in the tray:** Night mode lives in the system tray next to the clock. If you don't see the moon icon, click the **^** arrow. Click the icon to open the panel.
@@ -76,22 +72,17 @@ Night mode works fully offline. It has no account, no ads and no analytics, and 
 
 ## Build from source
 
-You need the [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0). The app has no NuGet packages.
+You need the [.NET SDK](https://dotnet.microsoft.com/download) and the [.NET Framework 4.8 Developer Pack](https://dotnet.microsoft.com/download/dotnet-framework/net48). The app has no NuGet packages.
 
 ```powershell
-dotnet build
 dotnet run --project checks   # dimming-maths checks
-
-# full download (no runtime needed)
-dotnet publish NightMode.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:EnableCompressionInSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -p:DebugType=none
-
-# small download (needs the .NET 10 Desktop Runtime)
-dotnet publish NightMode.csproj -c Release -r win-x64 --self-contained false -p:PublishSingleFile=true -p:DebugType=none
+dotnet build NightMode.csproj -c Release -p:DebugType=none
+# the app is bin\Release\net48\NightMode.exe
 ```
 
 ## Requirements
 
-- Windows 10 or 11, 64-bit
+- Windows 10 or 11, 64-bit, with .NET Framework 4.8 (built into Windows 10 May 2019 Update and later)
 - Backlight control needs a laptop or another panel that Windows can dim. On other screens, the colour filter does all the dimming.
 
 ## Licence

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text.Json;
+using System.Web.Script.Serialization;
 using System.Windows.Threading;
 
 namespace NightMode;
@@ -35,7 +35,8 @@ public sealed class Settings
 
     public static Settings Load()
     {
-        try { return JsonSerializer.Deserialize<Settings>(File.ReadAllText(FilePath)) ?? new(); }
+        // JavaScriptSerializer (built into .NET Framework) runs the constructor first, so missing keys keep their defaults
+        try { return new JavaScriptSerializer().Deserialize<Settings>(File.ReadAllText(FilePath)) ?? new(); }
         catch { return new(); }
     }
 
@@ -58,8 +59,8 @@ public sealed class Settings
         {
             Directory.CreateDirectory(Dir);
             var tmp = FilePath + ".tmp";
-            File.WriteAllText(tmp, JsonSerializer.Serialize(this, new JsonSerializerOptions { WriteIndented = true }));
-            File.Move(tmp, FilePath, true);
+            File.WriteAllText(tmp, new JavaScriptSerializer().Serialize(this));
+            if (File.Exists(FilePath)) File.Replace(tmp, FilePath, null); else File.Move(tmp, FilePath);
         }
         catch { /* a failed save must never take the dimmer down */ }
     }

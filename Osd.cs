@@ -55,7 +55,7 @@ sealed class Osd : Window
         base.OnSourceInitialized(e);
         var hwnd = new WindowInteropHelper(this).Handle;
         const int GWL_EXSTYLE = -20;
-        Native.SetWindowLongPtr(hwnd, GWL_EXSTYLE, Native.GetWindowLongPtr(hwnd, GWL_EXSTYLE) | 0x20 | 0x80 | 0x08000000); // click-through, no Alt+Tab, no focus
+        Native.SetWindowLongPtr(hwnd, GWL_EXSTYLE, (IntPtr)((long)Native.GetWindowLongPtr(hwnd, GWL_EXSTYLE) | 0x20 | 0x80 | 0x08000000)); // click-through, no Alt+Tab, no focus
     }
 
     public void Flash(bool on, double dim, bool backlight)

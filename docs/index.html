@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script>(function(){var q=/[?&]theme=(day|night)/.exec(location.search),h=new Date().getHours();if(q?q[1]==='night':(h>=22||h<6))document.documentElement.classList.add('night')})()</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Night mode: Screen Dimmer for Windows &amp; Android | BunkWise</title>
     <meta name="description" content="Make your screen darker than its lowest brightness. Free, open-source dimmer for Windows 10 and 11, plus a no-ads Android app. No account, works offline.">
@@ -45,11 +46,11 @@
                 "name": "Night mode for Windows",
                 "applicationCategory": "UtilitiesApplication",
                 "operatingSystem": "Windows 10, Windows 11 (64-bit)",
-                "softwareVersion": "1.0.0",
+                "softwareVersion": "1.1.0",
                 "datePublished": "2026-10-11",
                 "description": "Tray app that dims a laptop screen below its lowest brightness: the real backlight first, then a full-screen colour filter down to 4% of normal brightness.",
-                "downloadUrl": "https://github.com/madhavraj840/bunkwise-night/releases/download/v1.0.0/NightMode-1.0.0-win-x64-full.zip",
-                "fileSize": "61MB",
+                "downloadUrl": "https://github.com/madhavraj840/bunkwise-night/releases/download/v1.1.0/NightMode-1.1.0-win-x64.zip",
+                "fileSize": "0.4MB",
                 "license": "https://opensource.org/licenses/MIT",
                 "isAccessibleForFree": true,
                 "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -61,7 +62,7 @@
                 "name": "Night mode for Windows source code",
                 "codeRepository": "https://github.com/madhavraj840/bunkwise-night",
                 "programmingLanguage": "C#",
-                "runtimePlatform": ".NET 10",
+                "runtimePlatform": ".NET Framework 4.8",
                 "license": "https://opensource.org/licenses/MIT",
                 "targetProduct": { "@id": "https://nightmode.bunkwise.in/#windows" }
             },
@@ -81,7 +82,7 @@
                 "name": "How to install Night mode on Windows",
                 "totalTime": "PT2M",
                 "step": [
-                    { "@type": "HowToStep", "position": 1, "name": "Download", "text": "Download NightMode-1.0.0-win-x64-full.zip from the GitHub release." },
+                    { "@type": "HowToStep", "position": 1, "name": "Download", "text": "Download NightMode-1.1.0-win-x64.zip (0.4 MB) from the official GitHub release." },
                     { "@type": "HowToStep", "position": 2, "name": "Unzip", "text": "Right-click the zip, choose Extract All, then Extract." },
                     { "@type": "HowToStep", "position": 3, "name": "Run", "text": "Open NightMode.exe. If Windows shows 'Windows protected your PC', click More info, then Run anyway." },
                     { "@type": "HowToStep", "position": 4, "name": "Open from the tray", "text": "Click the moon icon in the system tray next to the clock. If it is hidden, click the ^ arrow first." }
@@ -92,7 +93,7 @@
                 "mainEntity": [
                     { "@type": "Question", "name": "How do I make my laptop screen darker than the lowest brightness?", "acceptedAnswer": { "@type": "Answer", "text": "Install Night mode for Windows. Its scale first turns the laptop's real backlight down to the hardware minimum (0 to 40 on the scale), then a full-screen colour filter keeps dimming below that minimum, down to 4% of normal brightness (40 to 100)." } },
                     { "@type": "Question", "name": "Is Night mode free?", "acceptedAnswer": { "@type": "Answer", "text": "The Windows app is completely free and open source under the MIT licence. The Android app is free to download and use as a dimmer; optional Pro features such as Auto-Dim and schedules are a purchase through Google Play." } },
-                    { "@type": "Question", "name": "Is Night mode open source?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the Windows app is open source. The full C# source is on GitHub at github.com/madhavraj840/bunkwise-night under the MIT licence, and you can build it yourself with the .NET 10 SDK." } },
+                    { "@type": "Question", "name": "Is Night mode open source?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the Windows app is open source. The full C# source is on GitHub at github.com/madhavraj840/bunkwise-night under the MIT licence, and you can build it yourself with the .NET SDK." } },
                     { "@type": "Question", "name": "Why does Windows say 'Windows protected your PC' when I open Night mode?", "acceptedAnswer": { "@type": "Answer", "text": "Microsoft Defender SmartScreen shows this for new apps that are not code-signed yet. Click More info, then Run anyway. The source code is public, and the SHA-256 checksums on the release page let you confirm the file is the one we published." } },
                     { "@type": "Question", "name": "What if the screen gets too dark to see?", "acceptedAnswer": { "@type": "Answer", "text": "On Windows, press Ctrl + Alt + Backspace at any time for full brightness. On Android, shake the phone (on by default) or press Volume Up and Volume Down together, or tap Off in the notification." } },
                     { "@type": "Question", "name": "Does Night mode work on Windows 10?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Night mode runs on 64-bit Windows 10 and Windows 11. The full download includes everything it needs, so nothing else has to be installed." } },
@@ -166,9 +167,6 @@ h3 { font-size: 19px; font-weight: 600; line-height: 1.3; }
 /* Hero: copy left, the two apps right on a dark "night" panel */
 .hero { background: var(--surface); padding: 48px 0 72px; }
 .hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 56px; align-items: center; }
-.night { position: relative; background: var(--ink); border-radius: 12px; padding: 28px 28px 0; min-height: 470px; overflow: hidden; }
-.night .win { width: 64%; border-radius: 8px; box-shadow: 0 18px 40px rgba(0,0,0,.45); }
-.night .phone { position: absolute; right: 22px; bottom: -40px; width: 40%; border-radius: 14px; border: 5px solid #2a2d34; box-shadow: 0 18px 40px rgba(0,0,0,.5); }
 .facts { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 72px; border-top: 1px solid var(--line); }
 .facts div { padding: 22px 24px 0 0; }
 .facts div + div { padding-left: 24px; border-left: 1px solid var(--line); }
@@ -307,15 +305,190 @@ kbd { font-size: 13px; background: var(--surface); border: 1px solid #cfcfc7; bo
     .facts div, .facts div + div { padding: 16px 0; border-left: 0; border-bottom: 1px solid var(--line); }
     .app-head { flex-wrap: wrap; }
     .app-head .tag { margin-left: 72px; }
-    .night { min-height: 0; padding: 18px 18px 0; }
-    .night .win { width: 70%; }
-    .night .phone { width: 44%; right: 12px; }
     .steps > li { grid-template-columns: 1fr; gap: 6px; }
     .pick, .ss { grid-template-columns: 1fr; }
     .phones { grid-template-columns: 1fr 1fr; }
     .btn { width: 100%; justify-content: center; }
     .keys td:first-child { white-space: normal; }
 }
+
+/* ---- Night theme after 10 pm (until 6 am) ---- */
+html.night { --bg: #0e1014; --surface: #15181e; --ink: #eceef2; --ink-2: #b3b8c2; --ink-3: #8a909b; --line: #2a2f38; --accent: #eceef2; --accent-h: #ffffff; --accent-bg: #1c2028; color-scheme: dark; }
+html.night .btn-solid, html.night .site-head .head-cta { color: #0e1014; }
+html.night .band { background: #15181e; border-top: 1px solid #2a2f38; border-bottom: 1px solid #2a2f38; }
+html.night .band .btn { background: #eceef2; color: #0e1014; border-color: #eceef2; }
+html.night kbd { background: #1c2028; border-color: #3a404b; }
+html.night .tabs a { background: #15181e; }
+html.night .small-dl { border-color: #3a404b; }
+html.night .hash button { border-color: #3a404b; }
+html.night .panel kbd { background: #fff; border-color: #b9bcc3; color: #1b1c1f; }
+
+/* ---- Hero demo: the real panel, dimming this whole page ---- */
+.demo { max-width: 400px; width: 100%; justify-self: end; }
+.seg-tabs { display: flex; gap: 4px; background: var(--accent-bg); border: 1px solid var(--line); border-radius: 8px; padding: 3px; margin-bottom: 10px; }
+.seg-tabs button { flex: 1; min-height: 38px; border: 0; border-radius: 6px; background: none; color: var(--ink-2); font: 500 14px "IBM Plex Sans", system-ui, sans-serif; cursor: pointer; }
+.seg-tabs button[aria-selected="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 0 0 1px var(--line), 0 1px 2px rgba(0,0,0,.08); }
+.panel { background: #f7f7f8; color: #1b1c1f; border-radius: 12px; border: 1px solid #d6d7db; padding: 16px 16px 14px; font-family: "Segoe UI", system-ui, sans-serif; box-shadow: 0 18px 40px rgba(22,24,29,.14); }
+.p-head { display: flex; justify-content: space-between; align-items: flex-start; }
+.p-head b { display: block; font-size: 15px; font-weight: 600; }
+.p-head small { display: block; font-size: 12.5px; color: #5d6068; }
+.toggle { display: inline-flex; align-items: center; gap: 8px; background: none; border: 0; cursor: pointer; font-family: "IBM Plex Mono", monospace; font-size: 12px; color: #43464d; min-height: 32px; }
+.toggle .sw { width: 40px; height: 20px; border-radius: 10px; border: 1px solid #8c9099; position: relative; background: #fff; }
+.toggle .sw::after { content: ""; position: absolute; top: 3px; left: 4px; width: 12px; height: 12px; border-radius: 50%; background: #3c3f46; transition: left .15s; }
+.toggle[aria-pressed="true"] .sw { background: #0067c0; border-color: #0067c0; }
+.toggle[aria-pressed="true"] .sw::after { left: 22px; background: #fff; }
+.p-num { display: flex; justify-content: space-between; align-items: flex-end; margin: 10px 0 2px; }
+.p-num .big { font-family: "IBM Plex Mono", monospace; font-size: 44px; font-weight: 500; letter-spacing: -0.04em; line-height: 1; }
+.p-num .big small { font-size: 18px; margin-left: 2px; }
+.p-num dl { display: grid; grid-template-columns: auto auto; gap: 1px 10px; font-size: 12px; text-align: right; color: #5d6068; }
+.p-num dd { font-family: "IBM Plex Mono", monospace; color: #1b1c1f; text-align: left; min-width: 54px; }
+.dscale { position: relative; margin-top: 8px; }
+.dscale svg { width: 100%; height: 44px; display: block; overflow: visible; }
+.dscale input { position: absolute; left: 0; top: 0; width: 100%; height: 46px; opacity: 0; cursor: ew-resize; margin: 0; z-index: 1; }
+.dscale .labels { display: flex; justify-content: space-between; font-size: 11px; color: #5d6068; margin-top: 4px; }
+.dscale input:focus-visible + svg { outline: 2px solid #1b1c1f; outline-offset: 3px; border-radius: 4px; }
+.dpresets { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 10px; }
+.dpresets button { background: #fff; border: 1px solid #c9cbd0; border-radius: 6px; padding: 6px 2px 5px; cursor: pointer; color: #1b1c1f; font-family: inherit; }
+.dpresets button b { display: block; font-family: "IBM Plex Mono", monospace; font-size: 15px; font-weight: 500; }
+.dpresets button span { display: block; font-size: 11px; color: #5d6068; }
+.dpresets button[aria-pressed="true"] { border-color: #0067c0; box-shadow: inset 0 0 0 1px #0067c0; }
+.dcolour { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; padding-top: 12px; border-top: 1px solid #e0e1e4; font-size: 13.5px; }
+.dcolour .segs { display: flex; border: 1px solid #c9cbd0; border-radius: 6px; padding: 2px; gap: 2px; }
+.dcolour .segs button { border: 0; background: none; padding: 5px 10px; border-radius: 4px; font: 12.5px "Segoe UI", system-ui, sans-serif; cursor: pointer; color: #1b1c1f; }
+.dcolour .segs button[aria-pressed="true"] { background: #e6e7ea; box-shadow: 0 0 0 1px #c9cbd0; }
+.descape { margin-top: 12px; padding-top: 10px; border-top: 1px dashed #c9cbd0; font-size: 12px; color: #43464d; }
+.panel kbd { font-size: 11px; background: #fff; border: 1px solid #b9bcc3; border-radius: 4px; padding: 0 5px; color: #1b1c1f; }
+.a-panel { display: none; }
+.panel.android .w-only { display: none; }
+.panel.android .a-panel { display: grid; grid-template-columns: 1fr 96px; gap: 14px; margin-top: 10px; }
+.a-panel .big { font-size: 46px; font-weight: 400; line-height: 1; letter-spacing: -0.03em; }
+.a-panel .big small { font-size: 18px; color: #5d6068; margin-left: 2px; }
+.a-panel p { font-size: 12px; color: #5d6068; margin: 4px 0 10px; }
+.a-panel .chips { display: grid; gap: 6px; }
+.a-panel .chips button { text-align: left; font: 12.5px "Segoe UI", system-ui, sans-serif; padding: 6px 10px; border-radius: 8px; background: #ececef; border: 1px solid transparent; cursor: pointer; color: #1b1c1f; }
+.a-panel .chips button[aria-pressed="true"] { border-color: #1b1c1f; }
+.shade { position: relative; height: 210px; border-radius: 22px; background: #fff; border: 1px solid #d6d7db; overflow: hidden; cursor: ns-resize; touch-action: none; }
+.shade .fill { position: absolute; left: 0; right: 0; top: 0; background: #16181d; }
+.shade .moon { position: absolute; top: 12px; left: 50%; margin-left: -6px; width: 16px; height: 16px; border-radius: 50%; box-shadow: -4px 2px 0 0 #f4f4f6; }
+.shade .sun { position: absolute; bottom: 14px; left: 50%; margin-left: -6px; width: 12px; height: 12px; border-radius: 50%; background: #1b1c1f; box-shadow: 0 0 0 3px #fff, 0 0 0 4px #1b1c1f; }
+.a-on { grid-column: 1 / -1; display: flex; gap: 8px; }
+.a-on button { flex: 1; min-height: 40px; border-radius: 20px; border: 0; font: 600 14px "Segoe UI", system-ui, sans-serif; cursor: pointer; }
+.a-on .go { background: #f6c945; color: #1b1c1f; }
+.a-on .go[aria-pressed="true"] { background: #1b1c1f; color: #fff; }
+.a-on .esc { background: #ececef; color: #1b1c1f; }
+.demo-hint { font-size: 14px; color: var(--ink-3); margin-top: 12px; }
+
+/* Page-wide dimming layers, a draggable compare line, and an always-bright control bar */
+.pd { position: fixed; inset: 0; pointer-events: none; z-index: 40; clip-path: inset(0 0 0 var(--x, 0%)); }
+#pdDim { background: #000; opacity: 0; transition: opacity .25s ease; }
+#pdWarm { background: #ff8a1f; mix-blend-mode: multiply; opacity: 0; transition: opacity .25s ease; }
+#pdGrey { -webkit-backdrop-filter: grayscale(1); backdrop-filter: grayscale(1); display: none; }
+.pd-line { position: fixed; top: 0; bottom: 0; left: var(--x, 50%); width: 2px; margin-left: -1px; background: var(--gold); z-index: 45; pointer-events: none; display: none; }
+.pd-handle { position: fixed; top: 50%; left: var(--x, 50%); z-index: 46; width: 46px; height: 46px; margin: -23px 0 0 -23px; border-radius: 50%; background: var(--gold); color: #1b1405; border: 3px solid #fff; display: none; align-items: center; justify-content: center; cursor: ew-resize; touch-action: none; box-shadow: 0 6px 18px rgba(0,0,0,.35); }
+.pd-lab { position: fixed; top: 50%; margin-top: 34px; z-index: 46; font: 500 12px "IBM Plex Mono", monospace; padding: 3px 8px; border-radius: 4px; background: rgba(14,16,20,.88); color: #eceef2; display: none; white-space: nowrap; pointer-events: none; }
+.pd-lab.l { right: calc(100% - var(--x, 50%) + 10px); }
+.pd-lab.r { left: calc(var(--x, 50%) + 10px); }
+body.cmp .pd-line, body.cmp .pd-lab { display: block; }
+body.cmp .pd-handle { display: flex; }
+.pd-bar { position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%); z-index: 47; display: none; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: center; background: #16181d; color: #eceef2; border: 1px solid #3a404b; border-radius: 12px; padding: 10px 14px; box-shadow: 0 10px 30px rgba(0,0,0,.4); font-size: 14px; width: max-content; max-width: calc(100% - 24px); }
+body.dimming .pd-bar { display: flex; }
+.pd-bar input[type=range] { width: 140px; accent-color: var(--gold); }
+.pd-bar output { font-family: "IBM Plex Mono", monospace; min-width: 38px; }
+.pd-bar button { background: #2a2f38; color: #eceef2; border: 1px solid #3a404b; border-radius: 6px; padding: 6px 12px; font: 500 13px "IBM Plex Sans", system-ui, sans-serif; cursor: pointer; min-height: 34px; }
+.pd-bar button[aria-pressed="true"] { border-color: var(--gold); }
+.pd-bar .off { background: var(--gold); color: #1b1405; border-color: var(--gold); }
+.pd-bar small { color: #8a909b; font-size: 12px; }
+
+/* Facts with icons */
+.facts img { width: 44px; height: 44px; margin-bottom: 10px; }
+
+/* ---- Download card + trust receipt ---- */
+.get { display: grid; grid-template-columns: 1.1fr 1fr; gap: 24px; align-items: start; }
+.get > * { min-width: 0; }
+.dcard, .receipt { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 28px; }
+.dcard h3 { font-size: 24px; letter-spacing: -0.015em; margin-bottom: 4px; }
+.detected { font-size: 13.5px; color: var(--ink-3); margin-bottom: 18px; }
+.dl-main { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.dl-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn img { width: 24px; height: 24px; }
+.btn-big { min-height: 54px; font-size: 16px; padding: 0 22px 0 16px; }
+.req { font-size: 14px; color: var(--ink-2); }
+.req strong { color: var(--ink); }
+.small-dl { margin-top: 18px; padding: 14px 16px; border: 1px dashed #cfcfc7; border-radius: 8px; font-size: 14px; color: var(--ink-2); }
+.small-dl a { color: var(--ink); font-weight: 500; text-underline-offset: 3px; }
+.small-dl strong { color: var(--ink); }
+.warn { margin-top: 18px; padding: 16px; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; }
+.warn > p { font-size: 14.5px; color: var(--ink-2); }
+.warn > p strong { color: var(--ink); }
+.warn .ss { margin-top: 12px; max-width: none; gap: 10px; }
+.warn .ss-box { min-height: 150px; padding: 12px 14px 52px; font-size: 12px; }
+.warn .ss-box b { font-size: 14px; margin-bottom: 6px; }
+.warn .ss-box p { font-size: 12px; }
+.warn .ss-box .ss-btns { right: 10px; bottom: 10px; }
+.warn .ss-box .ss-btns span { padding: 3px 10px; font-size: 12px; }
+.warn .guide { display: inline-block; margin-top: 12px; font-weight: 600; font-size: 15px; color: var(--ink); text-underline-offset: 3px; }
+.alt { margin-top: 16px; font-size: 14px; color: var(--ink-3); }
+.alt a { color: var(--ink-2); text-underline-offset: 3px; }
+.plat[hidden] { display: none; }
+.receipt { padding: 22px 24px 10px; }
+.receipt > p { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); padding-bottom: 12px; border-bottom: 1px dashed var(--line); }
+.receipt ul { list-style: none; }
+.receipt li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; padding: 16px 0; border-bottom: 1px dashed var(--line); }
+.receipt li:last-child { border-bottom: 0; }
+.receipt li > div { min-width: 0; }
+.receipt li img { width: 44px; height: 44px; }
+.receipt h4 { font-size: 15.5px; font-weight: 600; margin-bottom: 3px; }
+.receipt li p { font-size: 14px; color: var(--ink-2); }
+.receipt li a { color: var(--ink); text-underline-offset: 3px; }
+.receipt code { font-size: 12px; word-break: break-all; }
+.hash { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+.hash code { font-size: 11.5px; color: var(--ink-2); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; overflow-x: auto; white-space: nowrap; word-break: normal; flex: 1; min-width: 0; }
+.hash button { flex-shrink: 0; background: var(--surface); color: var(--ink); border: 1px solid #cfcfc7; border-radius: 6px; padding: 6px 12px; font: 500 12.5px "IBM Plex Sans", system-ui, sans-serif; cursor: pointer; min-height: 32px; }
+.win-keys { max-width: 720px; margin-top: 36px; }
+
+@media (max-width: 900px) {
+    .demo { justify-self: stretch; max-width: 420px; margin: 0 auto; }
+    .get { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+    .dcard, .receipt { padding: 20px 16px; }
+    .btn-big, .dl-row .btn { width: 100%; justify-content: center; }
+    .warn .ss { grid-template-columns: 1fr; }
+    .pd-bar input[type=range] { width: 100px; }
+    .pd-bar small { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { #pdDim, #pdWarm, .toggle .sw::after { transition: none; } }
+
+/* ---- Install guide: five steps side by side, scrolls sideways when narrow ---- */
+.hsteps { list-style: none; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(250px, 1fr); gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 2px 14px; border-top: 1px solid var(--ink); padding-top: 22px; }
+.hsteps li { scroll-snap-align: start; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.hsteps .num { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--ink-3); }
+.hsteps h3 { font-size: 17px; }
+.hsteps p { font-size: 14.5px; color: var(--ink-2); }
+.hsteps p strong { color: var(--ink); }
+.hsteps code { font-size: 12.5px; word-break: break-all; }
+.hsteps .shot { margin-top: auto; padding: 8px; }
+.hsteps .shot img { width: 100%; border-radius: 4px; }
+.hsteps .note { font-size: 12.5px; color: var(--ink-3); margin-top: auto; }
+.mini-explorer { margin-top: auto; background: #fff; color: #1b1c1f; border: 1px solid #d6d7db; border-radius: 8px; font: 12px "Segoe UI", system-ui, sans-serif; overflow: hidden; }
+.mini-explorer .t { background: #f3f3f3; padding: 6px 10px; font-size: 11px; color: #5d6068; border-bottom: 1px solid #e3e3e3; }
+.mini-explorer .f { display: flex; align-items: center; gap: 8px; padding: 7px 10px; }
+.mini-explorer .f.sel { background: #e5f1fb; }
+.mini-explorer .f i { width: 16px; height: 16px; border-radius: 3px; background: #1b2350; }
+.mini-explorer .f i.doc { background: #c9cbd0; }
+.ss-mini { margin-top: 4px; display: block; }
+.ss-mini .ss-box { min-height: 104px; padding: 10px 12px; }
+.ss-mini .ss-box b { font-size: 13px; margin-bottom: 6px; }
+.ss-mini .ss-box .ss-btns { right: 8px; bottom: 8px; }
+.ss-mini .ss-box .ss-btns span { padding: 2px 8px; font-size: 11px; }
+.hscroll-hint { margin-top: 10px; font-size: 13.5px; color: var(--ink-3); }
+@media (min-width: 1300px) { .hscroll-hint { display: none; } }
+.mini-dl { margin-top: auto; background: #fff; color: #1b1c1f; border: 1px solid #d6d7db; border-radius: 8px; padding: 10px 12px; font: 12px "Segoe UI", system-ui, sans-serif; }
+.mini-dl small { display: block; font-size: 11px; color: #5d6068; margin-bottom: 6px; }
+.mini-dl .row { display: flex; align-items: center; gap: 10px; }
+.mini-dl .ic { width: 28px; height: 34px; border-radius: 4px; background: #f6c945; font-size: 8px; font-weight: 700; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 4px; flex-shrink: 0; }
+.mini-dl b { display: block; font-size: 12px; word-break: break-all; }
+.mini-dl span { font-size: 11px; color: #5d6068; }
     </style>
 </head>
 <body>
@@ -325,10 +498,9 @@ kbd { font-size: 13px; background: var(--surface); border: 1px solid #cfcfc7; bo
         <a href="https://bunkwise.in/" class="brand"><img src="/img/bunkwise-logo.webp" alt="BunkWise" width="79" height="32"><span>Night mode</span></a>
         <nav aria-label="Main">
             <a href="#windows">Windows</a>
-            <a href="#android">Android</a>
             <a href="#open-source">Open source</a>
             <a href="#faq">FAQ</a>
-            <a href="#download" class="head-cta">Download</a>
+            <a href="#windows" class="head-cta">Download</a>
         </nav>
     </div>
 </header>
@@ -342,7 +514,7 @@ kbd { font-size: 13px; background: var(--surface); border: 1px solid #cfcfc7; bo
                 <h1>Your screen, darker than its lowest brightness.</h1>
                 <p class="lead">At night, even the bottom of the brightness slider can feel too bright. Night mode keeps dimming below the hardware minimum, so a dark room stays dark and nobody next to you gets lit up.</p>
                 <div class="btn-row">
-                    <a class="btn btn-solid" href="#download">Download for Windows <small>free</small></a>
+                    <a class="btn btn-solid" href="#windows">Download for Windows <small>free</small></a>
                     <a class="btn btn-line" href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" target="_blank" rel="noopener">Get it on Google Play</a>
                 </div>
                 <ul class="reassure">
@@ -352,9 +524,51 @@ kbd { font-size: 13px; background: var(--surface); border: 1px solid #cfcfc7; bo
                     <li>Works offline</li>
                 </ul>
             </div>
-            <div class="night">
-                <img class="win" src="/img/win-flyout.webp" alt="Night mode for Windows: the dim scale with a hatched sub-zero range past the laptop minimum, presets and colour options" width="558" height="865" fetchpriority="high">
-                <img class="phone" src="/img/android-darker.webp" alt="Night mode for Android, dimming below Android's minimum brightness" width="600" height="937">
+            <div class="demo" id="try">
+                <div class="seg-tabs" role="group" aria-label="Which app to try">
+                    <button type="button" id="tabWin" aria-selected="true">Windows app</button>
+                    <button type="button" id="tabAnd" aria-selected="false">Android app</button>
+                </div>
+                <div class="panel" id="panel">
+                    <div class="p-head">
+                        <div><b>Night mode</b><small id="pStatus">Screen at normal brightness</small></div>
+                        <button class="toggle" id="onBtn" type="button" aria-pressed="false" aria-label="Night mode on or off"><span id="onTxt">Off</span><span class="sw"></span></button>
+                    </div>
+                    <div class="w-only">
+                        <div class="p-num">
+                            <div class="big" id="bigW">18<small>%</small></div>
+                            <dl><dt>Backlight</dt><dd id="ddB">–</dd><dt>Sub-zero</dt><dd id="ddS">–</dd><dt>Colour</dt><dd id="ddC">Natural</dd></dl>
+                        </div>
+                        <div class="dscale">
+                            <input type="range" id="range" min="0" max="100" step="1" value="18" aria-label="Dim level, percent">
+                            <svg id="scaleSvg" viewBox="0 0 328 44" preserveAspectRatio="none" aria-hidden="true"></svg>
+                            <div class="labels"><span>Backlight</span><span>Sub-zero, below laptop minimum</span></div>
+                        </div>
+                        <div class="dpresets" id="presetsW">
+                            <button type="button" data-v="30"><b>30</b><span>Evening</span></button>
+                            <button type="button" data-v="50"><b>50</b><span>Reading</span></button>
+                            <button type="button" data-v="70"><b>70</b><span>Dark room</span></button>
+                            <button type="button" data-v="90"><b>90</b><span>Pitch black</span></button>
+                        </div>
+                        <div class="dcolour"><span>Colour</span><div class="segs" id="colourSegs"><button type="button" data-c="natural" aria-pressed="true">Natural</button><button type="button" data-c="warm" aria-pressed="false">Warm</button><button type="button" data-c="grey" aria-pressed="false">Grey</button></div></div>
+                        <p class="descape">Can't see the screen? <kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>Backspace</kbd> for full brightness.</p>
+                    </div>
+                    <div class="a-panel">
+                        <div>
+                            <div class="big" id="bigA">18<small>%</small></div>
+                            <p>darker than Android's lowest brightness</p>
+                            <div class="chips" id="presetsA">
+                                <button type="button" data-v="30">30%</button>
+                                <button type="button" data-v="45">45%</button>
+                                <button type="button" data-v="60">60%</button>
+                                <button type="button" data-v="80">80%</button>
+                            </div>
+                        </div>
+                        <div class="shade" id="shade" role="slider" tabindex="0" aria-label="Dimming shade: pull down to dim" aria-valuemin="0" aria-valuemax="100" aria-valuenow="18"><div class="fill" id="shadeFill"></div><span class="moon"></span><span class="sun"></span></div>
+                        <div class="a-on"><button type="button" class="go" id="aOn" aria-pressed="false">Turn on</button><button type="button" class="esc" id="shake">Shake to turn off</button></div>
+                    </div>
+                </div>
+                <p class="demo-hint">Try it: pick a preset or drag the scale, and this whole page dims the way your screen will. Press Compare on the bar below to see before and after.</p>
             </div>
         </div>
         <div class="facts">
@@ -366,21 +580,6 @@ kbd { font-size: 13px; background: var(--surface); border: 1px solid #cfcfc7; bo
     </div>
 </section>
 
-<section id="why">
-    <div class="wrap">
-        <p class="eyebrow">Why a dimmer at all</p>
-        <h2>Brightness sliders were set for daylight.</h2>
-        <p class="section-intro">Phone and laptop makers set the lowest brightness so the screen stays readable in an office. Switch the lights off and it becomes the brightest thing in the room. Most people find this out the same way:</p>
-        <ol class="pain-list">
-            <li><span class="n mono">01</span><div><h3>The slider is already at zero</h3><p>You can't go lower. In bed, on a night flight or in a cinema, the glare is still there.</p></div></li>
-            <li><span class="n mono">02</span><div><h3>Night light only changes the colour</h3><p>Warm tones are gentler, but a warm white page is still a bright page.</p></div></li>
-            <li><span class="n mono">03</span><div><h3>Some dimmers quietly switch off</h3><p>Some stop after a while, others ask for an account, show ads, or leave you stuck on a black screen.</p></div></li>
-            <li><span class="n mono">04</span><div><h3>Someone is asleep beside you</h3><p>One bright reel or white web page can light up the room.</p></div></li>
-        </ol>
-        <p class="close-line">Night mode does one job and does it reliably: it lowers the brightness further and stays on until you turn it off. You always have a way back to full brightness.</p>
-    </div>
-</section>
-
 <section id="windows">
     <div class="wrap">
         <div class="app-head">
@@ -388,23 +587,61 @@ kbd { font-size: 13px; background: var(--surface); border: 1px solid #cfcfc7; bo
             <div><p class="eyebrow" style="margin:0">Windows 10 and 11</p><h2 style="margin:0">Night mode for Windows</h2></div>
             <span class="tag tag-active">Free · Open source</span>
         </div>
-        <p class="section-intro">A small tray app for laptops. Dimming starts with the real backlight, which also saves battery. Once the backlight reaches its minimum, a full-screen colour filter covers everything, including the taskbar, menus and the mouse pointer.</p>
-        <div class="split">
-            <div>
-                <ul class="scale">
-                    <li><b>0 – 40</b><p><strong>Backlight.</strong> The laptop's own backlight goes down from where you set it to the hardware minimum.</p></li>
-                    <li><b>40 – 100</b><p><strong>Sub-zero.</strong> Past the laptop's minimum, a colour filter keeps dimming down to 4% of normal brightness. It never turns the screen fully black.</p></li>
-                    <li><b>Fallback</b><p><strong>Overlay.</strong> On a desktop monitor the filter covers the whole scale. If the filter isn't available, a click-through overlay takes over.</p></li>
+        <div class="get">
+            <div class="dcard">
+                <div class="plat" data-plat="windows">
+                    <p class="detected" data-detect></p>
+                    <div class="dl-main">
+                        <div class="dl-row">
+                            <a class="btn btn-solid btn-big" href="https://github.com/madhavraj840/bunkwise-night/releases/download/v1.1.0/NightMode-1.1.0-win-x64.zip" data-guide><img src="/img/icons/download.svg" alt="" width="24" height="24">Download for Windows</a>
+                            <a class="btn btn-line btn-big" href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" target="_blank" rel="noopener"><img src="/img/icons/play.svg" alt="" width="24" height="24">Get it on Google Play</a>
+                        </div>
+                        <p class="req"><strong>Free</strong> · 0.4 MB zip · nothing else to install · version 1.1.0</p>
+                    </div>
+                    <div class="small-dl">Night mode runs on <strong>.NET Framework 4.8</strong>, which is already part of Windows 11 and Windows 10 (May 2019 Update or later), so there is nothing extra to install. On an older Windows 10? <a href="https://dotnet.microsoft.com/download/dotnet-framework/net48" target="_blank" rel="noopener">Get .NET Framework 4.8 from Microsoft</a> first.</div>
+                    <div class="warn">
+                        <p><strong>Windows may show "Windows protected your PC"</strong> the first time, because the app isn't code-signed yet. Check that the file is from our GitHub release, then:</p>
+                        <div class="ss" role="img" aria-label="Illustration: in the Windows protected your PC box, click More info, then Run anyway">
+                            <div class="ss-box"><b>Windows protected your PC</b><p>Microsoft Defender SmartScreen prevented an unrecognised app…</p><p style="margin-top:6px"><u class="ss-hl">More info</u></p><div class="ss-btns"><span>Don't run</span></div></div>
+                            <div class="ss-box"><b>Windows protected your PC</b><p>App: NightMode.exe<br>Publisher: Unknown publisher</p><div class="ss-btns"><span class="ss-hl">Run anyway</span><span>Don't run</span></div></div>
+                        </div>
+                        <a class="guide" href="#steps-windows">See the install steps with pictures &rarr;</a>
+                    </div>
+                </div>
+                <div class="plat" data-plat="android" hidden>
+                    <p class="eyebrow">Android · Google Play</p>
+                    <h3>Night mode for Android</h3>
+                    <p class="detected" data-detect></p>
+                    <div class="dl-main">
+                        <a class="btn btn-solid btn-big" href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" target="_blank" rel="noopener"><img src="/img/icons/play.svg" alt="" width="24" height="24">Get it on Google Play</a>
+                        <p class="req"><strong>Free</strong> to use as a dimmer · optional Pro on Google Play</p>
+                    </div>
+                    <p class="alt">On a Windows PC? <a href="#windows" data-show="windows">Get Night mode for Windows</a></p>
+                </div>
+                <div class="plat" data-plat="other" hidden>
+                    <p class="eyebrow">Windows and Android</p>
+                    <h3>Get Night mode</h3>
+                    <p class="detected">Night mode is for Windows PCs and Android phones.</p>
+                    <div class="dl-row">
+                        <a class="btn btn-solid btn-big" href="https://github.com/madhavraj840/bunkwise-night/releases/download/v1.1.0/NightMode-1.1.0-win-x64.zip" data-guide><img src="/img/icons/download.svg" alt="" width="24" height="24">Download for Windows</a>
+                        <a class="btn btn-line btn-big" href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" target="_blank" rel="noopener"><img src="/img/icons/play.svg" alt="" width="24" height="24">Get it on Google Play</a>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="receipt" aria-label="Before you download">
+                <p>Before you download</p>
+                <ul>
+                    <li><img src="/img/icons/free.png" alt="" width="44" height="44"><div><h4>Free to use</h4><p>Windows: completely free, with no paid tier. Android: free as a dimmer, with an optional Pro purchase on Google Play (edge slider, Auto-Dim, schedules, per-app levels, colour filters).</p></div></li>
+                    <li><img src="/img/icons/code.png" alt="" width="44" height="44"><div><h4>Source code is public</h4><p>Windows app: <a href="https://github.com/madhavraj840/bunkwise-night">github.com/madhavraj840/bunkwise-night</a>, under the <a href="https://github.com/madhavraj840/bunkwise-night/blob/main/LICENSE">MIT licence</a>. The Android code isn't public.</p></div></li>
+                    <li><img src="/img/icons/shield.svg" alt="" width="44" height="44"><div><h4>No account, no telemetry</h4><p>Windows: works offline and makes no network connections. Android: no account, analytics or ads (<a href="https://bunkwise.in/privacypolicynightmode.html">privacy policy</a>). This website does use Google Analytics: <a href="#cookie-settings" data-cookie-settings>cookie settings</a>.</p></div></li>
+                    <li><img src="/img/icons/seal.svg" alt="" width="44" height="44"><div><h4>Verify your download</h4><p>Version 1.1.0 · released 11 Oct 2026 · <a href="https://github.com/madhavraj840/bunkwise-night/releases/tag/v1.1.0">official release</a>. SHA-256 of the zip:</p>
+                        <div class="hash"><code id="sha">0b865d87cbd3dac5ad828da213372b9a040e660e0cb6ed9f8aeaea0fe1a103fb</code><button type="button" id="copySha">Copy</button></div>
+                        <p style="margin-top:8px;font-size:13px">To check it, run this in PowerShell: <code>Get-FileHash .\NightMode-1.1.0-win-x64.zip</code></p></div></li>
                 </ul>
-                <ul class="feat">
-                    <li><strong>Presets:</strong> Evening 30, Reading 50, Dark room 70, Pitch black 90, plus your own.</li>
-                    <li><strong>Warm or Grey:</strong> add an amber tint or remove the colour while dimming.</li>
-                    <li><strong>Schedule:</strong> dims at bedtime with a gentle ease-in and turns off in the morning.</li>
-                    <li><strong>App rules:</strong> pause dimming while a photo editor or video player is in front.</li>
-                    <li><strong>Full brightness for a while:</strong> 30 seconds, 1 minute or 5 minutes, then it dims again by itself.</li>
-                    <li><strong>Start with Windows</strong> and <strong>Remember after restart</strong>, both off until you switch them on.</li>
-                </ul>
-                <table class="keys">
+            </aside>
+        </div>
+        <table class="keys win-keys">
                     <thead><tr><th>Shortcut</th><th>What it does</th></tr></thead>
                     <tbody>
                         <tr><td><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>D</kbd></td><td>Turn dimming on or off</td></tr>
@@ -413,41 +650,6 @@ kbd { font-size: 13px; background: var(--surface); border: 1px solid #cfcfc7; bo
                         <tr><td><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>Backspace</kbd></td><td><strong>Full brightness right away</strong>, even if you can't see the screen</td></tr>
                     </tbody>
                 </table>
-            </div>
-            <div class="shots">
-                <figure class="shot"><img src="/img/win-settings.webp" alt="Night mode settings window: use the laptop's backlight first, colour filter or overlay, remember after restart, start with Windows" width="1149" height="858" loading="lazy"><figcaption>Settings explain each option in plain words. Everything stays on your PC.</figcaption></figure>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="android">
-    <div class="wrap">
-        <div class="app-head">
-            <img src="/img/android-icon.png" alt="Night mode for Android icon" width="56" height="56">
-            <div><p class="eyebrow" style="margin:0">Android · Google Play</p><h2 style="margin:0">Night mode for Android</h2></div>
-            <span class="tag tag-active">Live on Google Play</span>
-        </div>
-        <p class="section-intro">The same idea on your phone. Night mode adds an adjustable dark layer over everything on screen, including apps, videos, games and the home screen. Pull the shade down to dim and push it up to brighten.</p>
-        <div class="split">
-            <ul class="feat">
-                <li><strong>Darker than Android's minimum:</strong> you choose exactly how dark it gets.</li>
-                <li><strong>One tap from anywhere:</strong> controls in the notification and Quick Settings tiles.</li>
-                <li><strong>Dim for a while:</strong> pick a time and the screen comes back by itself.</li>
-                <li><strong>Emergency off:</strong> shake the phone (on by default) or press Volume Up + Volume Down together.</li>
-                <li><strong>Private by design:</strong> no account, no analytics, no ads, works offline.</li>
-            </ul>
-            <div>
-                <p class="prose" style="color:var(--ink-2)">The optional Accessibility permission also dims the status bar, keyboard and lock screen. The app explains it and asks first. It never reads the text on your screen. <a href="https://bunkwise.in/privacypolicynightmode.html">Read the privacy policy</a>.</p>
-                <div class="pro"><strong>Free to use as a dimmer.</strong> Night mode Pro is an optional purchase through Google Play. It adds the edge slider, Auto-Dim for sudden bright screens, schedules, per-app levels and warm or red colour filters.</div>
-                <div class="btn-row"><a class="btn btn-solid" href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" target="_blank" rel="noopener">Get it on Google Play</a></div>
-            </div>
-        </div>
-        <div class="phones">
-            <figure class="shot"><img src="/img/android-darker.webp" alt="Android minimum brightness compared with Night mode's ultra low brightness" width="600" height="937" loading="lazy"><figcaption>Darker than Android's own minimum</figcaption></figure>
-            <figure class="shot"><img src="/img/android-notification.webp" alt="Night mode controls in the Android notification panel: -10, +10, Auto and Off" width="600" height="1066" loading="lazy"><figcaption>Adjust from the notification panel</figcaption></figure>
-            <figure class="shot"><img src="/img/android-emergency.webp" alt="Emergency escape options: notification, Quick Settings tile, volume buttons and shake to turn off" width="600" height="1066" loading="lazy"><figcaption>Several ways back to full brightness</figcaption></figure>
-        </div>
     </div>
 </section>
 
@@ -461,7 +663,7 @@ kbd { font-size: 13px; background: var(--surface); border: 1px solid #cfcfc7; bo
             <div><h3>Same file we published</h3><p>Each release lists SHA-256 checksums, so you can confirm your download is the file we published.</p></div>
             <div><h3>Safe if it crashes</h3><p>If the app ever crashes, Windows removes the filter, and the next launch restores your backlight.</p></div>
         </div>
-<pre class="code"><span class="c"># build it yourself (needs the .NET 10 SDK)</span>
+<pre class="code"><span class="c"># build it yourself (needs the .NET SDK and the .NET Framework 4.8 Developer Pack)</span>
 git clone https://github.com/madhavraj840/bunkwise-night
 cd bunkwise-night
 dotnet run --project checks   <span class="c"># dimming maths checks</span>
@@ -475,70 +677,45 @@ dotnet build -c Release</pre>
 
 <section id="download">
     <div class="wrap">
-        <p class="eyebrow">Download and install</p>
-        <h2>Ready in about two minutes.</h2>
-        <p class="section-intro">No installer, no sign-up and no restart. Choose your device:</p>
-        <div class="tabs"><a href="#steps-windows">Windows</a><a href="#steps-android">Android</a></div>
-
-        <h3 id="steps-windows" style="margin-bottom:16px">On Windows 10 or 11</h3>
-        <ol class="steps">
+        <p class="eyebrow">Windows 10 and 11</p>
+        <h2>Install guide</h2>
+        <p class="section-intro">Ready in about two minutes. No installer, no sign-up and no restart.</p>
+        <ol class="hsteps" aria-label="Install steps">
             <li>
                 <span class="num">01</span>
-                <div>
-                    <h3>Download the zip</h3>
-                    <p>If you're not sure which one to pick, take the first. It has everything built in.</p>
-                    <div class="pick">
-                        <a class="rec" href="https://github.com/madhavraj840/bunkwise-night/releases/download/v1.0.0/NightMode-1.0.0-win-x64-full.zip"><strong>Night mode for Windows <em>Recommended</em></strong><span>61 MB · any 64-bit Windows 10 or 11 PC</span></a>
-                        <a href="https://github.com/madhavraj840/bunkwise-night/releases/download/v1.0.0/NightMode-1.0.0-win-x64.zip"><strong>Small download</strong><span>0.4 MB · needs the <span style="display:inline">.NET 10 Desktop Runtime</span></span></a>
-                    </div>
-                    <figure class="shot"><img src="/img/step-download.webp" alt="GitHub release page, Assets list, with NightMode-1.0.0-win-x64-full.zip highlighted" width="1218" height="226" loading="lazy"><figcaption>Both files are also on the GitHub release page, under Assets.</figcaption></figure>
-                </div>
+                <h3>Download</h3>
+                <p>Click <strong>Download for Windows</strong>. You get <code>NightMode-1.1.0-win-x64.zip</code> (0.4 MB) from our GitHub release.</p>
+                <div class="mini-dl" aria-hidden="true"><small>Downloads</small><div class="row"><span class="ic">ZIP</span><div><b>NightMode-1.1.0-win-x64.zip</b><span>0.4 MB · github.com</span></div></div></div>
             </li>
             <li>
                 <span class="num">02</span>
-                <div>
-                    <h3>Unzip it</h3>
-                    <p>Open your Downloads folder, right-click <code>NightMode-1.0.0-win-x64-full.zip</code>, choose <strong>Extract All…</strong>, then click <strong>Extract</strong>. You can move the new folder anywhere, for example into Documents.</p>
-                </div>
+                <h3>Unzip it</h3>
+                <p>Open Downloads, right-click the zip, choose <strong>Extract All…</strong>, then <strong>Extract</strong>.</p>
+                <div class="mini-explorer" aria-hidden="true"><div class="t">Downloads › NightMode-1.1.0-win-x64</div><div class="f sel"><i></i>NightMode.exe</div><div class="f"><i class="doc"></i>Geist-OFL.txt</div></div>
             </li>
             <li>
                 <span class="num">03</span>
-                <div>
-                    <h3>Run NightMode.exe</h3>
-                    <p>Double-click <code>NightMode.exe</code>. The first time, Windows may show a blue <strong>"Windows protected your PC"</strong> box. This happens because the app is new and not code-signed yet. Click <strong>More info</strong>, then <strong>Run anyway</strong>. Windows only asks once.</p>
-                    <div class="ss" role="img" aria-label="Illustration: in the Windows protected your PC box, click More info, then Run anyway">
-                        <div class="ss-box"><b>Windows protected your PC</b><p>Microsoft Defender SmartScreen prevented an unrecognised app from starting…</p><p style="margin-top:8px"><u class="ss-hl">More info</u></p><div class="ss-btns"><span>Don't run</span></div></div>
-                        <div class="ss-box"><b>Windows protected your PC</b><p>App: NightMode.exe<br>Publisher: Unknown publisher</p><div class="ss-btns"><span class="ss-hl">Run anyway</span><span>Don't run</span></div></div>
-                        <p class="ss-cap">Illustration of the prompt. Click the highlighted parts.</p>
-                    </div>
-                    <p class="note">Want to check the file first? Compare its SHA-256 with the one on the release page. In PowerShell, run <code>Get-FileHash .\NightMode-1.0.0-win-x64-full.zip</code>. It should be <code>d18b77f56e8ccf3d5505aaf729c4ae648116b874cf876535c3115d3b4139cfb7</code>.</p>
+                <h3>Run NightMode.exe</h3>
+                <p>If Windows shows <strong>"Windows protected your PC"</strong>, choose <strong>More info</strong>, then <strong>Run anyway</strong>. It's only asked once.</p>
+                <div class="ss ss-mini" role="img" aria-label="Illustration: click More info, then Run anyway">
+                    <div class="ss-box"><b>Windows protected your PC</b><p><u class="ss-hl">More info</u></p><div class="ss-btns"><span class="ss-hl">Run anyway</span><span>Don't run</span></div></div>
                 </div>
+                <p class="note">Check first: in PowerShell, <code>Get-FileHash .\NightMode-1.1.0-win-x64.zip</code> should match the checksum above.</p>
             </li>
             <li>
                 <span class="num">04</span>
-                <div>
-                    <h3>Open it from the tray</h3>
-                    <p>Night mode doesn't open a big window. It sits in the system tray next to the clock. If you don't see the moon icon, click the <strong>^</strong> arrow, then click the moon to open the panel.</p>
-                    <figure class="shot" style="max-width:460px"><img src="/img/step-tray.webp" alt="Windows taskbar tray with the ^ arrow for hidden icons highlighted" width="430" height="72" loading="lazy"><figcaption>Hidden tray icons sit behind the ^ arrow.</figcaption></figure>
-                </div>
+                <h3>Find it in the tray</h3>
+                <p>It sits next to the clock. If the moon is hidden, click the <strong>^</strong> arrow.</p>
+                <figure class="shot"><img src="/img/step-tray.webp" alt="Windows taskbar with the ^ arrow for hidden tray icons highlighted" width="430" height="72" loading="lazy"></figure>
             </li>
             <li>
                 <span class="num">05</span>
-                <div>
-                    <h3>Dim, and keep it handy</h3>
-                    <p>Drag the scale or pick a preset. Anything past <strong>40</strong> is below your laptop's minimum brightness. To have the app ready every day, open <strong>Settings</strong> and turn on <strong>Start with Windows</strong>.</p>
-                    <p>To uninstall, quit the app from its tray menu and delete the folder.</p>
-                    <figure class="shot" style="max-width:300px"><img src="/img/win-flyout.webp" alt="Night mode panel opened from the tray" width="558" height="865" loading="lazy"><figcaption>Lost in the dark? Ctrl + Alt + Backspace brings full brightness back.</figcaption></figure>
-                </div>
+                <h3>Pick a preset</h3>
+                <p>Click the moon and choose <strong>Dark room</strong>. Anything past 40 is below your laptop's minimum.</p>
+                <figure class="shot"><img src="/img/step-preset.webp" alt="The Night mode panel with the Dark room preset highlighted" width="558" height="425" loading="lazy"></figure>
             </li>
         </ol>
-
-        <h3 id="steps-android" style="margin:56px 0 16px">On Android</h3>
-        <ol class="steps">
-            <li><span class="num">01</span><div><h3>Install from Google Play</h3><p>Open <a href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" target="_blank" rel="noopener">Night Mode - Screen Dimmer on Google Play</a> and tap <strong>Install</strong>.</p></div></li>
-            <li><span class="num">02</span><div><h3>Allow "Display over other apps"</h3><p>Night mode needs this permission to draw the dark layer. The app shows you where to switch it on. Notifications are optional. They put the controls in your notification shade.</p></div></li>
-            <li><span class="num">03</span><div><h3>Pull the shade down</h3><p>Drag down to dim and up to brighten. After that, use the notification or the Quick Settings tile, and you won't need to open the app again.</p></div></li>
-        </ol>
+        <p class="hscroll-hint">Scroll sideways for all five steps. To uninstall, quit from the tray menu and delete the folder.</p>
     </div>
 </section>
 
@@ -549,10 +726,10 @@ dotnet build -c Release</pre>
         <div class="faq">
             <details open><summary>How do I make my laptop screen darker than the lowest brightness?</summary><p>Install Night mode for Windows. The first part of its scale (0–40) turns the laptop's real backlight down to the hardware minimum. The rest (40–100) uses a full-screen colour filter to keep dimming below that minimum, down to 4% of normal brightness.</p></details>
             <details><summary>Is Night mode free?</summary><p>The Windows app is completely free and open source under the MIT licence. The Android app is free to download and works as a dimmer without paying. Optional Pro features such as Auto-Dim and schedules are a purchase through Google Play.</p></details>
-            <details><summary>Is Night mode open source?</summary><p>Yes, the Windows app is. Its full C# source is at <a href="https://github.com/madhavraj840/bunkwise-night">github.com/madhavraj840/bunkwise-night</a>, and you can build it yourself with the .NET 10 SDK.</p></details>
+            <details><summary>Is Night mode open source?</summary><p>Yes, the Windows app is. Its full C# source is at <a href="https://github.com/madhavraj840/bunkwise-night">github.com/madhavraj840/bunkwise-night</a>, and you can build it yourself with the .NET SDK.</p></details>
             <details><summary>Why does Windows say "Windows protected your PC"?</summary><p>Microsoft Defender SmartScreen shows this box for new apps that aren't code-signed yet. Click <strong>More info</strong>, then <strong>Run anyway</strong>. The source code is public, and the SHA-256 checksums on the release page let you confirm the file is the one we published.</p></details>
             <details><summary>What if the screen gets too dark to see?</summary><p>On Windows, press <kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>Backspace</kbd> at any time for full brightness. This works even when you can't see anything. On Android, shake the phone (on by default), press Volume Up and Volume Down together, or tap Off in the notification.</p></details>
-            <details><summary>Does Night mode work on Windows 10?</summary><p>Yes. It runs on 64-bit Windows 10 and Windows 11. The recommended download includes everything it needs, so nothing else has to be installed.</p></details>
+            <details><summary>Does Night mode work on Windows 10?</summary><p>Yes. It runs on 64-bit Windows 10 and Windows 11. It uses .NET Framework 4.8, which is already part of Windows 11 and Windows 10 (May 2019 Update or later), so nothing else has to be installed.</p></details>
             <details><summary>Does it work on a desktop PC or an external monitor?</summary><p>Yes. Backlight control needs a screen that Windows can dim, which is usually a laptop panel. On other screens, the colour filter does all of the dimming.</p></details>
             <details><summary>Do screenshots come out dark?</summary><p>Press <kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>S</kbd> to take a screenshot at normal brightness. Night mode lifts the filter, opens the Windows snipping tool and dims again afterwards. If you choose the Overlay method in Settings, all screenshots stay at normal brightness.</p></details>
             <details><summary>Does Night mode collect any data?</summary><p>No. The Windows app works fully offline and makes no network connections. The Android app has no account, no analytics and no ads, and purchases are handled by Google Play.</p></details>
@@ -585,8 +762,8 @@ dotnet build -c Release</pre>
             <nav class="foot-col" aria-label="Night mode">
                 <p class="foot-title">Night mode</p>
                 <a href="#windows">For Windows</a>
-                <a href="#android">For Android</a>
-                <a href="#download">Download</a>
+                <a href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" target="_blank" rel="noopener">For Android</a>
+                <a href="#windows">Download</a><a href="#download">Install guide</a>
                 <a href="#faq">FAQ</a>
             </nav>
             <nav class="foot-col" aria-label="Source">
@@ -607,9 +784,148 @@ dotnet build -c Release</pre>
         <div class="foot-bottom">
             <span>© 2026 BunkWise (OPC) Private Limited (incorporation in progress).</span>
             <span>Night mode is a screen dimmer, not a medical device. <a href="#cookie-settings" data-cookie-settings style="color:inherit">Cookie settings</a></span>
+            <span>Icons: <a href="https://www.deviantart.com/svengraph" style="color:inherit">“This is ART” by Svengraph</a>, <a href="https://creativecommons.org/licenses/by/3.0/" style="color:inherit">CC BY 3.0</a></span>
         </div>
     </div>
 </footer>
+
+<div class="pd" id="pdGrey"></div>
+<div class="pd" id="pdWarm"></div>
+<div class="pd" id="pdDim"></div>
+<div class="pd-line" aria-hidden="true"></div>
+<span class="pd-lab l" aria-hidden="true">Without</span><span class="pd-lab r" aria-hidden="true">With Night mode</span>
+<div class="pd-handle" id="pdHandle" role="slider" tabindex="0" aria-label="Compare: move the line" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></div>
+<div class="pd-bar" role="region" aria-label="Night mode demo controls">
+    <span>Night mode demo</span>
+    <input type="range" id="barRange" min="0" max="100" value="18" aria-label="Demo dim level">
+    <output id="barOut">18%</output>
+    <button type="button" id="cmpBtn" aria-pressed="false">Compare</button>
+    <button type="button" class="off" id="barOff">Turn off</button>
+    <small>or Ctrl + Alt + Backspace</small>
+</div>
+
+<script>
+(function () {
+    var $ = function (id) { return document.getElementById(id); };
+    var root = document.documentElement, body = document.body, range = $('range'), panel = $('panel');
+    var state = { platform: 'windows', on: false, w: 18, a: 18, colour: 'natural', compare: false, x: 50 };
+    // Same curve as the Windows app (DimMath): 0-40 the backlight goes to its minimum, 40-100 a filter dims to 4%.
+    // ponytail: the "laptop minimum" is a fixed 45% of full brightness in this simulation; real panels vary.
+    function bWin(d) { return d <= 40 ? 1 - 0.55 * d / 40 : 0.45 * Math.pow(0.04, (d - 40) / 60); }
+    function bAnd(l) { return 1 - 0.96 * l / 100; }
+
+    function drawScale() {
+        var W = 328, X = function (v) { return 6 + (W - 12) * v / 100; };
+        var s = '<defs><pattern id="h" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#c4c6cc" stroke-width="2"/></pattern></defs>';
+        s += '<rect x="' + X(40) + '" y="8" width="' + (X(100) - X(40)) + '" height="26" fill="url(#h)"/>';
+        for (var v = 0; v <= 100; v += 2) { var m = v % 10 === 0; s += '<line x1="' + X(v) + '" x2="' + X(v) + '" y1="' + (m ? 14 : 22) + '" y2="34" stroke="' + (m ? '#5d6068' : '#b0b3b9') + '"/>'; }
+        s += '<line x1="' + X(40) + '" x2="' + X(40) + '" y1="2" y2="40" stroke="#43464d" stroke-width="1.5"/>';
+        var c = state.on ? '#0067c0' : '#8a8d94';
+        if (state.on && state.w > 0) s += '<line x1="' + X(0) + '" x2="' + X(state.w) + '" y1="34" y2="34" stroke="' + c + '" stroke-width="3" stroke-linecap="round"/>';
+        s += '<rect x="' + (X(state.w) - 1) + '" y="4" width="2" height="30" fill="' + c + '"/><rect x="' + (X(state.w) - 6) + '" y="0" width="12" height="8" rx="2" fill="' + c + '"/>';
+        $('scaleSvg').innerHTML = s;
+    }
+
+    function render() {
+        var win = state.platform === 'windows', lvl = win ? state.w : state.a;
+        var b = state.on ? (win ? bWin(state.w) : bAnd(state.a)) : 1;
+        $('pdDim').style.opacity = (1 - b).toFixed(3);
+        $('pdWarm').style.opacity = state.on && win && state.colour === 'warm' ? 0.4 : 0;
+        $('pdGrey').style.display = state.on && win && state.colour === 'grey' ? 'block' : 'none';
+        root.style.setProperty('--x', (state.compare ? state.x : 0) + '%');
+        body.classList.toggle('dimming', state.on);
+        body.classList.toggle('cmp', state.on && state.compare);
+        $('pdHandle').setAttribute('aria-valuenow', Math.round(state.x));
+        $('barRange').value = lvl; $('barOut').textContent = lvl + '%';
+        $('cmpBtn').setAttribute('aria-pressed', state.compare);
+        $('bigW').innerHTML = state.w + '<small>%</small>';
+        range.value = state.w;
+        $('ddB').textContent = state.on ? Math.round(100 * Math.max(0, 1 - Math.min(state.w, 40) / 40)) + '%' : '–';
+        $('ddS').textContent = state.on && state.w > 40 ? Math.round(100 * (1 - Math.pow(0.04, (state.w - 40) / 60))) + '%' : '–';
+        $('ddC').textContent = state.colour[0].toUpperCase() + state.colour.slice(1);
+        $('pStatus').textContent = !state.on ? 'Screen at normal brightness' : win ? (state.w > 40 ? 'Dimming below the laptop minimum' : 'Dimming with the backlight') : 'Darker than Android allows';
+        $('onBtn').setAttribute('aria-pressed', state.on); $('onTxt').textContent = state.on ? 'On' : 'Off';
+        document.querySelectorAll('#presetsW button').forEach(function (x) { x.setAttribute('aria-pressed', state.on && +x.dataset.v === state.w); });
+        document.querySelectorAll('#colourSegs button').forEach(function (x) { x.setAttribute('aria-pressed', x.dataset.c === state.colour); });
+        $('bigA').innerHTML = state.a + '<small>%</small>';
+        $('shadeFill').style.height = state.a + '%';
+        $('shade').setAttribute('aria-valuenow', state.a);
+        $('aOn').setAttribute('aria-pressed', state.on); $('aOn').textContent = state.on ? 'Turn off' : 'Turn on';
+        document.querySelectorAll('#presetsA button').forEach(function (x) { x.setAttribute('aria-pressed', state.on && +x.dataset.v === state.a); });
+        drawScale();
+    }
+    function setLevel(v) { if (state.platform === 'windows') state.w = v; else state.a = v; state.on = true; render(); }
+
+    range.addEventListener('input', function () { state.w = +range.value; state.on = true; render(); });
+    $('barRange').addEventListener('input', function () { setLevel(+this.value); });
+    document.querySelectorAll('#presetsW button').forEach(function (x) { x.onclick = function () { state.w = +x.dataset.v; state.on = true; render(); }; });
+    document.querySelectorAll('#presetsA button').forEach(function (x) { x.onclick = function () { state.a = +x.dataset.v; state.on = true; render(); }; });
+    document.querySelectorAll('#colourSegs button').forEach(function (x) { x.onclick = function () { state.colour = x.dataset.c; render(); }; });
+    // The compare line exists only while Compare is pressed; turning off removes it too
+    function off() { state.on = false; state.compare = false; render(); }
+    $('onBtn').onclick = $('aOn').onclick = function () { if (state.on) off(); else { state.on = true; render(); } };
+    $('barOff').onclick = $('shake').onclick = off;
+    $('cmpBtn').onclick = function () { state.compare = !state.compare; if (state.compare) state.x = 50; render(); };
+
+    // Android shade: drag down to dim
+    var shade = $('shade');
+    function fromY(e) { var r = shade.getBoundingClientRect(); state.a = Math.max(0, Math.min(100, Math.round((e.clientY - r.top) / r.height * 100))); state.on = true; render(); }
+    shade.addEventListener('pointerdown', function (e) { shade.setPointerCapture(e.pointerId); fromY(e); });
+    shade.addEventListener('pointermove', function (e) { if (shade.hasPointerCapture(e.pointerId)) fromY(e); });
+    shade.addEventListener('keydown', function (e) {
+        var d = { ArrowDown: 5, ArrowUp: -5, PageDown: 10, PageUp: -10 }[e.key];
+        if (d) { e.preventDefault(); state.a = Math.max(0, Math.min(100, state.a + d)); state.on = true; render(); }
+    });
+
+    // The gold compare line: drag it anywhere across the page
+    var h = $('pdHandle');
+    function fromX(e) { state.x = Math.max(0, Math.min(100, e.clientX / innerWidth * 100)); render(); }
+    h.addEventListener('pointerdown', function (e) { h.setPointerCapture(e.pointerId); fromX(e); });
+    h.addEventListener('pointermove', function (e) { if (h.hasPointerCapture(e.pointerId)) fromX(e); });
+    h.addEventListener('keydown', function (e) {
+        var d = { ArrowLeft: -5, ArrowRight: 5 }[e.key];
+        if (d) { e.preventDefault(); state.x = Math.max(0, Math.min(100, state.x + d)); render(); }
+    });
+
+    function setPlatform(p) {
+        state.platform = p;
+        panel.classList.toggle('android', p === 'android');
+        $('tabWin').setAttribute('aria-selected', p === 'windows');
+        $('tabAnd').setAttribute('aria-selected', p === 'android');
+        render();
+    }
+    $('tabWin').onclick = function () { setPlatform('windows'); };
+    $('tabAnd').onclick = function () { setPlatform('android'); };
+
+    addEventListener('keydown', function (e) {
+        if (e.ctrlKey && e.altKey && e.key === 'Backspace') { e.preventDefault(); off(); }
+    });
+
+    // Download card: lead with the visitor's platform
+    var ua = navigator.userAgent, os = /Android/i.test(ua) ? 'android' : /Windows/i.test(ua) ? 'windows' : 'other';
+    var said = { windows: 'Showing the Windows version because you\'re on a Windows PC.', android: 'Showing the Android version because you\'re on an Android phone.' };
+    function showPlat(p, auto) {
+        document.querySelectorAll('.plat').forEach(function (x) { x.hidden = x.dataset.plat !== p; });
+        document.querySelectorAll('[data-detect]').forEach(function (x) { x.textContent = auto && said[p] ? said[p] : ''; });
+    }
+    showPlat(os, true);
+    if (os === 'android') setPlatform('android');
+    document.querySelectorAll('[data-show]').forEach(function (x) { x.onclick = function () { showPlat(x.dataset.show, false); }; });
+
+    // After the download starts, take the visitor to the install guide
+    document.querySelectorAll('[data-guide]').forEach(function (x) {
+        x.addEventListener('click', function () { setTimeout(function () { $('download').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); }, 400); });
+    });
+
+    $('copySha').onclick = function () {
+        var t = $('sha').textContent, btn = this;
+        (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(function () { btn.textContent = 'Copied'; }, function () { btn.textContent = 'Select it'; });
+        setTimeout(function () { btn.textContent = 'Copy'; }, 2000);
+    };
+
+    render();
+}());
+</script>
 
 </body>
 </html>
