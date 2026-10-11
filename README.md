@@ -13,16 +13,16 @@ Website: **[nightmode.bunkwise.in](https://nightmode.bunkwise.in)**. There is al
 
 ## Download
 
-**[NightMode-1.1.0-win-x64.zip](https://github.com/madhavraj840/bunkwise-night/releases/download/v1.1.0/NightMode-1.1.0-win-x64.zip)** (0.4 MB). It runs on any 64-bit Windows 10 or 11 PC with nothing else to install.
+**[NightMode-1.1.1-win-x64.zip](https://github.com/madhavraj840/bunkwise-night/releases/download/v1.1.1/NightMode-1.1.1-win-x64.zip)** (0.4 MB). It runs on any 64-bit Windows 10 or 11 PC with nothing else to install.
 
 Night mode uses **.NET Framework 4.8**, which is already part of Windows 11 and Windows 10 (May 2019 Update or later). On an older Windows 10, install [.NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48) first.
 
 All versions are listed on the **[Releases page](https://github.com/madhavraj840/bunkwise-night/releases/latest)**.
 
-SHA-256 checksum for v1.1.0:
+SHA-256 checksum for v1.1.1:
 
 ```
-0b865d87cbd3dac5ad828da213372b9a040e660e0cb6ed9f8aeaea0fe1a103fb  NightMode-1.1.0-win-x64.zip
+a69e507349990bdf8c2962721a642f21d8364b8ec0ab216a61c4f2ca42f96ea0  NightMode-1.1.1-win-x64.zip
 ```
 
 ## Install

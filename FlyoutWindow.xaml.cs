@@ -120,7 +120,9 @@ public partial class FlyoutWindow : Window
         WarmValue.Text = $"{s.Warmth:0}%";
 
         bool paused = e.PausedUntil != null;
-        PauseRow.Visibility = e.Active ? Visibility.Visible : Visibility.Collapsed;
+        // Always shown so the panel never jumps; only usable while dimming is on
+        PauseRow.IsEnabled = e.Active;
+        PauseRow.Opacity = e.Active ? 1 : 0.45;
         PausedRow.Visibility = paused ? Visibility.Visible : Visibility.Collapsed;
         if (paused)
         {
@@ -151,8 +153,12 @@ public partial class FlyoutWindow : Window
 
         bool known = App.BuiltIn.Any(p => p.Dim == now) || _app.S.Presets.Contains(now);
         bool canSave = !known && now > 0 && _app.S.Presets.Count < 4;
-        SaveBtn.Visibility = canSave ? Visibility.Visible : Visibility.Collapsed;
-        SaveText.Text = $"Save {now}% as a preset";
+        // Always shown so the panel never jumps; greyed out when there is nothing to save
+        SaveBtn.IsEnabled = canSave;
+        SaveBtn.Opacity = canSave ? 1 : 0.5;
+        SaveText.Text = known ? $"{now}% is already a preset"
+            : _app.S.Presets.Count >= 4 ? "Preset slots are full (remove one to save)"
+            : $"Save {now}% as a preset";
         AutomationProperties.SetName(SaveBtn, SaveText.Text);
     }
 

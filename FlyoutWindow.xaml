@@ -80,7 +80,7 @@
 
             <UniformGrid x:Name="PresetPanel" Columns="4" Margin="-3,6,-3,0" />
             <Button x:Name="SaveBtn" Style="{StaticResource NavRow}" MinHeight="30" HorizontalAlignment="Left" Margin="-8,2,0,0"
-                    Click="Save_Click" Visibility="Collapsed">
+                    Click="Save_Click">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Style="{StaticResource Glyph}" FontSize="12" Text="&#xE710;" Foreground="{DynamicResource Nm.Text2}" Margin="0,0,8,0" />
                     <TextBlock x:Name="SaveText" FontSize="12" Foreground="{DynamicResource Nm.Text2}" VerticalAlignment="Center" />
