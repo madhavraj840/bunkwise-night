@@ -5,19 +5,23 @@
 ## Key facts
 - App name on Google Play: "Screen Dimmer - Night Mode" (package com.bunkwise.nightmode). Platform: Android. Publisher: Bunkwise Technologies, India.
 - What it does: draws a dark overlay over the screen so it is darker than Android's lowest brightness setting. The app shows the level as a percentage darker than Android's lowest brightness (quick levels 30%, 45%, 60%, 80%).
-- Controls: floating in-app slider with an Auto button, notification buttons (-10, +10, Auto, Off), Quick Settings tiles (Night mode and a slider tile).
-- Emergency off: shake the phone (on by default), tap Off in the notification, or Volume Up + Volume Down together if the optional Accessibility service is enabled.
+- Controls: floating in-app slider with an AUTO button, notification buttons (-10, +10, AUTO, OFF), Quick Settings tiles (Night mode and Night mode slider).
+- Emergency off: shake the phone (on by default), tap OFF in the notification, switch off the tile, or Volume Up + Volume Down together if the optional Accessibility service is enabled.
 - Permissions: "Display over other apps" is required to draw the overlay. Accessibility is optional (volume-button shortcut, per-app profiles, dimming the notification panel).
 - Privacy: no account, no ads, no data collection, runs on-device.
 - Price: free dimmer with an optional Pro purchase on Google Play (edge slider, Auto-Dim, schedules, per-app profiles, colour filters).
 - Not an eye-care or medical app.
 - Windows: a separate free, open-source (MIT) Night mode for Windows 10/11 exists at https://nightmode.bunkwise.in/windows/ .
 
-## Pages
-- [Night Mode: Android screen dimmer (home)](https://nightmode.bunkwise.in/): what the app is, how to set it up, features, privacy
-- [Android screen dimmer below minimum brightness, 2026 guide](https://nightmode.bunkwise.in/android-screen-dimmer-below-minimum-brightness/): how overlay dimming works, comparison with Extra dim, brightness, dark mode and blue light filters, setup and safety
-- [FAQ and troubleshooting](https://nightmode.bunkwise.in/faq/): permissions, privacy, Pro, fixes
-- [Night mode for Windows](https://nightmode.bunkwise.in/windows/): separate free, open-source Windows 10/11 app
+## Docs
+- [Home](https://nightmode.bunkwise.in/): Official documentation for Night Mode (Screen Dimmer - Night Mode), a free Android screen dimmer that goes below your phone’s minimum brightness. Quick start, features, permissions, support.
+- [User Guide](https://nightmode.bunkwise.in/user-guide/): How to use Night Mode on Android: the home screen, quick levels, floating slider, notification buttons, Quick Settings tiles, emergency off, permissions and Free vs Pro.
+- [Dim below minimum brightness](https://nightmode.bunkwise.in/android-screen-dimmer-below-minimum-brightness/): How to make an Android screen darker than its lowest brightness with an overlay dimmer. Compares brightness, Extra dim, dark mode and blue light filters, with setup steps and safety tips for Night Mode.
+- [FAQ](https://nightmode.bunkwise.in/faq/): Answers about Night Mode for Android: dimming below minimum brightness, Extra dim, the overlay permission, Accessibility, privacy, ads, Pro features and the Windows app.
+- [Troubleshooting](https://nightmode.bunkwise.in/troubleshooting/): Fix Night Mode problems on Android: screen won’t dim, too dark to see, notification panel not dimmed, “Screen overlay detected”, dimming stops after restart, Pro not recognised.
+- [Windows app](https://nightmode.bunkwise.in/windows/): Free, open-source screen dimmer for Windows 10 and 11 that makes a laptop screen darker than its lowest brightness. Download, install, shortcuts, FAQ. Looking for the phone app? See Night Mode for Android.
+- [Privacy Policy](https://nightmode.bunkwise.in/privacy-policy/): Night Mode privacy: no account, no ads, no data collection, everything runs on your device. Link to the full privacy policy.
+- [Terms of Service](https://nightmode.bunkwise.in/terms-of-service/): Terms for using Night Mode: free use, optional Pro through Google Play, safe use, permissions, no warranty.
 
 ## Links
 - Google Play: https://play.google.com/store/apps/details?id=com.bunkwise.nightmode

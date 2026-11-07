@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,21 +12,22 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/img/app-icon-192.png">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Night Mode by Bunkwise">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Night Mode Docs">
 <meta property="og:url" content="https://nightmode.bunkwise.in/android-screen-dimmer-below-minimum-brightness/">
-<meta property="og:title" content="Android screen dimmer below minimum brightness (2026 guide)">
+<meta property="og:title" content="Android Screen Dimmer App: Go Below Minimum Brightness with an Overlay (Google Play, 2026)">
 <meta property="og:description" content="How to make an Android screen darker than its lowest brightness with an overlay dimmer. Compares brightness, Extra dim, dark mode and blue light filters, with setup steps and safety tips for Night Mode.">
 <meta property="og:image" content="https://nightmode.bunkwise.in/img/og.png">
 <meta property="og:image:width" content="1024"><meta property="og:image:height" content="500">
 <meta property="og:image:alt" content="Night Mode screen dimmer for Android: a normal settings screen next to the same screen dimmed below minimum brightness">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Android screen dimmer below minimum brightness (2026 guide)">
+<meta name="twitter:title" content="Android Screen Dimmer App: Go Below Minimum Brightness with an Overlay (Google Play, 2026)">
 <meta name="twitter:description" content="How to make an Android screen darker than its lowest brightness with an overlay dimmer. Compares brightness, Extra dim, dark mode and blue light filters, with setup steps and safety tips for Night Mode.">
 <meta name="twitter:image" content="https://nightmode.bunkwise.in/img/og.png">
 <meta name="theme-color" content="#2a0a5e">
+<script>try{var t=localStorage.getItem('nm-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 <link rel="preload" href="/assets/fonts/plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/docs.css">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -51,7 +52,7 @@
    "@type": "WebSite",
    "@id": "https://nightmode.bunkwise.in/#site",
    "url": "https://nightmode.bunkwise.in/",
-   "name": "Night Mode by Bunkwise",
+   "name": "Night Mode Docs",
    "publisher": {
     "@id": "https://bunkwise.in/#organization"
    },
@@ -78,7 +79,7 @@
    ],
    "inLanguage": "en",
    "isAccessibleForFree": true,
-   "description": "Android screen dimmer that makes the screen darker than the system's lowest brightness using an overlay. Notification controls, Quick Settings tiles, an in-app floating slider and emergency off. No account, no ads.",
+   "description": "Android screen dimmer that makes the screen darker than the system's lowest brightness using an overlay. Notification controls, Quick Settings tiles, floating slider and emergency off. No account, no ads.",
    "featureList": [
     "Dims below Android's minimum brightness",
     "Floating in-app brightness slider",
@@ -98,23 +99,45 @@
    }
   },
   {
-   "@type": "WebPage",
+   "@type": "TechArticle",
    "@id": "https://nightmode.bunkwise.in/android-screen-dimmer-below-minimum-brightness/#page",
    "url": "https://nightmode.bunkwise.in/android-screen-dimmer-below-minimum-brightness/",
+   "headline": "Android screen dimmer: go below minimum brightness with an overlay",
    "name": "Android Screen Dimmer App: Go Below Minimum Brightness with an Overlay (Google Play, 2026)",
    "description": "How to make an Android screen darker than its lowest brightness with an overlay dimmer. Compares brightness, Extra dim, dark mode and blue light filters, with setup steps and safety tips for Night Mode.",
    "inLanguage": "en",
+   "dateModified": "2026-11-07",
+   "datePublished": "2026-11-07",
+   "author": {
+    "@id": "https://bunkwise.in/#organization"
+   },
+   "publisher": {
+    "@id": "https://bunkwise.in/#organization"
+   },
    "isPartOf": {
     "@id": "https://nightmode.bunkwise.in/#site"
    },
    "about": {
     "@id": "https://nightmode.bunkwise.in/#android"
    },
-   "primaryImageOfPage": "https://nightmode.bunkwise.in/img/og.png",
-   "dateModified": "2026-11-07",
-   "publisher": {
-    "@id": "https://bunkwise.in/#organization"
-   }
+   "image": "https://nightmode.bunkwise.in/img/og.png"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Night Mode Docs",
+     "item": "https://nightmode.bunkwise.in/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Dim below minimum brightness",
+     "item": "https://nightmode.bunkwise.in/android-screen-dimmer-below-minimum-brightness/"
+    }
+   ]
   },
   {
    "@type": "HowTo",
@@ -131,50 +154,25 @@
      "@type": "HowToStep",
      "position": 2,
      "name": "Allow Display over other apps",
-     "text": "Grant the overlay permission when asked. This lets the app draw the dark layer over the screen."
+     "text": "Grant the overlay permission when asked so the app can draw the dark layer."
     },
     {
      "@type": "HowToStep",
      "position": 3,
-     "name": "Pick how dark",
-     "text": "Choose a level such as 30%, 45%, 60% or 80%, or drag the slider. The percentage is how much darker than Android's lowest brightness."
+     "name": "Pick a level",
+     "text": "Tap 30%, 45%, 60% or 80%, or drag the slider."
     },
     {
      "@type": "HowToStep",
      "position": 4,
-     "name": "Control it from anywhere",
-     "text": "Use the notification buttons, the Quick Settings tiles or the floating slider. Shake the phone to turn it off."
-    }
-   ]
-  },
-  {
-   "@type": "Article",
-   "headline": "Android Screen Dimmer App: Go Below Minimum Brightness with an Overlay (Google Play, 2026)",
-   "datePublished": "2026-11-07",
-   "dateModified": "2026-11-07",
-   "author": {
-    "@id": "https://bunkwise.in/#organization"
-   },
-   "publisher": {
-    "@id": "https://bunkwise.in/#organization"
-   },
-   "image": "https://nightmode.bunkwise.in/img/og.png",
-   "mainEntityOfPage": "https://nightmode.bunkwise.in/android-screen-dimmer-below-minimum-brightness/"
-  },
-  {
-   "@type": "BreadcrumbList",
-   "itemListElement": [
-    {
-     "@type": "ListItem",
-     "position": 1,
-     "name": "Night Mode",
-     "item": "https://nightmode.bunkwise.in/"
+     "name": "Adjust from anywhere",
+     "text": "Use the floating slider, the notification buttons or the Quick Settings tiles."
     },
     {
-     "@type": "ListItem",
-     "position": 2,
-     "name": "Guide",
-     "item": "https://nightmode.bunkwise.in/android-screen-dimmer-below-minimum-brightness/"
+     "@type": "HowToStep",
+     "position": 5,
+     "name": "Turn it off",
+     "text": "Use the app, the notification OFF button, the tile, or shake the phone."
     }
    ]
   }
@@ -185,72 +183,105 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-head"><div class="wrap">
-<a class="brand" href="/"><img src="/img/app-icon-192.png" alt="Night Mode app icon" width="34" height="34">Night Mode</a>
-<nav aria-label="Main"><a href="/android-screen-dimmer-below-minimum-brightness/">How it works</a><a href="/faq/">FAQ</a><a href="/windows/">Windows</a><a class="cta" href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" rel="noopener">Google Play</a></nav>
+<header class="md-header"><div class="md-header-in">
+<button class="md-burger" id="burger" type="button" aria-label="Navigation">☰</button>
+<a class="md-logo" href="/" aria-label="Night Mode Docs"><img src="/img/app-icon-192.png" alt="Night Mode logo" width="29" height="29"></a>
+<a class="md-title" href="/">Night Mode Docs</a>
+<span class="md-topic">Dim below minimum brightness</span>
+<span class="md-grow"></span>
+<div class="md-search"><input id="q" type="search" placeholder="Search docs" aria-label="Search" autocomplete="off"><div class="md-results" id="results" role="listbox"></div></div>
+<button class="md-btn" id="themeBtn" type="button" aria-label="Switch light or dark mode" title="Switch light or dark mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18V4a8 8 0 0 1 0 16z"/></svg></button>
+<a class="md-play" href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" rel="noopener">Google Play</a>
 </div></header>
-<main id="main">
-<div class="page-head"><div class="wrap">
-<p class="crumbs" style="color:#d9d2ee"><a href="/">Night Mode</a> › Guide</p>
-<h1>Android screen dimmer: go below minimum brightness with an overlay</h1>
-<p>A 2026 guide to dimming an Android phone beyond its lowest brightness setting, and how the Night Mode app on Google Play does it.</p>
-<div class="btn-row"><a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" rel="noopener"><img src="/img/icons/play.svg" alt="" width="22" height="22">Get it on Google Play</a></div></div></div>
-<section><div class="wrap prose">
-<h2>Quick answer</h2>
-<p class="answer"><strong>To make an Android screen darker than its minimum brightness, use an overlay dimmer app.</strong> Install Night Mode from Google Play, allow “Display over other apps”, then pick a level such as 45% or drag the slider. The app draws a dark layer over the screen, so it goes darker than the brightness slider allows.</p>
-<h2>Why is the lowest brightness still too bright?</h2>
+<div class="md-main">
+<aside class="md-side"><div class="nav-title"><img src="/img/app-icon-192.png" alt="" width="26" height="26">Night Mode Docs</div>
+<nav aria-label="Navigation"><ul><li><a href="/">Home</a></li><li><a href="/user-guide/">User Guide</a></li><li class="active"><a href="/android-screen-dimmer-below-minimum-brightness/" aria-current="page">Dim below minimum brightness</a><ul><li><a href="#quick-answer">Quick answer</a></li><li><a href="#why-is-the-lowest-brightness-still-too-bright">Why is the lowest brightness still too bright?</a></li><li><a href="#how-does-an-overlay-screen-dimmer-work">How does an overlay screen dimmer work?</a></li><li><a href="#night-mode-vs-extra-dim-brightness-dark-mode-and-blue-light-filters">Night Mode vs Extra dim, brightness, dark mode and blue light filters</a></li><li><a href="#how-to-set-up-night-mode-on-android">How to set up Night Mode on Android</a></li><li><a href="#what-if-it-gets-too-dark">What if it gets too dark?</a></li><li><a href="#good-to-know">Good to know</a></li></ul></li><li><a href="/faq/">FAQ</a></li><li><a href="/troubleshooting/">Troubleshooting</a></li><li><a href="/windows/">Windows app</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/terms-of-service/">Terms of Service</a></li></ul></nav></aside>
+<div class="md-content"><article id="main">
+<p class="crumbs"><a href="/">Night Mode Docs</a> › Dim below minimum brightness</p>
+<h1 id="android-screen-dimmer-go-below-minimum-brightness-with-an-overlay">Android screen dimmer: go below minimum brightness with an overlay<a class="headerlink" href="#android-screen-dimmer-go-below-minimum-brightness-with-an-overlay" title="Permanent link">¶</a></h1>
+<p>A 2026 guide to dimming an Android phone beyond its lowest brightness setting, and how Night Mode on Google Play does it.</p>
+<hr />
+<h2 id="quick-answer">Quick answer<a class="headerlink" href="#quick-answer" title="Permanent link">¶</a></h2>
+<p><strong>To make an Android screen darker than its minimum brightness, use an overlay dimmer app.</strong> Install <a href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode">Night Mode on Google Play</a>, allow “Display over other apps”, then pick a level such as 45% or drag the slider. The app draws a dark layer over the screen, so it goes darker than the brightness slider allows.</p>
+<p><a class="cta" href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" rel="noopener"><img src="/img/icons/play.svg" alt="" width="22" height="22">Get it on Google Play</a></p>
+<hr />
+<h2 id="why-is-the-lowest-brightness-still-too-bright">Why is the lowest brightness still too bright?<a class="headerlink" href="#why-is-the-lowest-brightness-still-too-bright" title="Permanent link">¶</a></h2>
 <p>Phone makers set a minimum brightness so the screen stays readable in daylight. In a dark bedroom that floor can still feel harsh, especially when reading in bed or sitting next to someone who is asleep. The system brightness slider cannot go lower, which is where an overlay helps.</p>
-<h2>How does an overlay screen dimmer work?</h2>
+<hr />
+<h2 id="how-does-an-overlay-screen-dimmer-work">How does an overlay screen dimmer work?<a class="headerlink" href="#how-does-an-overlay-screen-dimmer-work" title="Permanent link">¶</a></h2>
 <p>An overlay dimmer asks for Android’s “Display over other apps” permission and then draws a semi-transparent dark layer on top of the screen. Everything underneath, including apps, websites, video and the home screen, looks dimmer. Turning it off removes the layer straight away. Night Mode shows the level as a percentage darker than Android’s lowest brightness.</p>
-</div></section>
-<section id="compare"><div class="wrap">
-<h2>Night Mode vs Extra dim, brightness, dark mode and blue light filters</h2>
-<p class="intro">These settings are often mixed up. They solve different problems.</p>
-<div class="tscroll"><table><thead><tr><th>Method</th><th>What it does</th><th>Goes below minimum brightness?</th></tr></thead><tbody>
-<tr><td>Brightness slider</td><td>Sets the display’s brightness within the range the phone allows</td><td>No</td></tr>
-<tr><td>Extra dim (built in)</td><td>A system setting on many phones that dims beyond the slider. Availability and strength depend on your phone and Android version</td><td>Yes, where available</td></tr>
-<tr><td>Night Light / blue light filter</td><td>Warms screen colours for the evening</td><td>No</td></tr>
-<tr><td>Dark mode</td><td>Switches supported apps to dark colours</td><td>No</td></tr>
-<tr><td>Night Mode app</td><td>Overlay dimmer with an adjustable level, notification buttons, Quick Settings tiles and a floating slider</td><td>Yes, you choose how far</td></tr>
-</tbody></table></div>
-<p class="intro" style="margin-top:16px">Night Mode and Extra dim can be a good pair: if your phone has Extra dim, try both and keep whichever feels better.</p>
-</div></section>
-<section><div class="wrap prose">
-<h2>How to set up Night Mode on Android</h2>
+<hr />
+<h2 id="night-mode-vs-extra-dim-brightness-dark-mode-and-blue-light-filters">Night Mode vs Extra dim, brightness, dark mode and blue light filters<a class="headerlink" href="#night-mode-vs-extra-dim-brightness-dark-mode-and-blue-light-filters" title="Permanent link">¶</a></h2>
+<p>These settings are often mixed up. They solve different problems.</p>
+<div class="tscroll"><table>
+<thead>
+<tr>
+<th>Method</th>
+<th>What it does</th>
+<th>Goes below minimum brightness?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Brightness slider</td>
+<td>Sets the display’s brightness within the range the phone allows</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Extra dim (built in)</td>
+<td>A system setting on many phones that dims beyond the slider. Availability and strength depend on your phone and Android version</td>
+<td>Yes, where available</td>
+</tr>
+<tr>
+<td>Night Light / blue light filter</td>
+<td>Warms screen colours for the evening</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Dark mode</td>
+<td>Switches supported apps to dark colours</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Night Mode app</td>
+<td>Overlay dimmer with an adjustable level, notification buttons, Quick Settings tiles and a floating slider</td>
+<td>Yes, you choose how far</td>
+</tr>
+</tbody>
+</table></div>
+<p>Night Mode and Extra dim can be a good pair. If your phone has Extra dim, try both and keep whichever feels better.</p>
+<hr />
+<h2 id="how-to-set-up-night-mode-on-android">How to set up Night Mode on Android<a class="headerlink" href="#how-to-set-up-night-mode-on-android" title="Permanent link">¶</a></h2>
 <ol>
-<li><strong>Install</strong> <a href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" rel="noopener">Screen Dimmer - Night Mode</a> from Google Play and open it.</li>
-<li><strong>Allow “Display over other apps”.</strong> This is the only permission the dimmer needs. If Android shows “Screen overlay detected”, close other apps that draw over the screen and try again.</li>
-<li><strong>Choose a level.</strong> Tap 30%, 45%, 60% or 80%, or drag the slider. Higher means darker than Android’s lowest brightness.</li>
-<li><strong>Adjust from anywhere.</strong> Use the notification buttons (−10, +10, Auto, Off), the Quick Settings tiles, or the floating slider.</li>
+<li><strong>Install</strong> <a href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode">Screen Dimmer - Night Mode</a> from Google Play and open it</li>
+<li><strong>Allow “Display over other apps”.</strong> This is the only permission the dimmer needs. If Android shows “Screen overlay detected”, close other apps that draw over the screen and try again</li>
+<li><strong>Choose a level.</strong> Tap 30%, 45%, 60% or 80%, or drag the slider. Higher means darker than Android’s lowest brightness</li>
+<li><strong>Adjust from anywhere.</strong> Use the notification buttons (−10, +10, AUTO, OFF), the Quick Settings tiles, or the floating slider</li>
 </ol>
-<h2 style="margin-top:34px">Control it without opening the app</h2>
-</div><div class="wrap" style="margin-top:20px"><div class="shots"><figure><img src="/img/app-meet-night-mode.webp" alt="Night Mode app set to 45% darker than Android lowest brightness" width="600" height="1071" loading="lazy"><figcaption>Pick a level</figcaption></figure><figure><img src="/img/app-in-app-controls.webp" alt="Floating brightness slider with Auto button over another app, left half bright and right half dimmed" width="640" height="1136" loading="lazy"><figcaption>Floating slider</figcaption></figure><figure><img src="/img/app-notification-controls.webp" alt="Night Mode notification buttons minus 10, plus 10, Auto and Off" width="600" height="1071" loading="lazy"><figcaption>Notification buttons</figcaption></figure><figure><img src="/img/app-quick-tiles.webp" alt="Quick Settings tiles named Night mode and Night mode slider" width="600" height="1071" loading="lazy"><figcaption>Quick Settings tiles</figcaption></figure></div></div></section>
-<section><div class="wrap split prose">
-<div><h2>What if it gets too dark?</h2>
+<p>See the <a href="/user-guide/">User Guide</a> for every control.</p>
+<hr />
+<h2 id="what-if-it-gets-too-dark">What if it gets too dark?<a class="headerlink" href="#what-if-it-gets-too-dark" title="Permanent link">¶</a></h2>
 <ul>
-<li><strong>Shake the phone.</strong> This is on by default.</li>
-<li><strong>Tap Off</strong> in the Night Mode notification, or use the Quick Settings tile.</li>
-<li><strong>Volume Up + Volume Down</strong> together, if you enabled the optional Accessibility service.</li>
+<li><strong>Shake the phone.</strong> This is on by default</li>
+<li><strong>Tap OFF</strong> in the Night Mode notification, or use the Quick Settings tile</li>
+<li><strong>Volume Up + Volume Down</strong> together, if you enabled the optional Accessibility service</li>
 </ul>
-<p>Begin with 30% to get a feel for the levels, then go darker.</p></div>
-<div><h2>Good to know</h2>
+<p>Begin with 30% to get a feel for the levels, then go darker.</p>
+<hr />
+<h2 id="good-to-know">Good to know<a class="headerlink" href="#good-to-know" title="Permanent link">¶</a></h2>
 <ul>
-<li>The notification panel is dimmed only if you enable the optional Accessibility service.</li>
-<li>No account, no ads, and no data collection. Everything runs on your device.</li>
-<li>Optional Pro adds the edge slider, Auto-Dim, schedules, per-app profiles and colour filters.</li>
-<li>Night Mode is a screen dimmer, not a medical or eye-care device.</li>
-</ul></div>
-</div></section>
-<section class="also"><div class="wrap"><p class="eyebrow">Try it</p><h2>Get Night Mode on Google Play</h2><p>Free to use, no account, no ads.</p><div class="btn-row"><a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" rel="noopener"><img src="/img/icons/play.svg" alt="" width="22" height="22">Get it on Google Play</a><a class="btn btn-ghost" href="/faq/">Read the FAQ</a></div></div></section>
-</main>
-<footer class="site-foot"><div class="wrap">
-<div class="foot-grid">
-<div><a class="brand" href="/"><img src="/img/app-icon-192.png" alt="" width="34" height="34">Night Mode</a><p style="margin-top:14px;max-width:34ch">Android screen dimmer that goes below minimum brightness. Made by Bunkwise Technologies, India.</p></div>
-<nav class="foot-col" aria-label="Night Mode"><p class="foot-title">Night Mode</p><a href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" rel="noopener">Google Play</a><a href="/android-screen-dimmer-below-minimum-brightness/">How it works</a><a href="/faq/">FAQ and troubleshooting</a><a href="/windows/">For Windows</a></nav>
-<nav class="foot-col" aria-label="For AI and search"><p class="foot-title">For AI agents</p><a href="/llms.txt">llms.txt</a><a href="/llms-full.txt">llms-full.txt</a><a href="/sitemap.xml">Sitemap</a><a href="/robots.txt">robots.txt</a></nav>
-<nav class="foot-col" aria-label="Bunkwise"><p class="foot-title">Bunkwise</p><a href="https://bunkwise.in/">Home</a><a href="https://bunkwise.in/about.html">About us</a><a href="https://bunkwise.in/privacypolicynightmode.html">Privacy policy</a><a href="mailto:support@bunkwise.in">support@bunkwise.in</a></nav>
-</div>
-<div class="foot-bottom"><span>© 2026 Bunkwise Technologies, India.</span><span>Night Mode is a screen dimmer, not a medical device. <a href="#cookie-settings" data-cookie-settings style="color:inherit">Cookie settings</a></span></div>
-</div></footer>
+<li>The notification panel is dimmed only if you enable the optional Accessibility service</li>
+<li>No account, no ads, and no data collection. Everything runs on your device</li>
+<li>Optional Pro adds the edge slider, Auto-Dim, schedules, per-app profiles and colour filters</li>
+<li>Night Mode is a screen dimmer, not a medical or eye-care device</li>
+</ul>
+<p>If something is not working, see <a href="/troubleshooting/">Troubleshooting</a>.</p>
+<p style="font-size:.8rem;color:var(--muted)">Last updated: 7 November 2026</p>
+</article>
+<nav class="pager" aria-label="Pages"><a class="prev" href="/user-guide/"><small>Previous</small>User Guide</a><a class="next" href="/faq/"><small>Next</small>FAQ</a></nav>
+<footer class="md-foot"><span>© 2026 <a href="https://bunkwise.in/">Bunkwise Technologies</a>, India. Night Mode is a screen dimmer, not a medical device.</span>
+<span><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="mailto:support@bunkwise.in">support@bunkwise.in</a> · <a href="#cookie-settings" data-cookie-settings>Cookie settings</a></span></footer>
+</div></div>
+<script src="/assets/docs.js" defer></script>
 </body>
 </html>
