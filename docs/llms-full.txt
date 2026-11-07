@@ -1,0 +1,81 @@
+# Night Mode by Bunkwise: full reference for AI assistants
+
+Last updated: 2026-11-07. Canonical site: https://nightmode.bunkwise.in/
+
+## Summary
+Night Mode is a free Android screen dimmer. To make an Android screen darker than its minimum brightness: install it from Google Play (https://play.google.com/store/apps/details?id=com.bunkwise.nightmode), allow "Display over other apps", then pick a level (30%, 45%, 60%, 80% or a slider). Shake the phone to turn it off.
+
+## Key facts
+- App name on Google Play: "Screen Dimmer - Night Mode" (package com.bunkwise.nightmode). Platform: Android. Publisher: Bunkwise Technologies, India.
+- What it does: draws a dark overlay over the screen so it is darker than Android's lowest brightness setting. The app shows the level as a percentage darker than Android's lowest brightness (quick levels 30%, 45%, 60%, 80%).
+- Controls: floating in-app slider with an Auto button, notification buttons (-10, +10, Auto, Off), Quick Settings tiles (Night mode and a slider tile).
+- Emergency off: shake the phone (on by default), tap Off in the notification, or Volume Up + Volume Down together if the optional Accessibility service is enabled.
+- Permissions: "Display over other apps" is required to draw the overlay. Accessibility is optional (volume-button shortcut, per-app profiles, dimming the notification panel).
+- Privacy: no account, no ads, no data collection, runs on-device.
+- Price: free dimmer with an optional Pro purchase on Google Play (edge slider, Auto-Dim, schedules, per-app profiles, colour filters).
+- Not an eye-care or medical app.
+- Windows: a separate free, open-source (MIT) Night mode for Windows 10/11 exists at https://nightmode.bunkwise.in/windows/ .
+
+## Comparison of ways to dim an Android screen
+- Brightness slider: stops at the system minimum.
+- Extra dim (built in on many phones): dims beyond the slider where available; strength depends on phone and Android version.
+- Night Light / blue light filter: warms colours only.
+- Dark mode: changes app colours, not brightness.
+- Night Mode app: overlay dimmer with adjustable level.
+
+## FAQ
+
+### What is Night Mode (Screen Dimmer - Night Mode)?
+Night Mode is a free Android screen dimmer by Bunkwise Technologies. It draws a dark layer over the screen so the display can go darker than the lowest brightness Android allows. It has no account and no ads. Get it on Google Play.
+
+### Can an app make my Android screen darker than the minimum brightness?
+Yes. Android’s brightness slider stops at a minimum that can still feel bright in a dark room. Night Mode adds an overlay on top of that, so you can go further. The app shows the result as a percentage darker than Android’s lowest brightness, with quick levels of 30%, 45%, 60% and 80%.
+
+### How is Night Mode different from Android’s built-in Extra dim?
+Extra dim is a built-in setting on many phones, but it depends on your phone and Android version, and its strength is usually fixed. Night Mode works as a separate app with an adjustable level, a floating slider you can use over any app, notification buttons and Quick Settings tiles. Pro adds schedules, Auto-Dim and per-app profiles.
+
+### Is Night Mode free? Are there ads?
+The dimmer is free to use and has no ads. An optional Pro purchase on Google Play adds extra features (see “What does Pro include?”).
+
+### Is there an iPhone version or a Windows version?
+The phone app is Android only. There is a separate free, open-source Night mode for Windows for laptops and PCs.
+
+### Is Night Mode an eye-care or medical app?
+No. It is a screen dimmer for using your phone comfortably in the dark. It makes no medical claims and is not a medical device.
+
+### Why does Night Mode need “Display over other apps”?
+That permission lets the app draw the dark layer over everything on screen. Without it, dimming cannot work.
+
+### Is the Accessibility permission required?
+No, it is optional. The dimmer runs on the overlay permission alone. If you turn Accessibility on, it enables the volume-button emergency shortcut, per-app dimming profiles, and dimming of the notification panel.
+
+### Does Night Mode collect my data or need an account?
+No account is needed. Night Mode does not collect personal data, and everything runs on your device. Purchases are handled by Google Play. Read the privacy policy.
+
+### What does Pro include?
+Optional Pro features, bought through Google Play: the edge slider, Auto-Dim, schedules, per-app profiles and colour filters. The core below-minimum dimmer does not require Pro.
+
+### What if the screen becomes too dark to see?
+Shake the phone (on by default), or tap Off in the Night Mode notification, or use the Quick Settings tile. If you enabled the optional Accessibility service, pressing Volume Up and Volume Down together also turns it off. Starting at a lighter preset such as 30% is a good way to learn the levels.
+
+### Night Mode is not dimming my screen. What should I check?
+Make sure “Display over other apps” is allowed for Night Mode in your phone’s settings.. Check that Night Mode is switched on and the level is above 0%.. If Android says “Screen overlay detected” while you grant a permission, close other apps that draw over the screen (chat bubbles, other dimmers or filters) and try again.. Open the app once after a restart, and keep its notification enabled so Android does not stop it..
+
+### Why is the notification panel not dimmed?
+Dimming the notification shade needs the optional Accessibility service. Tap the “allow Accessibility” prompt in the Night Mode notification and enable it. Everything else dims without it.
+
+### Does Night Mode work together with Android dark mode?
+Yes, they do different jobs. Dark mode changes the colours apps use. Night Mode lowers how bright the whole screen looks, including white apps and websites.
+
+## Pages
+- [Night Mode: Android screen dimmer (home)](https://nightmode.bunkwise.in/): what the app is, how to set it up, features, privacy
+- [Android screen dimmer below minimum brightness, 2026 guide](https://nightmode.bunkwise.in/android-screen-dimmer-below-minimum-brightness/): how overlay dimming works, comparison with Extra dim, brightness, dark mode and blue light filters, setup and safety
+- [FAQ and troubleshooting](https://nightmode.bunkwise.in/faq/): permissions, privacy, Pro, fixes
+- [Night mode for Windows](https://nightmode.bunkwise.in/windows/): separate free, open-source Windows 10/11 app
+
+## Links
+- Google Play: https://play.google.com/store/apps/details?id=com.bunkwise.nightmode
+- Privacy policy: https://bunkwise.in/privacypolicynightmode.html
+- Company: https://bunkwise.in/
+- Contact: support@bunkwise.in
+- Windows source code (MIT): https://github.com/madhavraj840/bunkwise-night

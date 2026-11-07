@@ -1,18 +1,27 @@
-# Night mode (BunkWise)
+# Night Mode by Bunkwise
 
-> Night mode is a screen dimmer that makes a screen darker than its lowest brightness setting. It is made by BunkWise Technologies (India) for Windows and Android. The Windows app is free and open source (MIT); the Android app is free on Google Play with optional Pro features.
+> Night Mode (Google Play name: "Screen Dimmer - Night Mode") is a free Android screen dimmer that makes the screen darker than its lowest brightness setting using an overlay. No account, no ads. Made by Bunkwise Technologies (India). A separate free, open-source Windows version also exists.
 
-Key facts:
-- Windows app: Night mode for Windows 1.1.1, for Windows 10 and 11 (64-bit), built on .NET Framework 4.8 (part of Windows). Free, MIT licence, source at https://github.com/madhavraj840/bunkwise-night
-- How it dims on Windows: scale 0-40 lowers the laptop's real backlight to its hardware minimum; 40-100 adds a full-screen colour filter down to 4% of normal brightness (never fully black). On desktops/external monitors the filter covers the whole scale. A click-through overlay is the fallback.
-- Windows emergency shortcut: Ctrl + Alt + Backspace restores full brightness at any time. Other shortcuts: Ctrl + Alt + D on/off, Ctrl + Alt + minus/plus darker/brighter, Ctrl + Alt + S screenshot at normal brightness.
-- Windows features: presets (Evening 30, Reading 50, Dark room 70, Pitch black 90), Warm and Grey colour, schedule with ease-in, app rules, temporary full brightness (30 s, 1 min, 5 min), start with Windows.
-- Windows privacy: fully offline, no network connections, no account, no ads, no analytics.
-- Windows download: https://github.com/madhavraj840/bunkwise-night/releases/latest (NightMode-1.1.1-win-x64.zip, 0.4 MB, nothing else to install on Windows 10 May 2019 Update or later and Windows 11). Not code-signed yet: on first run choose More info, then Run anyway, after checking the SHA-256 on the release page.
-- Android app: "Night Mode - Screen Dimmer", https://play.google.com/store/apps/details?id=com.bunkwise.nightmode. Overlay dimmer below Android's minimum brightness; notification controls, Quick Settings tiles, emergency off (shake, or Volume Up + Volume Down). No account, no analytics, no ads. Optional Pro (Google Play purchase): edge slider, Auto-Dim, schedules, per-app profiles, colour filters.
+## Key facts
+- App name on Google Play: "Screen Dimmer - Night Mode" (package com.bunkwise.nightmode). Platform: Android. Publisher: Bunkwise Technologies, India.
+- What it does: draws a dark overlay over the screen so it is darker than Android's lowest brightness setting. The app shows the level as a percentage darker than Android's lowest brightness (quick levels 30%, 45%, 60%, 80%).
+- Controls: floating in-app slider with an Auto button, notification buttons (-10, +10, Auto, Off), Quick Settings tiles (Night mode and a slider tile).
+- Emergency off: shake the phone (on by default), tap Off in the notification, or Volume Up + Volume Down together if the optional Accessibility service is enabled.
+- Permissions: "Display over other apps" is required to draw the overlay. Accessibility is optional (volume-button shortcut, per-app profiles, dimming the notification panel).
+- Privacy: no account, no ads, no data collection, runs on-device.
+- Price: free dimmer with an optional Pro purchase on Google Play (edge slider, Auto-Dim, schedules, per-app profiles, colour filters).
 - Not an eye-care or medical app.
-- Contact: support@bunkwise.in. Company site: https://bunkwise.in/
+- Windows: a separate free, open-source (MIT) Night mode for Windows 10/11 exists at https://nightmode.bunkwise.in/windows/ .
 
 ## Pages
-- [Night mode home, download and install guide](https://nightmode.bunkwise.in/)
-- [Android app privacy policy](https://bunkwise.in/privacypolicynightmode.html)
+- [Night Mode: Android screen dimmer (home)](https://nightmode.bunkwise.in/): what the app is, how to set it up, features, privacy
+- [Android screen dimmer below minimum brightness, 2026 guide](https://nightmode.bunkwise.in/android-screen-dimmer-below-minimum-brightness/): how overlay dimming works, comparison with Extra dim, brightness, dark mode and blue light filters, setup and safety
+- [FAQ and troubleshooting](https://nightmode.bunkwise.in/faq/): permissions, privacy, Pro, fixes
+- [Night mode for Windows](https://nightmode.bunkwise.in/windows/): separate free, open-source Windows 10/11 app
+
+## Links
+- Google Play: https://play.google.com/store/apps/details?id=com.bunkwise.nightmode
+- Privacy policy: https://bunkwise.in/privacypolicynightmode.html
+- Company: https://bunkwise.in/
+- Contact: support@bunkwise.in
+- Windows source code (MIT): https://github.com/madhavraj840/bunkwise-night
