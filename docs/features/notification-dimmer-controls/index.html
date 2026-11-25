@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dim your screen from the notification (Android)</title>
+<meta name="description" content="Change screen darkness from the notification shade with −10, +10, AUTO and OFF buttons, or a Quick Settings tile, without opening the app.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Madhav Raj, Bunkwise Technologies">
+<link rel="canonical" href="https://nightmode.bunkwise.in/features/notification-dimmer-controls/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/app-icon-192.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Night Mode Docs">
+<meta property="og:url" content="https://nightmode.bunkwise.in/features/notification-dimmer-controls/">
+<meta property="og:title" content="Dim your screen from the notification (Android)">
+<meta property="og:description" content="Change screen darkness from the notification shade with −10, +10, AUTO and OFF buttons, or a Quick Settings tile, without opening the app.">
+<meta property="og:image" content="https://nightmode.bunkwise.in/img/og.png">
+<meta property="og:image:width" content="1024"><meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="Screen &amp; Notification Dimmer for Android: a normal settings screen next to the same screen dimmed below minimum brightness">
+<meta property="article:published_time" content="2026-11-25">
+<meta property="article:modified_time" content="2026-11-25">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dim your screen from the notification (Android)">
+<meta name="twitter:description" content="Change screen darkness from the notification shade with −10, +10, AUTO and OFF buttons, or a Quick Settings tile, without opening the app.">
+<meta name="twitter:image" content="https://nightmode.bunkwise.in/img/og.png">
+<meta name="theme-color" content="#2a0a5e">
+<script>try{var t=localStorage.getItem('nm-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preload" href="/assets/fonts/plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/docs.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://bunkwise.in/#organization",
+   "name": "Bunkwise Technologies",
+   "url": "https://bunkwise.in/",
+   "logo": "https://bunkwise.in/assets/bunkwise-app.png",
+   "email": "support@bunkwise.in",
+   "founder": {
+    "@id": "https://bunkwise.in/#madhav"
+   },
+   "sameAs": [
+    "https://github.com/madhavraj840"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://bunkwise.in/#madhav",
+   "name": "Madhav Raj",
+   "jobTitle": "Founder and Android developer, Bunkwise Technologies",
+   "url": "https://github.com/madhavraj840",
+   "worksFor": {
+    "@id": "https://bunkwise.in/#organization"
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://nightmode.bunkwise.in/#site",
+   "url": "https://nightmode.bunkwise.in/",
+   "name": "Night Mode Docs",
+   "publisher": {
+    "@id": "https://bunkwise.in/#organization"
+   },
+   "inLanguage": "en"
+  },
+  {
+   "@type": "MobileApplication",
+   "@id": "https://nightmode.bunkwise.in/#android",
+   "name": "Screen & Notification Dimmer",
+   "alternateName": [
+    "Night Mode",
+    "Night Mode by Bunkwise",
+    "Notification Screen Dimmer",
+    "Screen Dimmer - Night Mode"
+   ],
+   "applicationCategory": "UtilitiesApplication",
+   "operatingSystem": "Android 8.0 or later",
+   "softwareVersion": "8.0.2",
+   "dateModified": "2026-11-21",
+   "url": "https://nightmode.bunkwise.in/",
+   "installUrl": "https://play.google.com/store/apps/details?id=com.bunkwise.nightmode",
+   "downloadUrl": "https://play.google.com/store/apps/details?id=com.bunkwise.nightmode",
+   "image": "https://nightmode.bunkwise.in/img/app-icon-512.png",
+   "screenshot": [
+    "https://nightmode.bunkwise.in/img/app-meet-night-mode.webp",
+    "https://nightmode.bunkwise.in/img/app-in-app-controls.webp",
+    "https://nightmode.bunkwise.in/img/app-notification-controls.webp",
+    "https://nightmode.bunkwise.in/img/app-quick-tiles.webp"
+   ],
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "description": "Android screen dimmer that makes the screen darker than the phone's lowest brightness with an overlay, and can also dim the status bar, notification shade and keyboard. Free bedtime schedule, notification controls, Quick Settings tile and emergency off. No account.",
+   "featureList": [
+    "Dims below Android's minimum brightness (0-100, capped so the screen is never fully black)",
+    "Free bedtime schedule (10:30 PM to 6 AM by default)",
+    "Free 'Dim for' timer",
+    "Notification buttons: -10, +10, AUTO, OFF",
+    "Quick Settings tiles",
+    "Emergency off: shake, or Volume Up + Volume Down (opt-in)",
+    "Pro: dim the status bar, notification shade and keyboard",
+    "Pro: edge slider",
+    "Pro: Auto-Dim for bright pages (Android 11+)",
+    "Pro: per-app levels",
+    "Pro: red, amber and custom colour filters",
+    "Pro: presets",
+    "Pro: keep dimming after restart",
+    "Any Pro feature can be unlocked free for 12 hours by watching one ad"
+   ],
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR",
+    "url": "https://play.google.com/store/apps/details?id=com.bunkwise.nightmode"
+   },
+   "publisher": {
+    "@id": "https://bunkwise.in/#organization"
+   },
+   "author": {
+    "@id": "https://bunkwise.in/#madhav"
+   }
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://nightmode.bunkwise.in/features/notification-dimmer-controls/#page",
+   "url": "https://nightmode.bunkwise.in/features/notification-dimmer-controls/",
+   "mainEntityOfPage": "https://nightmode.bunkwise.in/features/notification-dimmer-controls/",
+   "headline": "Control dimming from the notification and Quick Settings",
+   "name": "Dim your screen from the notification (Android)",
+   "description": "Change screen darkness from the notification shade with −10, +10, AUTO and OFF buttons, or a Quick Settings tile, without opening the app.",
+   "inLanguage": "en",
+   "datePublished": "2026-11-25",
+   "dateModified": "2026-11-25",
+   "wordCount": 535,
+   "author": {
+    "@id": "https://bunkwise.in/#madhav"
+   },
+   "publisher": {
+    "@id": "https://bunkwise.in/#organization"
+   },
+   "isPartOf": {
+    "@id": "https://nightmode.bunkwise.in/#site"
+   },
+   "about": {
+    "@id": "https://nightmode.bunkwise.in/#android"
+   },
+   "image": "https://nightmode.bunkwise.in/img/og.png"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Night Mode Docs",
+     "item": "https://nightmode.bunkwise.in/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Features",
+     "item": "https://nightmode.bunkwise.in/features/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Notification controls",
+     "item": "https://nightmode.bunkwise.in/features/notification-dimmer-controls/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://nightmode.bunkwise.in/features/notification-dimmer-controls/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Can I adjust dimming without opening the app?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Use the −10 and +10 buttons on the notification, the Night mode tile in Quick Settings, or the edge slider."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Why did the dimmer notification disappear?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It only shows while dimming is on. If dimming is on and there is no notification, notifications for the app are probably blocked. Allow them in Android Settings > Apps > Night mode > Notifications."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is there a screen dimmer Quick Settings tile?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Screen & Notification Dimmer adds a Night mode on/off tile (free) and a Night slider tile (Pro) to Quick Settings."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<script src="https://bunkwise.in/analytics.js" data-ga="G-TSC0HSFVJQ" data-privacy="https://bunkwise.in/web-design-privacy.html" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="md-header"><div class="md-header-in">
+<button class="md-burger" id="burger" type="button" aria-label="Navigation">☰</button>
+<a class="md-logo" href="/" aria-label="Night Mode Docs"><img src="/img/app-icon-192.png" alt="Night Mode logo" width="29" height="29"></a>
+<a class="md-title" href="/">Night Mode Docs</a>
+<span class="md-topic">Notification controls</span>
+<span class="md-grow"></span>
+<div class="md-search"><input id="q" type="search" placeholder="Search docs" aria-label="Search" autocomplete="off"><div class="md-results" id="results" role="listbox"></div></div>
+<button class="md-btn" id="themeBtn" type="button" aria-label="Switch light or dark mode" title="Switch light or dark mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18V4a8 8 0 0 1 0 16z"/></svg></button>
+<a class="md-play" href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" rel="noopener">Google Play</a>
+</div></header>
+<div class="md-main">
+<aside class="md-side"><div class="nav-title"><img src="/img/app-icon-192.png" alt="" width="26" height="26">Night Mode Docs</div>
+<nav aria-label="Navigation"><ul><li><a href="/">Home</a></li><li><a href="/user-guide/">User Guide</a></li><li class="active"><a href="/features/">Features</a><ul><li><a href="/features/dim-notification-bar-status-bar/">Dim the notification bar</a></li><li><a href="/features/edge-slider/">Edge slider</a></li><li><a href="/features/auto-dim/">Auto-Dim</a></li><li class="active"><a href="/features/notification-dimmer-controls/" aria-current="page">Notification controls</a></li><li><a href="/features/emergency-off/">Emergency off</a></li><li><a href="/features/bedtime-schedule/">Bedtime schedule (free)</a></li><li><a href="/features/dim-for-timer/">Dim for a set time</a></li><li><a href="/features/per-app-dimming/">Per-app levels</a></li><li><a href="/features/red-light-filter/">Red and amber filters</a></li></ul></li><li><a href="/alternatives/">Alternatives &amp; comparisons</a></li><li><a href="/guides/">Guides</a></li><li><a href="/android-screen-dimmer-below-minimum-brightness/">Dim below minimum brightness</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/troubleshooting/">Troubleshooting</a></li><li><a href="/why-screen-and-notification-dimmer/">Why this app</a></li><li><a href="/whats-new/">What's new</a></li><li><a href="/windows/">Windows app</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/terms-of-service/">Terms of Service</a></li></ul></nav></aside>
+<div class="md-content"><article id="main">
+<p class="crumbs"><a href="/">Night Mode Docs</a> › <a href="/features/">Features</a> › Notification controls</p>
+<h1 id="control-dimming-from-the-notification-and-quick-settings">Control dimming from the notification and Quick Settings<a class="headerlink" href="#control-dimming-from-the-notification-and-quick-settings" title="Permanent link">¶</a></h1>
+<p class="byline">By <a href="https://github.com/madhavraj840" rel="author">Madhav Raj</a>, who builds Screen &amp; Notification Dimmer · Updated <time datetime="2026-11-25">25 November 2026</time> · 2 min read</p>
+<div class="answer"><p class="answer-title">Short answer</p><p>While dimming is on, Screen &amp; Notification Dimmer shows a notification with four buttons: <strong>−10</strong> (lighter), <strong>+10</strong> (darker), <strong>AUTO</strong> (Auto-Dim) and <strong>OFF</strong>. Pull down the shade and tap; you never need to open the app. There is also a Night mode on/off tile for Quick Settings. The notification buttons and the on/off tile are free.</p></div>
+
+<p><img class="hero-shot" src="/img/app-notification-controls.webp" alt="The dimmer notification reading Dimming on with minus 10, plus 10, AUTO and OFF buttons" width="600" height="1071" loading="lazy"></p>
+
+<p>Most of the time you want to change dimming while doing something else, such as reading or watching. The notification is the one place that is always a swipe away, so the controls belong there.</p>
+<h2 id="the-notification-buttons">The notification buttons<a class="headerlink" href="#the-notification-buttons" title="Permanent link">¶</a></h2>
+<div class="tscroll"><table>
+<thead><tr><th>Button</th><th>What it does</th><th>Free?</th></tr></thead>
+<tbody><tr><td>−10</td><td>Makes the screen 10 points lighter</td><td>Free</td></tr><tr><td>+10</td><td>Makes the screen 10 points darker</td><td>Free</td></tr><tr><td>AUTO</td><td>Turns <a href="/features/auto-dim/">Auto-Dim</a> on or off</td><td>Pro, or 12 h with an ad</td></tr><tr><td>OFF</td><td>Switches dimming off at once</td><td>Free</td></tr></tbody>
+</table></div>
+
+<p>The title shows the level, for example "Dimming on - 40%". You can hide the buttons in the app's settings if you would rather have a plain status notification.</p>
+<div class="admonition tip">
+<p class="admonition-title">Keep notifications allowed</p>
+<p>On Android 13 and newer, apps must ask before showing notifications. If you tapped "Don't allow", the buttons can't appear. Turn notifications back on in the app ("Turn on notifications to dim from the shade") or in Android Settings &gt; Apps &gt; Night mode &gt; Notifications. The notification is also the most reliable way to switch dimming off, so it is worth keeping.</p>
+</div>
+
+<h2 id="quick-settings-tiles">Quick Settings tiles<a class="headerlink" href="#quick-settings-tiles" title="Permanent link">¶</a></h2>
+<p><img class="hero-shot" src="/img/app-quick-tiles.webp" alt="Android Quick Settings with the Night mode and Night slider tiles" width="600" height="1071" loading="lazy"></p>
+
+<ul>
+<li><strong>Night mode</strong> toggles dimming at your current level and shows it, for example "On · 40%". Free.</li>
+<li><strong>Night slider</strong> opens the volume-style dimming bar over whatever you are doing, the same bar as the <a href="/features/edge-slider/">edge slider</a>. Pro, or 12 hours with an ad.</li>
+</ul>
+<p>To add them: swipe down twice from the top of the screen, tap the edit pencil, then drag "Night mode" and "Night slider" up into your active tiles. On Samsung the edit button sits behind the three-dot menu, and on Xiaomi HyperOS it is the edit icon in the Control Centre.</p>
+<h2 id="will-the-notification-bother-me">Will the notification bother me?<a class="headerlink" href="#will-the-notification-bother-me" title="Permanent link">¶</a></h2>
+<p>It only shows while dimming is on, because Android needs a visible notification to keep the dimming service alive. Other notifications from the app are rare and never break through Do Not Disturb.</p>
+<p>The panel you pull down to reach these buttons is bright by default. If that bothers you, see <a href="/features/dim-notification-bar-status-bar/">how to dim the notification bar itself</a>.</p>
+<hr />
+<h2 id="frequently-asked-questions">Frequently asked questions<a class="headerlink" href="#frequently-asked-questions" title="Permanent link">¶</a></h2>
+<h3 id="can-i-adjust-dimming-without-opening-the-app">Can I adjust dimming without opening the app?<a class="headerlink" href="#can-i-adjust-dimming-without-opening-the-app" title="Permanent link">¶</a></h3>
+<p>Yes. Use the −10 and +10 buttons on the notification, the Night mode tile in Quick Settings, or the edge slider.</p>
+<h3 id="why-did-the-dimmer-notification-disappear">Why did the dimmer notification disappear?<a class="headerlink" href="#why-did-the-dimmer-notification-disappear" title="Permanent link">¶</a></h3>
+<p>It only shows while dimming is on. If dimming is on and there is no notification, notifications for the app are probably blocked. Allow them in Android Settings &gt; Apps &gt; Night mode &gt; Notifications.</p>
+<h3 id="is-there-a-screen-dimmer-quick-settings-tile">Is there a screen dimmer Quick Settings tile?<a class="headerlink" href="#is-there-a-screen-dimmer-quick-settings-tile" title="Permanent link">¶</a></h3>
+<p>Yes. Screen &amp; Notification Dimmer adds a Night mode on/off tile (free) and a Night slider tile (Pro) to Quick Settings.</p><hr />
+<h2 id="related-pages">Related pages<a class="headerlink" href="#related-pages" title="Permanent link">¶</a></h2>
+<ul><li><a href="/features/edge-slider/">Edge slider: change the darkness by sliding along the screen edge</a></li><li><a href="/features/emergency-off/">Emergency off: getting your screen back when it is too dark</a></li><li><a href="/features/dim-notification-bar-status-bar/">Dim the notification bar, status bar and keyboard on Android</a></li><li><a href="/features/">Everything Screen &amp; Notification Dimmer can do</a></li></ul>
+<hr />
+<p><a class="cta" href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" rel="noopener"><img src="/img/icons/play.svg" alt="" width="22" height="22">Get Screen &amp; Notification Dimmer on Google Play</a></p>
+<p style="font-size:.8rem;color:var(--muted)">Last updated: 25 November 2026. App facts checked against Screen &amp; Notification Dimmer 8.0.2 (released 21 November 2026).</p>
+</article>
+<nav class="pager" aria-label="Pages"><a class="prev" href="/features/auto-dim/"><small>Previous</small>Auto-Dim</a><a class="next" href="/features/emergency-off/"><small>Next</small>Emergency off</a></nav>
+<footer class="md-foot"><span>© 2026 <a href="https://bunkwise.in/">Bunkwise Technologies</a>, India. Screen &amp; Notification Dimmer is a screen dimmer, not a medical device.</span>
+<span><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="mailto:support@bunkwise.in">support@bunkwise.in</a> · <a href="#cookie-settings" data-cookie-settings>Cookie settings</a></span></footer>
+</div></div>
+<script src="/assets/docs.js" defer></script>
+</body>
+</html>

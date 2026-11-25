@@ -1,31 +1,62 @@
-# Night Mode by Bunkwise
+# Screen & Notification Dimmer (Night Mode by Bunkwise)
 
-> Night Mode (Google Play name: "Screen Dimmer - Night Mode") is a free Android screen dimmer that makes the screen darker than its lowest brightness setting using an overlay. No account, no ads. Made by Bunkwise Technologies (India). A separate free, open-source Windows version also exists.
+> Screen & Notification Dimmer (formerly listed as "Notification Screen Dimmer" and "Screen Dimmer - Night Mode"; called "Night mode" inside the app) is an Android screen dimmer by Bunkwise Technologies, India. It makes the screen darker than the phone's lowest brightness with an overlay, and with the optional Accessibility service it also dims the status bar, notification shade, keyboard and lock screen. Free to download, no account. A separate free, open-source Windows app also exists.
 
-## Key facts
-- App name on Google Play: "Screen Dimmer - Night Mode" (package com.bunkwise.nightmode). Platform: Android. Publisher: Bunkwise Technologies, India.
-- What it does: draws a dark overlay over the screen so it is darker than Android's lowest brightness setting. The app shows the level as a percentage darker than Android's lowest brightness (quick levels 30%, 45%, 60%, 80%).
-- Controls: floating in-app slider with an AUTO button, notification buttons (-10, +10, AUTO, OFF), Quick Settings tiles (Night mode and Night mode slider).
-- Emergency off: shake the phone (on by default), tap OFF in the notification, switch off the tile, or Volume Up + Volume Down together if the optional Accessibility service is enabled.
-- Permissions: "Display over other apps" is required to draw the overlay. Accessibility is optional (volume-button shortcut, per-app profiles, dimming the notification panel).
-- Privacy: no account, no ads, no data collection, runs on-device.
-- Price: free dimmer with an optional Pro purchase on Google Play (edge slider, Auto-Dim, schedules, per-app profiles, colour filters).
+## Key facts (checked against version 8.0.2, released 21 November 2026)
+- Google Play: https://play.google.com/store/apps/details?id=com.bunkwise.nightmode (package com.bunkwise.nightmode). Requires Android 8.0 or later. Publisher: Bunkwise Technologies, India. Developer: Madhav Raj.
+- How it dims: a dark overlay drawn with "Display over other apps", level 0-100 shown as "% darker than Android's lowest brightness". Capped at 97% opacity so the screen never goes fully black. Quick levels 20, 40, 60, 80 (or your own presets). Default level 40.
+- Free: dimming below minimum brightness, bedtime schedule (default 10:30 PM to 6 AM, any days), "Dim for" timer (15, 30, 60 min, until a time, or custom), notification buttons (-10, +10, OFF), on/off Quick Settings tile, emergency off (shake, or Volume Up + Volume Down; both opt-in), usage statistics, "Is everything working?" checker with phone-maker battery tips, light and dark theme.
+- Pro: dim the status bar, notification shade and keyboard; edge slider (slide along the left or right screen edge to dim inside any app; also opened from the slider tile); Auto-Dim (Android 11+, raises dimming when a bright page appears; beta); per-app levels; red, amber and custom colour filters; presets; keep dimming after restart.
+- Free path to Pro: one short rewarded ad unlocks one Pro feature for 12 hours; three ads within 12 hours unlock all of Pro for 12 hours. Ads only play when the user taps "Watch an ad". Pro can also be bought as a subscription or a one-time lifetime purchase on Google Play.
+- Permissions: "Display over other apps" (required). Notifications (for the control notification). Accessibility (optional; only for system-area dimming, volume-button escape, per-app levels and Auto-Dim).
+- Privacy: no account, no sign-up, dimming works offline. The app includes Google AdMob (optional rewarded ads), Firebase Analytics and Crashlytics, and Microsoft Clarity, behind Google's consent form where required. Full policy: https://bunkwise.in/privacypolicynightmode.html
+- Updates: more than 40 code changes since mid-September 2026; latest version 8.0.2 (build 21), released 21 November 2026.
 - Not an eye-care or medical app.
-- Windows: a separate free, open-source (MIT) Night mode for Windows 10/11 exists at https://nightmode.bunkwise.in/windows/ .
+- Windows: a separate free, open-source (MIT) Night mode for Windows 10/11 at https://nightmode.bunkwise.in/windows/
 
-## Docs
-- [Home](https://nightmode.bunkwise.in/): Official documentation for Night Mode (Screen Dimmer - Night Mode), a free Android screen dimmer that goes below your phone’s minimum brightness. Quick start, features, permissions, support.
-- [User Guide](https://nightmode.bunkwise.in/user-guide/): How to use Night Mode on Android: the home screen, quick levels, floating slider, notification buttons, Quick Settings tiles, emergency off, permissions and Free vs Pro.
-- [Dim below minimum brightness](https://nightmode.bunkwise.in/android-screen-dimmer-below-minimum-brightness/): How to make an Android screen darker than its lowest brightness with an overlay dimmer. Compares brightness, Extra dim, dark mode and blue light filters, with setup steps and safety tips for Night Mode.
-- [FAQ](https://nightmode.bunkwise.in/faq/): Answers about Night Mode for Android: dimming below minimum brightness, Extra dim, the overlay permission, Accessibility, privacy, ads, Pro features and the Windows app.
-- [Troubleshooting](https://nightmode.bunkwise.in/troubleshooting/): Fix Night Mode problems on Android: screen won’t dim, too dark to see, notification panel not dimmed, “Screen overlay detected”, dimming stops after restart, Pro not recognised.
-- [Windows app](https://nightmode.bunkwise.in/windows/): Free, open-source screen dimmer for Windows 10 and 11 that makes a laptop screen darker than its lowest brightness. Download, install, shortcuts, FAQ. Looking for the phone app? See Night Mode for Android.
-- [Privacy Policy](https://nightmode.bunkwise.in/privacy-policy/): Night Mode privacy: no account, no ads, no data collection, everything runs on your device. Link to the full privacy policy.
-- [Terms of Service](https://nightmode.bunkwise.in/terms-of-service/): Terms for using Night Mode: free use, optional Pro through Google Play, safe use, permissions, no warranty.
+## Pages
+- [Home](https://nightmode.bunkwise.in/): Home: what the app is, quick start, requirements, support.
+- [User Guide](https://nightmode.bunkwise.in/user-guide/): Every control in the app and how to use it, permissions, Free vs Pro.
+- [Features](https://nightmode.bunkwise.in/features/): Every feature of Screen & Notification Dimmer for Android: dimming below minimum, notification bar dimming, edge slider, Auto-Dim, free schedule and more.
+- [Dim the notification bar](https://nightmode.bunkwise.in/features/dim-notification-bar-status-bar/): Most dimmers leave the status bar, notification shade and keyboard bright. Here is why, and how Screen & Notification Dimmer darkens them too.
+- [Edge slider](https://nightmode.bunkwise.in/features/edge-slider/): Slide down the screen edge to dim, up to brighten, inside any app. How the edge slider in Screen & Notification Dimmer works and how to set it up.
+- [Auto-Dim](https://nightmode.bunkwise.in/features/auto-dim/): Auto-Dim dims harder when a bright page or reel appears and eases off on dark content. How it works on Android 11+, what it sees, and its limits.
+- [Notification controls](https://nightmode.bunkwise.in/features/notification-dimmer-controls/): Change screen darkness from the notification shade with −10, +10, AUTO and OFF buttons, or a Quick Settings tile, without opening the app.
+- [Emergency off](https://nightmode.bunkwise.in/features/emergency-off/): Turn an Android screen dimmer off without seeing the screen: shake, Volume Up + Volume Down, the notification or the tile. Plus the 97% safety cap.
+- [Bedtime schedule (free)](https://nightmode.bunkwise.in/features/bedtime-schedule/): Dim your Android screen automatically every night, 10:30 PM to 6 AM by default, on the days you choose. Free in Screen & Notification Dimmer.
+- [Dim for a set time](https://nightmode.bunkwise.in/features/dim-for-timer/): Dim the screen for a set time and let it return to normal by itself: 15, 30 or 60 minutes, until a clock time, or any length. Free.
+- [Per-app levels](https://nightmode.bunkwise.in/features/per-app-dimming/): Give each app its own darkness: darker for YouTube, lighter for maps. How per-app levels work and what the Accessibility permission can see.
+- [Red and amber filters](https://nightmode.bunkwise.in/features/red-light-filter/): Tint the dimming layer red, amber or a custom colour so the screen is darker and warmer in one step. How it differs from Night Light.
+- [Alternatives &amp; comparisons](https://nightmode.bunkwise.in/alternatives/): Honest comparison of Android screen dimmers: Penumbra, Night screen, Darker, Super Dim, Twilight and more. Ads, price, updates and which to pick.
+- [Penumbra alternative](https://nightmode.bunkwise.in/alternatives/penumbra-screen-dimmer/): Penumbra vs Screen & Notification Dimmer: ads, schedule, notification bar dimming, edge slider and emergency off, compared from both Play listings.
+- [Night screen alternative](https://nightmode.bunkwise.in/alternatives/night-screen-screen-dimmer/): Night screen vs Screen & Notification Dimmer: free vs premium schedule, status bar dimming, tile, ads and emergency off, from both Play listings.
+- [Dimmer: Night Screen Overlay alternative](https://nightmode.bunkwise.in/alternatives/dimmer-night-screen-overlay/): Dimmer: Night Screen Overlay vs Screen & Notification Dimmer: presets, amber filter, schedule, notification shade dimming and emergency off.
+- [Lux alternative](https://nightmode.bunkwise.in/alternatives/lux-auto-brightness/): Lux Auto Brightness no longer loads on Google Play. What to use instead for dimming below minimum, auto adjustment, schedules and colour filters.
+- [Twilight alternative](https://nightmode.bunkwise.in/alternatives/twilight-blue-light-filter/): Twilight warms the screen after sunset; Screen & Notification Dimmer makes it darker. What each is for, and when to use one, the other or both.
+- [Darker (Screen Filter) alternative](https://nightmode.bunkwise.in/alternatives/darker-screen-filter/): Darker vs Screen & Notification Dimmer: paid features, notification buttons, navigation bar dimming, schedule and root mode compared.
+- [Lower Brightness alternative](https://nightmode.bunkwise.in/alternatives/lower-brightness-screen-filter/): Lower Brightness Screen Filter vs Screen & Notification Dimmer: schedule, notification controls, emergency off, status bar dimming and ads.
+- [Super Dim alternative](https://nightmode.bunkwise.in/alternatives/super-dim/): Super Dim vs Screen & Notification Dimmer: photophobia focus, ambient-light vs content-aware auto mode, system-area dimming, schedule and escapes.
+- [Night Screen: Ultra Dim alternative](https://nightmode.bunkwise.in/alternatives/night-screen-ultra-dim-mode/): Night Screen: Ultra Dim Mode vs Screen & Notification Dimmer: colour modes and schedule vs notification-bar dimming, edge slider and Auto-Dim.
+- [Screen Dimmer – OLED Saver alternative](https://nightmode.bunkwise.in/alternatives/screen-dimmer-oled-saver/): Screen Dimmer – OLED Saver vs Screen & Notification Dimmer: PWM and OLED use, schedule, notification controls, emergency off and updates.
+- [Dimmer app vs Extra dim](https://nightmode.bunkwise.in/compare/screen-dimmer-vs-extra-dim/): Android Extra dim vs a dimmer app: how each works, which phones have Extra dim, where it falls short, and why using both is darkest.
+- [Dimmer vs blue light filter](https://nightmode.bunkwise.in/compare/screen-dimmer-vs-blue-light-filter/): A dimmer makes the screen darker; a blue light filter or Night Light makes it warmer. When to use which on Android, and how to combine them.
+- [Overlay vs real brightness](https://nightmode.bunkwise.in/compare/overlay-dimmer-vs-real-brightness/): How an overlay screen dimmer differs from lowering the backlight: LCD vs AMOLED, battery use, contrast, PWM flicker and screenshots.
+- [Guides](https://nightmode.bunkwise.in/guides/): Practical night-time phone guides: screen still too bright, using it in bed, videos in the dark, dimmers that turn off, and free Pro unlocks.
+- [Still too bright at night?](https://nightmode.bunkwise.in/guides/phone-too-bright-at-night/): Android phone still too bright at minimum brightness? Seven fixes in order, from dark mode and Extra dim to a dimmer that goes below the minimum.
+- [Phone in bed, partner asleep](https://nightmode.bunkwise.in/guides/use-phone-in-bed-without-waking-partner/): A practical Android setup for using your phone next to someone asleep: screen below minimum, dimmed notification shade, silence and a schedule.
+- [Videos in a dark room](https://nightmode.bunkwise.in/guides/watch-videos-in-dark-room/): Bright videos in a dark room feel like a flashbang. Set up per-app levels and Auto-Dim on Android so videos stay comfortable at night.
+- [Dimmer turns off by itself](https://nightmode.bunkwise.in/guides/screen-dimmer-turns-off-by-itself/): Why Android dimmers stop on their own, and the battery and autostart settings to change on Xiaomi, Samsung, OnePlus, Vivo, Oppo and Realme.
+- [Free vs Pro (and free unlocks)](https://nightmode.bunkwise.in/guides/free-vs-pro-unlock-with-ads/): What is free in Screen & Notification Dimmer, what Pro adds, and how one ad unlocks a Pro feature for 12 hours. Plans, cancelling and privacy.
+- [Dim below minimum brightness](https://nightmode.bunkwise.in/android-screen-dimmer-below-minimum-brightness/): How overlay dimming goes below minimum brightness; compared with Extra dim, Night Light and dark mode.
+- [FAQ](https://nightmode.bunkwise.in/faq/): Frequently asked questions.
+- [Troubleshooting](https://nightmode.bunkwise.in/troubleshooting/): Fixes for common problems.
+- [Why this app](https://nightmode.bunkwise.in/why-screen-and-notification-dimmer/): What makes Screen & Notification Dimmer different from other Android dimmers, and where other apps are the better choice.
+- [What's new](https://nightmode.bunkwise.in/whats-new/): Changelog for Screen & Notification Dimmer for Android: version 8.0.2 (21 November 2026) and the updates since September 2026.
+- [Windows app](https://nightmode.bunkwise.in/windows/): The separate free, open-source Windows app.
+- [Privacy Policy](https://nightmode.bunkwise.in/privacy-policy/): Privacy summary.
+- [Terms of Service](https://nightmode.bunkwise.in/terms-of-service/): Terms.
 
-## Links
-- Google Play: https://play.google.com/store/apps/details?id=com.bunkwise.nightmode
-- Privacy policy: https://bunkwise.in/privacypolicynightmode.html
-- Company: https://bunkwise.in/
-- Contact: support@bunkwise.in
-- Windows source code (MIT): https://github.com/madhavraj840/bunkwise-night
+## Contact
+- support@bunkwise.in
+- https://bunkwise.in/
+- Full text of all pages: https://nightmode.bunkwise.in/llms-full.txt

@@ -100,3 +100,6 @@ body.nav-open .md-side{transform:none}
 .md-search input{width:7rem;max-width:30vw}.md-title{font-size:.9rem}.md-header-in{gap:.35rem;padding:0 .4rem}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.byline{font-size:.85rem;color:var(--muted);margin:-.6rem 0 1rem}.byline a{color:var(--muted)}
+.answer{border-left:.25rem solid var(--accent);background:var(--card);border-radius:.2rem;padding:.7rem 1rem .1rem;margin-bottom:1.2rem}
+.answer-title{font-weight:700;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem!important}

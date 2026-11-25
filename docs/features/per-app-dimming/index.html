@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Per-app screen dimming on Android: a level per app</title>
+<meta name="description" content="Give each app its own darkness: darker for YouTube, lighter for maps. How per-app levels work and what the Accessibility permission can see.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="Madhav Raj, Bunkwise Technologies">
+<link rel="canonical" href="https://nightmode.bunkwise.in/features/per-app-dimming/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/app-icon-192.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Night Mode Docs">
+<meta property="og:url" content="https://nightmode.bunkwise.in/features/per-app-dimming/">
+<meta property="og:title" content="Per-app screen dimming on Android: a level per app">
+<meta property="og:description" content="Give each app its own darkness: darker for YouTube, lighter for maps. How per-app levels work and what the Accessibility permission can see.">
+<meta property="og:image" content="https://nightmode.bunkwise.in/img/og.png">
+<meta property="og:image:width" content="1024"><meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="Screen &amp; Notification Dimmer for Android: a normal settings screen next to the same screen dimmed below minimum brightness">
+<meta property="article:published_time" content="2026-11-25">
+<meta property="article:modified_time" content="2026-11-25">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Per-app screen dimming on Android: a level per app">
+<meta name="twitter:description" content="Give each app its own darkness: darker for YouTube, lighter for maps. How per-app levels work and what the Accessibility permission can see.">
+<meta name="twitter:image" content="https://nightmode.bunkwise.in/img/og.png">
+<meta name="theme-color" content="#2a0a5e">
+<script>try{var t=localStorage.getItem('nm-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preload" href="/assets/fonts/plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/docs.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://bunkwise.in/#organization",
+   "name": "Bunkwise Technologies",
+   "url": "https://bunkwise.in/",
+   "logo": "https://bunkwise.in/assets/bunkwise-app.png",
+   "email": "support@bunkwise.in",
+   "founder": {
+    "@id": "https://bunkwise.in/#madhav"
+   },
+   "sameAs": [
+    "https://github.com/madhavraj840"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://bunkwise.in/#madhav",
+   "name": "Madhav Raj",
+   "jobTitle": "Founder and Android developer, Bunkwise Technologies",
+   "url": "https://github.com/madhavraj840",
+   "worksFor": {
+    "@id": "https://bunkwise.in/#organization"
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://nightmode.bunkwise.in/#site",
+   "url": "https://nightmode.bunkwise.in/",
+   "name": "Night Mode Docs",
+   "publisher": {
+    "@id": "https://bunkwise.in/#organization"
+   },
+   "inLanguage": "en"
+  },
+  {
+   "@type": "MobileApplication",
+   "@id": "https://nightmode.bunkwise.in/#android",
+   "name": "Screen & Notification Dimmer",
+   "alternateName": [
+    "Night Mode",
+    "Night Mode by Bunkwise",
+    "Notification Screen Dimmer",
+    "Screen Dimmer - Night Mode"
+   ],
+   "applicationCategory": "UtilitiesApplication",
+   "operatingSystem": "Android 8.0 or later",
+   "softwareVersion": "8.0.2",
+   "dateModified": "2026-11-21",
+   "url": "https://nightmode.bunkwise.in/",
+   "installUrl": "https://play.google.com/store/apps/details?id=com.bunkwise.nightmode",
+   "downloadUrl": "https://play.google.com/store/apps/details?id=com.bunkwise.nightmode",
+   "image": "https://nightmode.bunkwise.in/img/app-icon-512.png",
+   "screenshot": [
+    "https://nightmode.bunkwise.in/img/app-meet-night-mode.webp",
+    "https://nightmode.bunkwise.in/img/app-in-app-controls.webp",
+    "https://nightmode.bunkwise.in/img/app-notification-controls.webp",
+    "https://nightmode.bunkwise.in/img/app-quick-tiles.webp"
+   ],
+   "inLanguage": "en",
+   "isAccessibleForFree": true,
+   "description": "Android screen dimmer that makes the screen darker than the phone's lowest brightness with an overlay, and can also dim the status bar, notification shade and keyboard. Free bedtime schedule, notification controls, Quick Settings tile and emergency off. No account.",
+   "featureList": [
+    "Dims below Android's minimum brightness (0-100, capped so the screen is never fully black)",
+    "Free bedtime schedule (10:30 PM to 6 AM by default)",
+    "Free 'Dim for' timer",
+    "Notification buttons: -10, +10, AUTO, OFF",
+    "Quick Settings tiles",
+    "Emergency off: shake, or Volume Up + Volume Down (opt-in)",
+    "Pro: dim the status bar, notification shade and keyboard",
+    "Pro: edge slider",
+    "Pro: Auto-Dim for bright pages (Android 11+)",
+    "Pro: per-app levels",
+    "Pro: red, amber and custom colour filters",
+    "Pro: presets",
+    "Pro: keep dimming after restart",
+    "Any Pro feature can be unlocked free for 12 hours by watching one ad"
+   ],
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR",
+    "url": "https://play.google.com/store/apps/details?id=com.bunkwise.nightmode"
+   },
+   "publisher": {
+    "@id": "https://bunkwise.in/#organization"
+   },
+   "author": {
+    "@id": "https://bunkwise.in/#madhav"
+   }
+  },
+  {
+   "@type": "TechArticle",
+   "@id": "https://nightmode.bunkwise.in/features/per-app-dimming/#page",
+   "url": "https://nightmode.bunkwise.in/features/per-app-dimming/",
+   "mainEntityOfPage": "https://nightmode.bunkwise.in/features/per-app-dimming/",
+   "headline": "Per-app levels: each app keeps its own darkness",
+   "name": "Per-app screen dimming on Android: a level per app",
+   "description": "Give each app its own darkness: darker for YouTube, lighter for maps. How per-app levels work and what the Accessibility permission can see.",
+   "inLanguage": "en",
+   "datePublished": "2026-11-25",
+   "dateModified": "2026-11-25",
+   "wordCount": 416,
+   "author": {
+    "@id": "https://bunkwise.in/#madhav"
+   },
+   "publisher": {
+    "@id": "https://bunkwise.in/#organization"
+   },
+   "isPartOf": {
+    "@id": "https://nightmode.bunkwise.in/#site"
+   },
+   "about": {
+    "@id": "https://nightmode.bunkwise.in/#android"
+   },
+   "image": "https://nightmode.bunkwise.in/img/og.png"
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Night Mode Docs",
+     "item": "https://nightmode.bunkwise.in/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Features",
+     "item": "https://nightmode.bunkwise.in/features/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Per-app levels",
+     "item": "https://nightmode.bunkwise.in/features/per-app-dimming/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://nightmode.bunkwise.in/features/per-app-dimming/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Can I set different screen brightness for different apps on Android?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Android itself does not offer this, but Screen & Notification Dimmer's per-app profiles set a dimming level for each app and switch automatically when you open it."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does per-app dimming read my screen?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. It only knows the name of the app in front, in memory. It does not see screen content or keystrokes."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<script src="https://bunkwise.in/analytics.js" data-ga="G-TSC0HSFVJQ" data-privacy="https://bunkwise.in/web-design-privacy.html" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="md-header"><div class="md-header-in">
+<button class="md-burger" id="burger" type="button" aria-label="Navigation">☰</button>
+<a class="md-logo" href="/" aria-label="Night Mode Docs"><img src="/img/app-icon-192.png" alt="Night Mode logo" width="29" height="29"></a>
+<a class="md-title" href="/">Night Mode Docs</a>
+<span class="md-topic">Per-app levels</span>
+<span class="md-grow"></span>
+<div class="md-search"><input id="q" type="search" placeholder="Search docs" aria-label="Search" autocomplete="off"><div class="md-results" id="results" role="listbox"></div></div>
+<button class="md-btn" id="themeBtn" type="button" aria-label="Switch light or dark mode" title="Switch light or dark mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18V4a8 8 0 0 1 0 16z"/></svg></button>
+<a class="md-play" href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" rel="noopener">Google Play</a>
+</div></header>
+<div class="md-main">
+<aside class="md-side"><div class="nav-title"><img src="/img/app-icon-192.png" alt="" width="26" height="26">Night Mode Docs</div>
+<nav aria-label="Navigation"><ul><li><a href="/">Home</a></li><li><a href="/user-guide/">User Guide</a></li><li class="active"><a href="/features/">Features</a><ul><li><a href="/features/dim-notification-bar-status-bar/">Dim the notification bar</a></li><li><a href="/features/edge-slider/">Edge slider</a></li><li><a href="/features/auto-dim/">Auto-Dim</a></li><li><a href="/features/notification-dimmer-controls/">Notification controls</a></li><li><a href="/features/emergency-off/">Emergency off</a></li><li><a href="/features/bedtime-schedule/">Bedtime schedule (free)</a></li><li><a href="/features/dim-for-timer/">Dim for a set time</a></li><li class="active"><a href="/features/per-app-dimming/" aria-current="page">Per-app levels</a></li><li><a href="/features/red-light-filter/">Red and amber filters</a></li></ul></li><li><a href="/alternatives/">Alternatives &amp; comparisons</a></li><li><a href="/guides/">Guides</a></li><li><a href="/android-screen-dimmer-below-minimum-brightness/">Dim below minimum brightness</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/troubleshooting/">Troubleshooting</a></li><li><a href="/why-screen-and-notification-dimmer/">Why this app</a></li><li><a href="/whats-new/">What's new</a></li><li><a href="/windows/">Windows app</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/terms-of-service/">Terms of Service</a></li></ul></nav></aside>
+<div class="md-content"><article id="main">
+<p class="crumbs"><a href="/">Night Mode Docs</a> › <a href="/features/">Features</a> › Per-app levels</p>
+<h1 id="per-app-levels-each-app-keeps-its-own-darkness">Per-app levels: each app keeps its own darkness<a class="headerlink" href="#per-app-levels-each-app-keeps-its-own-darkness" title="Permanent link">¶</a></h1>
+<p class="byline">By <a href="https://github.com/madhavraj840" rel="author">Madhav Raj</a>, who builds Screen &amp; Notification Dimmer · Updated <time datetime="2026-11-25">25 November 2026</time> · 2 min read</p>
+<div class="answer"><p class="answer-title">Short answer</p><p>Per-app profiles let Screen &amp; Notification Dimmer switch the dimming level automatically when you open a particular app. For example, YouTube at 70, your reading app at 30 and Maps at 0, while everything else stays at your usual level. It uses the optional Accessibility service only to know which app is in front. It is a Pro feature, and one ad unlocks it for 12 hours.</p></div>
+
+<p>One level rarely fits everything. Video apps in a dark room want a lot of dimming. A white e-book page wants some. Maps in the car at night may need none at all, or you won't read the street names. Without per-app levels you end up moving the slider every time you switch apps.</p>
+<h2 id="how-to-set-it-up">How to set it up<a class="headerlink" href="#how-to-set-it-up" title="Permanent link">¶</a></h2>
+<ol>
+<li>Go to <strong>Automate</strong> &gt; <strong>Per-app profiles</strong> and switch it on (or Watch an ad for 12 hours).</li>
+<li>Tap <strong>Choose an app</strong>, search for it, and set the level it should dim to.</li>
+<li>Allow the "Night mode - better dimming" Accessibility service if you haven't already. It is the same permission the volume-button escape uses, so there is nothing extra to grant.</li>
+</ol>
+<p>The page then shows a summary like "3 apps set · everything else stays at 40%".</p>
+<h2 id="what-it-can-see">What it can see<a class="headerlink" href="#what-it-can-see" title="Permanent link">¶</a></h2>
+<p>The service only notes the package name of the app in front, such as <code>com.google.android.youtube</code>, and only in memory. It never sees what is on the screen or what you type, and it keeps no history of the apps you used.</p>
+<h2 id="ideas-that-work-well">Ideas that work well<a class="headerlink" href="#ideas-that-work-well" title="Permanent link">¶</a></h2>
+<div class="tscroll"><table>
+<thead><tr><th>App type</th><th>Suggested level</th><th>Why</th></tr></thead>
+<tbody><tr><td>Video and reels</td><td>60–80</td><td>Dark rooms, bright content</td></tr><tr><td>E-books and news</td><td>30–50</td><td>White pages, long sessions</td></tr><tr><td>Maps and navigation</td><td>0–20</td><td>You need to read it at a glance</td></tr><tr><td>Camera and gallery</td><td>0</td><td>Judging photos needs true brightness</td></tr><tr><td>Banking and UPI apps</td><td>0</td><td>Some block taps while an overlay is on</td></tr></tbody>
+</table></div>
+
+<hr />
+<h2 id="frequently-asked-questions">Frequently asked questions<a class="headerlink" href="#frequently-asked-questions" title="Permanent link">¶</a></h2>
+<h3 id="can-i-set-different-screen-brightness-for-different-apps-on-android">Can I set different screen brightness for different apps on Android?<a class="headerlink" href="#can-i-set-different-screen-brightness-for-different-apps-on-android" title="Permanent link">¶</a></h3>
+<p>Android itself does not offer this, but Screen &amp; Notification Dimmer's per-app profiles set a dimming level for each app and switch automatically when you open it.</p>
+<h3 id="does-per-app-dimming-read-my-screen">Does per-app dimming read my screen?<a class="headerlink" href="#does-per-app-dimming-read-my-screen" title="Permanent link">¶</a></h3>
+<p>No. It only knows the name of the app in front, in memory. It does not see screen content or keystrokes.</p><hr />
+<h2 id="related-pages">Related pages<a class="headerlink" href="#related-pages" title="Permanent link">¶</a></h2>
+<ul><li><a href="/features/auto-dim/">Auto-Dim: a dimmer that reacts to what is on screen</a></li><li><a href="/features/bedtime-schedule/">A free bedtime schedule that dims the screen for you</a></li><li><a href="/features/dim-notification-bar-status-bar/">Dim the notification bar, status bar and keyboard on Android</a></li><li><a href="/features/">Everything Screen &amp; Notification Dimmer can do</a></li></ul>
+<hr />
+<p><a class="cta" href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" rel="noopener"><img src="/img/icons/play.svg" alt="" width="22" height="22">Get Screen &amp; Notification Dimmer on Google Play</a></p>
+<p style="font-size:.8rem;color:var(--muted)">Last updated: 25 November 2026. App facts checked against Screen &amp; Notification Dimmer 8.0.2 (released 21 November 2026).</p>
+</article>
+<nav class="pager" aria-label="Pages"><a class="prev" href="/features/dim-for-timer/"><small>Previous</small>Dim for a set time</a><a class="next" href="/features/red-light-filter/"><small>Next</small>Red and amber filters</a></nav>
+<footer class="md-foot"><span>© 2026 <a href="https://bunkwise.in/">Bunkwise Technologies</a>, India. Screen &amp; Notification Dimmer is a screen dimmer, not a medical device.</span>
+<span><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="mailto:support@bunkwise.in">support@bunkwise.in</a> · <a href="#cookie-settings" data-cookie-settings>Cookie settings</a></span></footer>
+</div></div>
+<script src="/assets/docs.js" defer></script>
+</body>
+</html>

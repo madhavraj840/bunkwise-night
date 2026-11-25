@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>User Guide - Night Mode Android Screen Dimmer Docs</title>
-<meta name="description" content="How to use Night Mode on Android: the home screen, quick levels, floating slider, notification buttons, Quick Settings tiles, emergency off, permissions and Free vs Pro.">
+<meta name="description" content="How to use Night Mode on Android: the home screen, quick levels, schedule, notification buttons, edge slider, Quick Settings tiles, emergency off, permissions and Free vs Pro.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="Bunkwise Technologies">
 <link rel="canonical" href="https://nightmode.bunkwise.in/user-guide/">
@@ -16,13 +16,13 @@
 <meta property="og:site_name" content="Night Mode Docs">
 <meta property="og:url" content="https://nightmode.bunkwise.in/user-guide/">
 <meta property="og:title" content="User Guide - Night Mode Android Screen Dimmer Docs">
-<meta property="og:description" content="How to use Night Mode on Android: the home screen, quick levels, floating slider, notification buttons, Quick Settings tiles, emergency off, permissions and Free vs Pro.">
+<meta property="og:description" content="How to use Night Mode on Android: the home screen, quick levels, schedule, notification buttons, edge slider, Quick Settings tiles, emergency off, permissions and Free vs Pro.">
 <meta property="og:image" content="https://nightmode.bunkwise.in/img/og.png">
 <meta property="og:image:width" content="1024"><meta property="og:image:height" content="500">
 <meta property="og:image:alt" content="Night Mode screen dimmer for Android: a normal settings screen next to the same screen dimmed below minimum brightness">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="User Guide - Night Mode Android Screen Dimmer Docs">
-<meta name="twitter:description" content="How to use Night Mode on Android: the home screen, quick levels, floating slider, notification buttons, Quick Settings tiles, emergency off, permissions and Free vs Pro.">
+<meta name="twitter:description" content="How to use Night Mode on Android: the home screen, quick levels, schedule, notification buttons, edge slider, Quick Settings tiles, emergency off, permissions and Free vs Pro.">
 <meta name="twitter:image" content="https://nightmode.bunkwise.in/img/og.png">
 <meta name="theme-color" content="#2a0a5e">
 <script>try{var t=localStorage.getItem('nm-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
@@ -49,6 +49,16 @@
    ]
   },
   {
+   "@type": "Person",
+   "@id": "https://bunkwise.in/#madhav",
+   "name": "Madhav Raj",
+   "jobTitle": "Founder and Android developer, Bunkwise Technologies",
+   "url": "https://github.com/madhavraj840",
+   "worksFor": {
+    "@id": "https://bunkwise.in/#organization"
+   }
+  },
+  {
    "@type": "WebSite",
    "@id": "https://nightmode.bunkwise.in/#site",
    "url": "https://nightmode.bunkwise.in/",
@@ -61,15 +71,20 @@
   {
    "@type": "MobileApplication",
    "@id": "https://nightmode.bunkwise.in/#android",
-   "name": "Screen Dimmer - Night Mode",
+   "name": "Screen & Notification Dimmer",
    "alternateName": [
     "Night Mode",
-    "Night Mode by Bunkwise"
+    "Night Mode by Bunkwise",
+    "Notification Screen Dimmer",
+    "Screen Dimmer - Night Mode"
    ],
    "applicationCategory": "UtilitiesApplication",
-   "operatingSystem": "Android",
+   "operatingSystem": "Android 8.0 or later",
+   "softwareVersion": "8.0.2",
+   "dateModified": "2026-11-21",
    "url": "https://nightmode.bunkwise.in/",
    "installUrl": "https://play.google.com/store/apps/details?id=com.bunkwise.nightmode",
+   "downloadUrl": "https://play.google.com/store/apps/details?id=com.bunkwise.nightmode",
    "image": "https://nightmode.bunkwise.in/img/app-icon-512.png",
    "screenshot": [
     "https://nightmode.bunkwise.in/img/app-meet-night-mode.webp",
@@ -79,14 +94,22 @@
    ],
    "inLanguage": "en",
    "isAccessibleForFree": true,
-   "description": "Android screen dimmer that makes the screen darker than the system's lowest brightness using an overlay. Notification controls, Quick Settings tiles, floating slider and emergency off. No account, no ads.",
+   "description": "Android screen dimmer that makes the screen darker than the phone's lowest brightness with an overlay, and can also dim the status bar, notification shade and keyboard. Free bedtime schedule, notification controls, Quick Settings tile and emergency off. No account.",
    "featureList": [
-    "Dims below Android's minimum brightness",
-    "Floating in-app brightness slider",
-    "Notification buttons: -10, +10, Auto, Off",
+    "Dims below Android's minimum brightness (0-100, capped so the screen is never fully black)",
+    "Free bedtime schedule (10:30 PM to 6 AM by default)",
+    "Free 'Dim for' timer",
+    "Notification buttons: -10, +10, AUTO, OFF",
     "Quick Settings tiles",
-    "Emergency off by shaking the phone",
-    "Optional Pro: edge slider, Auto-Dim, schedules, per-app profiles, colour filters"
+    "Emergency off: shake, or Volume Up + Volume Down (opt-in)",
+    "Pro: dim the status bar, notification shade and keyboard",
+    "Pro: edge slider",
+    "Pro: Auto-Dim for bright pages (Android 11+)",
+    "Pro: per-app levels",
+    "Pro: red, amber and custom colour filters",
+    "Pro: presets",
+    "Pro: keep dimming after restart",
+    "Any Pro feature can be unlocked free for 12 hours by watching one ad"
    ],
    "offers": {
     "@type": "Offer",
@@ -96,6 +119,9 @@
    },
    "publisher": {
     "@id": "https://bunkwise.in/#organization"
+   },
+   "author": {
+    "@id": "https://bunkwise.in/#madhav"
    }
   },
   {
@@ -104,12 +130,12 @@
    "url": "https://nightmode.bunkwise.in/user-guide/",
    "headline": "User Guide",
    "name": "User Guide - Night Mode Android Screen Dimmer Docs",
-   "description": "How to use Night Mode on Android: the home screen, quick levels, floating slider, notification buttons, Quick Settings tiles, emergency off, permissions and Free vs Pro.",
+   "description": "How to use Night Mode on Android: the home screen, quick levels, schedule, notification buttons, edge slider, Quick Settings tiles, emergency off, permissions and Free vs Pro.",
    "inLanguage": "en",
-   "dateModified": "2026-11-07",
+   "dateModified": "2026-11-25",
    "datePublished": "2026-11-07",
    "author": {
-    "@id": "https://bunkwise.in/#organization"
+    "@id": "https://bunkwise.in/#madhav"
    },
    "publisher": {
     "@id": "https://bunkwise.in/#organization"
@@ -158,7 +184,7 @@
 </div></header>
 <div class="md-main">
 <aside class="md-side"><div class="nav-title"><img src="/img/app-icon-192.png" alt="" width="26" height="26">Night Mode Docs</div>
-<nav aria-label="Navigation"><ul><li><a href="/">Home</a></li><li class="active"><a href="/user-guide/" aria-current="page">User Guide</a><ul><li><a href="#getting-started">Getting started</a></li><li><a href="#the-home-screen">The home screen</a></li><li><a href="#choosing-a-level">Choosing a level</a></li><li><a href="#floating-in-app-control">Floating in-app control</a></li><li><a href="#the-notification">The notification</a></li><li><a href="#quick-settings-tiles">Quick Settings tiles</a></li><li><a href="#emergency-off">Emergency off</a></li><li><a href="#permissions">Permissions</a></li><li><a href="#free-and-pro">Free and Pro</a></li><li><a href="#tips-for-using-it-at-night">Tips for using it at night</a></li></ul></li><li><a href="/android-screen-dimmer-below-minimum-brightness/">Dim below minimum brightness</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/troubleshooting/">Troubleshooting</a></li><li><a href="/windows/">Windows app</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/terms-of-service/">Terms of Service</a></li></ul></nav></aside>
+<nav aria-label="Navigation"><ul><li><a href="/">Home</a></li><li class="active"><a href="/user-guide/" aria-current="page">User Guide</a><ul><li><a href="#getting-started">Getting started</a></li><li><a href="#the-home-screen">The home screen</a></li><li><a href="#choosing-a-level">Choosing a level</a></li><li><a href="#floating-in-app-control">Slider bar and edge slider (Pro)</a></li><li><a href="#the-notification">The notification</a></li><li><a href="#quick-settings-tiles">Quick Settings tiles</a></li><li><a href="#emergency-off">Emergency off</a></li><li><a href="#permissions">Permissions</a></li><li><a href="#free-and-pro">Free and Pro</a></li><li><a href="#tips-for-using-it-at-night">Tips for using it at night</a></li></ul></li><li><a href="/features/">Features</a></li><li><a href="/alternatives/">Alternatives &amp; comparisons</a></li><li><a href="/guides/">Guides</a></li><li><a href="/android-screen-dimmer-below-minimum-brightness/">Dim below minimum brightness</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/troubleshooting/">Troubleshooting</a></li><li><a href="/why-screen-and-notification-dimmer/">Why this app</a></li><li><a href="/whats-new/">What's new</a></li><li><a href="/windows/">Windows app</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/terms-of-service/">Terms of Service</a></li></ul></nav></aside>
 <div class="md-content"><article id="main">
 <p class="crumbs"><a href="/">Night Mode Docs</a> › User Guide</p>
 <h1 id="user-guide">User Guide<a class="headerlink" href="#user-guide" title="Permanent link">¶</a></h1>
@@ -178,7 +204,7 @@
 <ul>
 <li><strong>Status line</strong> - for example “Off · Android’s own minimum” when dimming is off</li>
 <li><strong>Large percentage</strong> - how much darker than Android’s lowest brightness the screen is</li>
-<li><strong>Quick levels</strong> - 30%, 45%, 60% and 80%, with a tick on the active one</li>
+<li><strong>Quick levels</strong> - 20, 40, 60 and 80, or your first four presets once you have saved some</li>
 <li><strong>Vertical slider</strong> - slide towards <strong>Darker</strong> or <strong>Lighter</strong> to fine-tune the level</li>
 <li><strong>Help icon</strong> - top right, for help inside the app</li>
 </ul>
@@ -193,32 +219,32 @@
 </thead>
 <tbody>
 <tr>
-<td>30%</td>
+<td>20</td>
 <td>A gentle start. Good for the first night or a dim lamp-lit room</td>
 </tr>
 <tr>
-<td>45%</td>
+<td>40</td>
 <td>Reading in bed with the lights off</td>
 </tr>
 <tr>
-<td>60%</td>
+<td>60</td>
 <td>A dark room where even the lowest brightness feels harsh</td>
 </tr>
 <tr>
-<td>80%</td>
+<td>80</td>
 <td>Very dark rooms, or sharing a bed with someone who is asleep</td>
 </tr>
 </tbody>
 </table></div>
 <p>These are suggestions. Every phone panel is different, so move the slider until the screen feels right.</p>
 <hr />
-<h2 id="floating-in-app-control">Floating in-app control<a class="headerlink" href="#floating-in-app-control" title="Permanent link">¶</a></h2>
+<h2 id="floating-in-app-control">Slider bar and edge slider (Pro)<a class="headerlink" href="#floating-in-app-control" title="Permanent link">¶</a></h2>
 <p><img class="hero-shot" src="/img/app-in-app-controls.webp" alt="Floating Night Mode brightness slider showing 73 with an Auto button over a gallery app" width="640" height="1136" loading="lazy"></p>
-<p>A floating control sits over the app you are using, so you can adjust dimming without leaving it. It has:</p>
+<p>A volume-style bar appears over the app you are using, so you can adjust dimming without leaving it. Open it from the Night slider tile, or slide along the screen edge with the <a href="/features/edge-slider/">edge slider</a>. Both are Pro, or free for 12 hours with one ad. The bar has:</p>
 <ul>
 <li>a <strong>vertical slider</strong> with the current level at the top</li>
-<li>a <strong>ring button</strong> to switch dimming on or off</li>
-<li>an <strong>AUTO</strong> button to hand control to automatic mode</li>
+<li>a <strong>moon / power button</strong> to switch dimming off</li>
+<li>an <strong>AUTO</strong> button that turns on <a href="/features/auto-dim/">Auto-Dim</a></li>
 </ul>
 <hr />
 <h2 id="the-notification">The notification<a class="headerlink" href="#the-notification" title="Permanent link">¶</a></h2>
@@ -242,7 +268,7 @@
 </tr>
 <tr>
 <td>AUTO</td>
-<td>Switches to automatic mode</td>
+<td>Turns Auto-Dim on or off (Pro)</td>
 </tr>
 <tr>
 <td>OFF</td>
@@ -250,28 +276,28 @@
 </tr>
 </tbody>
 </table></div>
-<p>If the notification shows “Tap here: allow Accessibility to dim this panel”, tap it to enable the optional Accessibility service. That lets Night Mode dim the notification panel itself.</p>
+<p>If the notification shows “Tap here: allow Accessibility to dim this panel”, tap it to enable the optional Accessibility service. With <a href="/features/dim-notification-bar-status-bar/">Dim notification bar</a> on (Pro, or 12 hours with an ad), Night Mode then dims the notification panel itself.</p>
 <hr />
 <h2 id="quick-settings-tiles">Quick Settings tiles<a class="headerlink" href="#quick-settings-tiles" title="Permanent link">¶</a></h2>
 <p><img class="hero-shot" src="/img/app-quick-tiles.webp" alt="Android Quick Settings panel with the Night mode and Night mode slider tiles highlighted" width="600" height="1071" loading="lazy"></p>
 <p>Night Mode adds two tiles to your Quick Settings panel:</p>
 <ul>
 <li><strong>Night mode</strong> - one tap to turn dimming on or off, and it shows its current state</li>
-<li><strong>Night mode slider</strong> - a brightness slider you can drag from the panel</li>
+<li><strong>Night slider</strong> - opens the dimming bar over whatever you are doing (Pro)</li>
 </ul>
 <p>To add them, swipe down twice from the top of the screen, tap the edit (pencil) icon, then drag the Night Mode tiles into your active tiles. The exact steps vary a little between phone makers.</p>
 <hr />
 <h2 id="emergency-off">Emergency off<a class="headerlink" href="#emergency-off" title="Permanent link">¶</a></h2>
 <p>If the screen ever gets too dark to see, use any of these:</p>
 <ol>
-<li><strong>Shake the phone</strong> - on by default</li>
+<li><strong>Shake the phone</strong> - off by default; turn it on in Settings &gt; Emergency escape</li>
 <li><strong>Tap OFF</strong> in the Night Mode notification</li>
 <li><strong>Switch off the Quick Settings tile</strong></li>
-<li><strong>Press Volume Up and Volume Down together</strong> - needs the optional Accessibility service</li>
+<li><strong>Press Volume Up and Volume Down together</strong> - off by default; turn it on in Emergency escape (needs the optional Accessibility service)</li>
 </ol>
 <div class="admonition tip">
 <p class="admonition-title">Learn the levels first</p>
-<p>Start at 30% and work upwards. You will quickly learn how dark each level is on your phone.</p>
+<p>Turn on one of the blind escapes first, then start at 20 or 40 and work upwards. You will quickly learn how dark each level is on your phone.</p>
 </div>
 <hr />
 <h2 id="permissions">Permissions<a class="headerlink" href="#permissions" title="Permanent link">¶</a></h2>
@@ -292,7 +318,7 @@
 <tr>
 <td>Accessibility service</td>
 <td>Optional</td>
-<td>Volume-button emergency shortcut, per-app dimming profiles, and dimming the notification panel</td>
+<td>Dimming the status bar, notification shade and keyboard; volume-button emergency shortcut; per-app levels; Auto-Dim</td>
 </tr>
 </tbody>
 </table></div>
@@ -319,7 +345,7 @@
 <td>Yes</td>
 </tr>
 <tr>
-<td>Floating in-app control</td>
+<td>Bedtime schedule and Dim for timer</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
@@ -329,43 +355,43 @@
 <td>Yes</td>
 </tr>
 <tr>
-<td>Emergency off (shake)</td>
+<td>Emergency off (shake, Volume Up + Down)</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td>Edge slider</td>
-<td>No</td>
+<td>Edge slider and Night slider tile</td>
+<td>12 h per ad</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td>Auto-Dim</td>
-<td>No</td>
+<td>Auto-Dim (Android 11+)</td>
+<td>12 h per ad</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td>Schedules</td>
-<td>No</td>
+<td>Dim the notification bar, status bar and keyboard</td>
+<td>12 h per ad</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td>Per-app profiles</td>
-<td>No</td>
+<td>Per-app levels</td>
+<td>12 h per ad</td>
 <td>Yes</td>
 </tr>
 <tr>
-<td>Colour filters</td>
-<td>No</td>
+<td>Colour filters, presets, keep after restart</td>
+<td>12 h per ad</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td>Ads</td>
-<td>None</td>
+<td>Only if you tap Watch an ad</td>
 <td>None</td>
 </tr>
 </tbody>
 </table></div>
-<p>Pro is bought through Google Play. Purchases are tied to your Google account.</p>
+<p>Pro is bought through Google Play, as a subscription or a one-time lifetime purchase, and is tied to your Google account. "12 h per ad" means one short ad unlocks that feature for 12 hours; three ads within 12 hours unlock all of Pro. See <a href="/guides/free-vs-pro-unlock-with-ads/">Free vs Pro</a>.</p>
 <hr />
 <h2 id="tips-for-using-it-at-night">Tips for using it at night<a class="headerlink" href="#tips-for-using-it-at-night" title="Permanent link">¶</a></h2>
 <ul>
@@ -374,9 +400,9 @@
 <li>Keep the <strong>notification</strong> enabled so the OFF button is always one tap away</li>
 <li>Night Mode is a screen dimmer, not a medical device</li>
 </ul>
-<p style="font-size:.8rem;color:var(--muted)">Last updated: 7 November 2026</p>
+<p style="font-size:.8rem;color:var(--muted)">Last updated: 25 November 2026</p>
 </article>
-<nav class="pager" aria-label="Pages"><a class="prev" href="/"><small>Previous</small>Home</a><a class="next" href="/android-screen-dimmer-below-minimum-brightness/"><small>Next</small>Dim below minimum brightness</a></nav>
+<nav class="pager" aria-label="Pages"><a class="prev" href="/"><small>Previous</small>Home</a><a class="next" href="/features/"><small>Next</small>Features</a></nav>
 <footer class="md-foot"><span>© 2026 <a href="https://bunkwise.in/">Bunkwise Technologies</a>, India. Night Mode is a screen dimmer, not a medical device.</span>
 <span><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="mailto:support@bunkwise.in">support@bunkwise.in</a> · <a href="#cookie-settings" data-cookie-settings>Cookie settings</a></span></footer>
 </div></div>
