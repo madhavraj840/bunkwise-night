@@ -7,7 +7,7 @@
 - How it dims: a dark overlay drawn with "Display over other apps", level 0-100 shown as "% darker than Android's lowest brightness". Capped at 97% opacity so the screen never goes fully black. Quick levels 20, 40, 60, 80 (or your own presets). Default level 40.
 - Free: dimming below minimum brightness, bedtime schedule (default 10:30 PM to 6 AM, any days), "Dim for" timer (15, 30, 60 min, until a time, or custom), notification buttons (-10, +10, OFF), on/off Quick Settings tile, emergency off (shake, or Volume Up + Volume Down; both opt-in), usage statistics, "Is everything working?" checker with phone-maker battery tips, light and dark theme.
 - Pro: dim the status bar, notification shade and keyboard; edge slider (slide along the left or right screen edge to dim inside any app; also opened from the slider tile); Auto-Dim (Android 11+, raises dimming when a bright page appears; beta); per-app levels; red, amber and custom colour filters; presets; keep dimming after restart.
-- Free path to Pro: one short rewarded ad unlocks one Pro feature for 12 hours; three ads within 12 hours unlock all of Pro for 12 hours. Ads only play when the user taps "Watch an ad". Pro can also be bought on Google Play as a weekly subscription or a one-time lifetime purchase, priced by country (weekly: INR 25 in India, USD 0.49 in the US, GBP 0.49 in the UK, EUR 0.49-0.59 in the euro area; the app shows the local price). New subscribers may get a cheaper first week.
+- Free path to Pro: one short rewarded ad unlocks one Pro feature for 12 hours; three ads within 12 hours unlock all of Pro for 12 hours. Ads only play when the user taps "Watch an ad". Pro can also be bought on Google Play as a weekly subscription or a one-time lifetime purchase, priced by country (weekly: INR 25 in India, USD 0.49 in the US, GBP 0.49 in the UK, EUR 0.49-0.59 in the euro area; lifetime: INR 379, USD 9.99, GBP 8.99, EUR 8.79-10.99; the app shows the local price). New subscribers may get a cheaper first week.
 - Permissions: "Display over other apps" (required). Notifications (for the control notification). Accessibility (optional; only for system-area dimming, volume-button escape, per-app levels and Auto-Dim).
 - Privacy: no account, no sign-up, dimming works offline. The app includes Google AdMob (optional rewarded ads), Firebase Analytics and Crashlytics, and Microsoft Clarity, behind Google's consent form where required. Full policy: https://bunkwise.in/privacypolicynightmode.html
 - Updates: more than 40 code changes since mid-September 2026; latest version 8.0.2 (build 21), released 21 November 2026.
@@ -319,7 +319,7 @@ Colour filters, presets, keep after restart | 12 h per ad | Yes
 | 
 Ads | Only if you tap Watch an ad | None
 
-Pro is bought through Google Play, as a subscription or a one-time lifetime purchase, and is tied to your Google account. "12 h per ad" means one short ad unlocks that feature for 12 hours; three ads within 12 hours unlock all of Pro. See Free vs Pro.
+Pro is bought through Google Play, as a weekly subscription or a one-time lifetime purchase (prices by country are on Free vs Pro), and is tied to your Google account. "12 h per ad" means one short ad unlocks that feature for 12 hours; three ads within 12 hours unlock all of Pro. See Free vs Pro.
 
 ## Tips for using it at night
 
@@ -2403,37 +2403,37 @@ If you would rather not watch ads, Pro is sold through Google Play in two ways:
 
 - Lifetime. One payment, and Pro stays unlocked for good.
 
-Prices are set country by country, so they are lower in some places than others. The Pro page in the app always shows the exact price in your currency before you pay. These are the weekly prices on Google Play as of 25 November 2026:
+Prices are set country by country, so they are lower in some places than others. The Pro page in the app always shows the exact price in your currency before you pay. These are the Google Play prices as of 25 November 2026:
 
-| Country or region | Pro weekly price
+| Country or region | Weekly | Lifetime (one payment)
 
-| India | ₹25
-| United States | US$0.49, plus state sales tax where it applies
-| United Kingdom | £0.49
-| Germany, France, Italy, Spain, Netherlands, Austria, Belgium, Ireland, Finland | €0.59
-| Portugal, Greece, Croatia, Slovakia, Slovenia, the Baltic states and other euro countries | €0.49
-| Canada | CA$0.69
-| Australia | A$0.79
-| New Zealand | NZ$0.99
-| Japan | ¥80
-| South Korea | ₩700
-| Singapore | S$0.98
-| Malaysia | RM 1.99
-| Indonesia | Rp 5,500
-| Philippines | ₱19
-| Vietnam | ₫7,500
-| Pakistan | Rs 69
-| Bangladesh | ৳35
-| Sri Lanka | Rs 79
-| United Arab Emirates | AED 1.99
-| Saudi Arabia | SAR 1.69
-| Türkiye | ₺17.99
-| Egypt | EGP 14.99
-| Nigeria | ₦355
-| South Africa | R 5.99
-| Brazil | R$1.49
-| Mexico | MX$7
-| Argentina | ARS 440
+| India | ₹25 | ₹379
+| United States | US$0.49, plus state sales tax where it applies | US$9.99
+| United Kingdom | £0.49 | £8.99
+| Germany, France, Italy, Spain, Netherlands, Austria, Belgium, Ireland, Finland | €0.59 | €10.99
+| Portugal, Greece, Croatia, Slovakia, Slovenia, the Baltic states and other euro countries | €0.49 | €8.79 (€9.99 in Luxembourg)
+| Canada | CA$0.69 | CA$13.99
+| Australia | A$0.79 | A$15.99
+| New Zealand | NZ$0.99 | NZ$19.99
+| Japan | ¥80 | ¥1,700
+| South Korea | ₩700 | ₩15,000
+| Singapore | S$0.98 | S$14.99
+| Malaysia | RM 1.99 | RM 35.99
+| Indonesia | Rp 5,500 | Rp 110,000
+| Philippines | ₱19 | ₱419
+| Vietnam | ₫7,500 | ₫160,000
+| Pakistan | Rs 69 | Rs 1,100
+| Bangladesh | ৳35 | ৳599
+| Sri Lanka | Rs 79 | Rs 1,300
+| United Arab Emirates | AED 1.99 | AED 38.99
+| Saudi Arabia | SAR 1.69 | SAR 34.99
+| Türkiye | ₺17.99 | ₺354.99
+| Egypt | EGP 14.99 | EGP 239.99
+| Nigeria | ₦355 | ₦5,800
+| South Africa | R 5.99 | R 114.99
+| Brazil | R$1.49 | R$29.99
+| Mexico | MX$7 | MX$129
+| Argentina | ARS 440 | ARS 9,000
 
 Purchases are tied to your Google account, so Pro comes back if you reinstall on the same account. There is no separate login. If you subscribed earlier on a monthly or six-month plan, you keep Pro for as long as that subscription runs.
 
@@ -2461,11 +2461,11 @@ No. Ads only play when you tap Watch an ad to unlock a Pro feature.
 
 ### How much does Pro cost?
 
-Pro is a weekly subscription or a one-time lifetime purchase on Google Play, priced by country. The weekly plan is ₹25 in India, US$0.49 in the United States, £0.49 in the UK and €0.49 to €0.59 in the euro area. The app shows your exact local price before you pay.
+Pro is a weekly subscription or a one-time lifetime purchase on Google Play, priced by country. The weekly plan is ₹25 in India, US$0.49 in the United States, £0.49 in the UK and €0.49 to €0.59 in the euro area. Lifetime is ₹379, US$9.99, £8.99 and €8.79 to €10.99. The app shows your exact local price before you pay.
 
 ### Is there a lifetime option?
 
-Yes. Lifetime is a single payment that unlocks Pro for good. Its price also depends on your country and is shown on the Pro page.
+Yes. Lifetime is a single payment that unlocks Pro for good. It is ₹379 in India, US$9.99 in the United States, £8.99 in the UK and €8.79 to €10.99 in the euro area, and the Pro page shows your local price.
 
 ## Related pages
 
@@ -2642,7 +2642,7 @@ Only if you choose to watch one. Tapping Watch an ad on a locked Pro feature pla
 
 ### Is Night Mode free?
 
-Yes. The core dimmer is free to use. The bedtime schedule and timer are free too. Optional Pro, a subscription or a lifetime purchase on Google Play, adds extra features, and each one can also be unlocked for 12 hours with an ad.
+Yes. The core dimmer is free to use. The bedtime schedule and timer are free too. Optional Pro, a weekly subscription or a one-time lifetime purchase on Google Play (priced by country; see Free vs Pro), adds extra features, and each one can also be unlocked for 12 hours with an ad.
 
 ### What does Pro include?
 
@@ -2791,7 +2791,7 @@ That is a small sample. The app is new, so read the current reviews on Google Pl
 | Developer | Bunkwise Technologies, India
 | Android version | 8.0 or newer; Auto-Dim needs 11 or newer
 | Latest version | 8.0.2, 21 November 2026
-| Price | Free; optional Pro weekly subscription (for example ₹25 in India, US$0.49 in the US) or lifetime purchase; any Pro feature free for 12 h with an ad
+| Price | Free; optional Pro weekly subscription (for example ₹25 in India, US$0.49 in the US) or lifetime purchase (₹379, US$9.99); any Pro feature free for 12 h with an ad
 | Permissions | Display over other apps (required), Notifications, Accessibility (optional)
 | Account | None
 | Support | support@bunkwise.in
