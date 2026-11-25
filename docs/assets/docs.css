@@ -103,3 +103,4 @@ body.nav-open .md-side{transform:none}
 .byline{font-size:.85rem;color:var(--muted);margin:-.6rem 0 1rem}.byline a{color:var(--muted)}
 .answer{border-left:.25rem solid var(--accent);background:var(--card);border-radius:.2rem;padding:.7rem 1rem .1rem;margin-bottom:1.2rem}
 .answer-title{font-weight:700;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin-bottom:.3rem!important}
+.md-content blockquote,article blockquote{border-left:.2rem solid var(--muted);margin:1rem 0;padding:.2rem 1rem;color:var(--fg,inherit)}article blockquote p:last-child{font-size:.85rem;color:var(--muted)}

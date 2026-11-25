@@ -7,7 +7,7 @@
 - How it dims: a dark overlay drawn with "Display over other apps", level 0-100 shown as "% darker than Android's lowest brightness". Capped at 97% opacity so the screen never goes fully black. Quick levels 20, 40, 60, 80 (or your own presets). Default level 40.
 - Free: dimming below minimum brightness, bedtime schedule (default 10:30 PM to 6 AM, any days), "Dim for" timer (15, 30, 60 min, until a time, or custom), notification buttons (-10, +10, OFF), on/off Quick Settings tile, emergency off (shake, or Volume Up + Volume Down; both opt-in), usage statistics, "Is everything working?" checker with phone-maker battery tips, light and dark theme.
 - Pro: dim the status bar, notification shade and keyboard; edge slider (slide along the left or right screen edge to dim inside any app; also opened from the slider tile); Auto-Dim (Android 11+, raises dimming when a bright page appears; beta); per-app levels; red, amber and custom colour filters; presets; keep dimming after restart.
-- Free path to Pro: one short rewarded ad unlocks one Pro feature for 12 hours; three ads within 12 hours unlock all of Pro for 12 hours. Ads only play when the user taps "Watch an ad". Pro can also be bought as a subscription or a one-time lifetime purchase on Google Play.
+- Free path to Pro: one short rewarded ad unlocks one Pro feature for 12 hours; three ads within 12 hours unlock all of Pro for 12 hours. Ads only play when the user taps "Watch an ad". Pro can also be bought on Google Play as a weekly subscription or a one-time lifetime purchase, priced by country (weekly: INR 25 in India, USD 0.49 in the US, GBP 0.49 in the UK, EUR 0.49-0.59 in the euro area; the app shows the local price). New subscribers may get a cheaper first week.
 - Permissions: "Display over other apps" (required). Notifications (for the control notification). Accessibility (optional; only for system-area dimming, volume-button escape, per-app levels and Auto-Dim).
 - Privacy: no account, no sign-up, dimming works offline. The app includes Google AdMob (optional rewarded ads), Firebase Analytics and Crashlytics, and Microsoft Clarity, behind Google's consent form where required. Full policy: https://bunkwise.in/privacypolicynightmode.html
 - Updates: more than 40 code changes since mid-September 2026; latest version 8.0.2 (build 21), released 21 November 2026.
@@ -2359,7 +2359,7 @@ URL: https://nightmode.bunkwise.in/guides/free-vs-pro-unlock-with-ads/
 
 # Free vs Pro, and unlocking Pro without paying
 
-By Madhav Raj, who builds Screen & Notification Dimmer · Updated 25 November 2026 · 3 min read
+By Madhav Raj, who builds Screen & Notification Dimmer · Updated 25 November 2026 · 4 min read
 
 Short answer
 Screen & Notification Dimmer is free to use with no time limit: dimming below minimum brightness, the bedtime schedule, the timer, the notification buttons, the on/off tile and emergency off. Pro adds notification-bar dimming, the edge slider, Auto-Dim, per-app levels, colour filters, presets and keep-after-restart. You can buy Pro, or watch one short ad to unlock any single Pro feature for 12 hours. Watch three ads within 12 hours and all of Pro unlocks for 12 hours.
@@ -2395,9 +2395,47 @@ Screen & Notification Dimmer is free to use with no time limit: dimming below mi
 
 Ads only play when you tap that button yourself. There are no banner ads and no ads that pop up while you dim, read or watch. If you are in the EEA or UK, Google's consent form asks about ad personalisation first, and you can change your choice later in Settings.
 
-## Buying Pro
+## Buying Pro: weekly or lifetime
 
-Pro is sold through Google Play, either as a subscription or as a one-time lifetime purchase, and the price is shown in your local currency on the Pro page. Subscriptions can be cancelled any time in Google Play > Payments & subscriptions. Purchases are tied to your Google account, so Pro comes back if you reinstall on the same account. There is no separate login.
+If you would rather not watch ads, Pro is sold through Google Play in two ways:
+
+- Weekly subscription. It renews every week until you cancel, which you can do any time in Google Play > Payments & subscriptions. First-time subscribers may be offered a cheaper first week.
+
+- Lifetime. One payment, and Pro stays unlocked for good.
+
+Prices are set country by country, so they are lower in some places than others. The Pro page in the app always shows the exact price in your currency before you pay. These are the weekly prices on Google Play as of 25 November 2026:
+
+| Country or region | Pro weekly price
+
+| India | ₹25
+| United States | US$0.49, plus state sales tax where it applies
+| United Kingdom | £0.49
+| Germany, France, Italy, Spain, Netherlands, Austria, Belgium, Ireland, Finland | €0.59
+| Portugal, Greece, Croatia, Slovakia, Slovenia, the Baltic states and other euro countries | €0.49
+| Canada | CA$0.69
+| Australia | A$0.79
+| New Zealand | NZ$0.99
+| Japan | ¥80
+| South Korea | ₩700
+| Singapore | S$0.98
+| Malaysia | RM 1.99
+| Indonesia | Rp 5,500
+| Philippines | ₱19
+| Vietnam | ₫7,500
+| Pakistan | Rs 69
+| Bangladesh | ৳35
+| Sri Lanka | Rs 79
+| United Arab Emirates | AED 1.99
+| Saudi Arabia | SAR 1.69
+| Türkiye | ₺17.99
+| Egypt | EGP 14.99
+| Nigeria | ₦355
+| South Africa | R 5.99
+| Brazil | R$1.49
+| Mexico | MX$7
+| Argentina | ARS 440
+
+Purchases are tied to your Google account, so Pro comes back if you reinstall on the same account. There is no separate login. If you subscribed earlier on a monthly or six-month plan, you keep Pro for as long as that subscription runs.
 
 ## Why it works this way
 
@@ -2421,9 +2459,13 @@ Yes. The dimmer, schedule, timer, notification buttons, tile and emergency off a
 
 No. Ads only play when you tap Watch an ad to unlock a Pro feature.
 
+### How much does Pro cost?
+
+Pro is a weekly subscription or a one-time lifetime purchase on Google Play, priced by country. The weekly plan is ₹25 in India, US$0.49 in the United States, £0.49 in the UK and €0.49 to €0.59 in the euro area. The app shows your exact local price before you pay.
+
 ### Is there a lifetime option?
 
-Yes. Pro is available as a subscription or a one-time lifetime purchase on Google Play.
+Yes. Lifetime is a single payment that unlocks Pro for good. Its price also depends on your country and is shown on the Pro page.
 
 ## Related pages
 
@@ -2692,7 +2734,7 @@ URL: https://nightmode.bunkwise.in/why-screen-and-notification-dimmer/
 
 # Why Screen & Notification Dimmer?
 
-By Madhav Raj, who builds Screen & Notification Dimmer · Updated 25 November 2026 · 2 min read
+By Madhav Raj, who builds Screen & Notification Dimmer · Updated 25 November 2026 · 3 min read
 
 Short answer
 Screen & Notification Dimmer is built around the parts of night-time phone use that ordinary dimmers miss. It can dim the notification shade, status bar and keyboard. You can change the darkness from the screen edge in any app. Auto-Dim catches bright pages, the bedtime schedule is free, and you can switch it off blind with the volume buttons. It is updated often; version 8.0.2 came out on 21 November 2026.
@@ -2729,6 +2771,18 @@ Android changes the rules for overlays, background services and notifications al
 
 - Track record: Night screen and Twilight have millions of users. This app is new, with 1K+ downloads so far.
 
+## What users say
+
+Two of the first Google Play reviews, both five stars, on version 6.1.0:
+
+“great app !! VERY USEFUL”
+— Narayan, OnePlus Nord, Android 12, 11 October 2026
+
+“Awesome”
+— Trident, Redmi Note 13 5G, Android 15, 29 October 2026
+
+That is a small sample. The app is new, so read the current reviews on Google Play too.
+
 ## The facts in one place
 
 | | 
@@ -2737,7 +2791,7 @@ Android changes the rules for overlays, background services and notifications al
 | Developer | Bunkwise Technologies, India
 | Android version | 8.0 or newer; Auto-Dim needs 11 or newer
 | Latest version | 8.0.2, 21 November 2026
-| Price | Free; optional Pro subscription or lifetime purchase; any Pro feature free for 12 h with an ad
+| Price | Free; optional Pro weekly subscription (for example ₹25 in India, US$0.49 in the US) or lifetime purchase; any Pro feature free for 12 h with an ad
 | Permissions | Display over other apps (required), Notifications, Accessibility (optional)
 | Account | None
 | Support | support@bunkwise.in
