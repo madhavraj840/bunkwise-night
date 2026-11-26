@@ -2632,7 +2632,7 @@ No. There is no sign-up or login.
 
 ### What data does Screen & Notification Dimmer collect?
 
-Screen & Notification Dimmer never asks for your name, email or contacts, and your settings stay on your phone. It includes Google AdMob (optional rewarded ads), Firebase Analytics and Crashlytics, and Microsoft Clarity, which collect device and usage data such as app screens opened and crash reports, subject to your consent where required. Purchases are handled by Google Play. See the Privacy Policy.
+Screen & Notification Dimmer never asks for your name, email or contacts, and your settings are stored on your phone. It includes Google AdMob (optional rewarded ads), Firebase Analytics and Crashlytics, and Microsoft Clarity, which collect device and usage data such as app screens opened, which features and settings you use, and crash reports, subject to your consent where required. Purchases are handled by Google Play. See the Privacy Policy.
 
 ### Are there ads?
 
@@ -3023,7 +3023,7 @@ How Screen & Notification Dimmer handles your data.
 
 - Ads only if you choose. A short rewarded ad plays only when you tap Watch an ad to unlock a Pro feature. Pro has no ads
 
-- No personal details asked for. Your settings stay on your phone and dimming works offline. The app includes Google AdMob, Firebase Analytics and Crashlytics, and Microsoft Clarity, which collect device and usage data (for example screens opened and crash reports), subject to your consent where required
+- No personal details asked for. Your settings are stored on your phone and dimming works offline. The app includes Google AdMob, Firebase Analytics and Crashlytics, and Microsoft Clarity, which collect device and usage data (for example screens opened, which features and settings you use, and crash reports), subject to your consent where required
 
 - Payments for optional Pro are handled by Google Play
 
