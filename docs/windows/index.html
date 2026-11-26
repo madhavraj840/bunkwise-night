@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Night mode for Windows: Dim a Laptop Below Minimum Brightness | Free and Open Source</title>
-<meta name="description" content="Free, open-source screen dimmer for Windows 10 and 11 that makes a laptop screen darker than its lowest brightness. Download, install, shortcuts, FAQ. Looking for the phone app? See Night Mode for Android.">
+<title>Night mode for Windows: dim a laptop below minimum brightness</title>
+<meta name="description" content="Free, open-source dimmer for Windows 10 and 11 that makes a laptop darker than its lowest brightness. For phones, see Screen &amp; Notification Dimmer.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="Bunkwise Technologies">
 <link rel="canonical" href="https://nightmode.bunkwise.in/windows/">
@@ -13,16 +13,16 @@
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
 <meta property="og:type" content="article">
-<meta property="og:site_name" content="Night Mode Docs">
+<meta property="og:site_name" content="Screen &amp; Notification Dimmer Docs">
 <meta property="og:url" content="https://nightmode.bunkwise.in/windows/">
-<meta property="og:title" content="Night mode for Windows: Dim a Laptop Below Minimum Brightness | Free and Open Source">
-<meta property="og:description" content="Free, open-source screen dimmer for Windows 10 and 11 that makes a laptop screen darker than its lowest brightness. Download, install, shortcuts, FAQ. Looking for the phone app? See Night Mode for Android.">
+<meta property="og:title" content="Night mode for Windows: dim a laptop below minimum brightness">
+<meta property="og:description" content="Free, open-source dimmer for Windows 10 and 11 that makes a laptop darker than its lowest brightness. For phones, see Screen &amp; Notification Dimmer.">
 <meta property="og:image" content="https://nightmode.bunkwise.in/img/og.png">
 <meta property="og:image:width" content="1024"><meta property="og:image:height" content="500">
-<meta property="og:image:alt" content="Night Mode screen dimmer for Android: a normal settings screen next to the same screen dimmed below minimum brightness">
+<meta property="og:image:alt" content="Screen &amp; Notification Dimmer screen dimmer for Android: a normal settings screen next to the same screen dimmed below minimum brightness">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Night mode for Windows: Dim a Laptop Below Minimum Brightness | Free and Open Source">
-<meta name="twitter:description" content="Free, open-source screen dimmer for Windows 10 and 11 that makes a laptop screen darker than its lowest brightness. Download, install, shortcuts, FAQ. Looking for the phone app? See Night Mode for Android.">
+<meta name="twitter:title" content="Night mode for Windows: dim a laptop below minimum brightness">
+<meta name="twitter:description" content="Free, open-source dimmer for Windows 10 and 11 that makes a laptop darker than its lowest brightness. For phones, see Screen &amp; Notification Dimmer.">
 <meta name="twitter:image" content="https://nightmode.bunkwise.in/img/og.png">
 <meta name="theme-color" content="#2a0a5e">
 <script>try{var t=localStorage.getItem('nm-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
@@ -52,7 +52,7 @@
    "@type": "WebSite",
    "@id": "https://nightmode.bunkwise.in/#site",
    "url": "https://nightmode.bunkwise.in/",
-   "name": "Night Mode Docs",
+   "name": "Screen & Notification Dimmer Docs",
    "publisher": {
     "@id": "https://bunkwise.in/#organization"
    },
@@ -61,15 +61,20 @@
   {
    "@type": "MobileApplication",
    "@id": "https://nightmode.bunkwise.in/#android",
-   "name": "Screen Dimmer - Night Mode",
+   "name": "Screen & Notification Dimmer",
    "alternateName": [
     "Night Mode",
-    "Night Mode by Bunkwise"
+    "Night Mode by Bunkwise",
+    "Notification Screen Dimmer",
+    "Screen Dimmer - Night Mode"
    ],
    "applicationCategory": "UtilitiesApplication",
-   "operatingSystem": "Android",
+   "operatingSystem": "Android 8.0 or later",
+   "softwareVersion": "8.0.2",
+   "dateModified": "2026-11-21",
    "url": "https://nightmode.bunkwise.in/",
    "installUrl": "https://play.google.com/store/apps/details?id=com.bunkwise.nightmode",
+   "downloadUrl": "https://play.google.com/store/apps/details?id=com.bunkwise.nightmode",
    "image": "https://nightmode.bunkwise.in/img/app-icon-512.png",
    "screenshot": [
     "https://nightmode.bunkwise.in/img/app-meet-night-mode.webp",
@@ -79,14 +84,22 @@
    ],
    "inLanguage": "en",
    "isAccessibleForFree": true,
-   "description": "Android screen dimmer that makes the screen darker than the system's lowest brightness using an overlay. Notification controls, Quick Settings tiles, floating slider and emergency off. No account, no ads.",
+   "description": "Android screen dimmer that makes the screen darker than the phone's lowest brightness with an overlay, and can also dim the status bar, notification shade and keyboard. Free bedtime schedule, notification controls, Quick Settings tile and emergency off. No account.",
    "featureList": [
-    "Dims below Android's minimum brightness",
-    "Floating in-app brightness slider",
-    "Notification buttons: -10, +10, Auto, Off",
+    "Dims below Android's minimum brightness (0-100, capped so the screen is never fully black)",
+    "Free bedtime schedule (10:30 PM to 6 AM by default)",
+    "Free 'Dim for' timer",
+    "Notification buttons: -10, +10, AUTO, OFF",
     "Quick Settings tiles",
-    "Emergency off by shaking the phone",
-    "Optional Pro: edge slider, Auto-Dim, schedules, per-app profiles, colour filters"
+    "Emergency off: shake, or Volume Up + Volume Down (opt-in)",
+    "Pro: dim the status bar, notification shade and keyboard",
+    "Pro: edge slider",
+    "Pro: Auto-Dim for bright pages (Android 11+)",
+    "Pro: per-app levels",
+    "Pro: red, amber and custom colour filters",
+    "Pro: presets",
+    "Pro: keep dimming after restart",
+    "Any Pro feature can be unlocked free for 12 hours by watching one ad; 3 ads within 12 hours unlock all of Pro"
    ],
    "offers": {
     "@type": "Offer",
@@ -96,7 +109,11 @@
    },
    "publisher": {
     "@id": "https://bunkwise.in/#organization"
-   }
+   },
+   "author": {
+    "@id": "https://bunkwise.in/#madhav"
+   },
+   "datePublished": "2026-10-08"
   },
   {
    "@type": "SoftwareApplication",
@@ -124,8 +141,8 @@
    "@id": "https://nightmode.bunkwise.in/windows/#page",
    "url": "https://nightmode.bunkwise.in/windows/",
    "headline": "Night mode for Windows",
-   "name": "Night mode for Windows: Dim a Laptop Below Minimum Brightness | Free and Open Source",
-   "description": "Free, open-source screen dimmer for Windows 10 and 11 that makes a laptop screen darker than its lowest brightness. Download, install, shortcuts, FAQ. Looking for the phone app? See Night Mode for Android.",
+   "name": "Night mode for Windows: dim a laptop below minimum brightness",
+   "description": "Free, open-source dimmer for Windows 10 and 11 that makes a laptop darker than its lowest brightness. For phones, see Screen & Notification Dimmer.",
    "inLanguage": "en",
    "dateModified": "2026-11-07",
    "datePublished": "2026-11-07",
@@ -149,7 +166,7 @@
     {
      "@type": "ListItem",
      "position": 1,
-     "name": "Night Mode Docs",
+     "name": "Screen & Notification Dimmer Docs",
      "item": "https://nightmode.bunkwise.in/"
     },
     {
@@ -169,8 +186,8 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="md-header"><div class="md-header-in">
 <button class="md-burger" id="burger" type="button" aria-label="Navigation">☰</button>
-<a class="md-logo" href="/" aria-label="Night Mode Docs"><img src="/img/app-icon-192.png" alt="Night Mode logo" width="29" height="29"></a>
-<a class="md-title" href="/">Night Mode Docs</a>
+<a class="md-logo" href="/" aria-label="Screen &amp; Notification Dimmer Docs"><img src="/img/app-icon-192.png" alt="Screen &amp; Notification Dimmer logo" width="29" height="29"></a>
+<a class="md-title" href="/">Screen &amp; Notification Dimmer Docs</a>
 <span class="md-topic">Windows app</span>
 <span class="md-grow"></span>
 <div class="md-search"><input id="q" type="search" placeholder="Search docs" aria-label="Search" autocomplete="off"><div class="md-results" id="results" role="listbox"></div></div>
@@ -178,10 +195,10 @@
 <a class="md-play" href="https://play.google.com/store/apps/details?id=com.bunkwise.nightmode" rel="noopener">Google Play</a>
 </div></header>
 <div class="md-main">
-<aside class="md-side"><div class="nav-title"><img src="/img/app-icon-192.png" alt="" width="26" height="26">Night Mode Docs</div>
+<aside class="md-side"><div class="nav-title"><img src="/img/app-icon-192.png" alt="" width="26" height="26">Screen &amp; Notification Dimmer Docs</div>
 <nav aria-label="Navigation"><ul><li><a href="/">Home</a></li><li><a href="/user-guide/">User Guide</a></li><li><a href="/features/">Features</a></li><li><a href="/alternatives/">Alternatives &amp; comparisons</a></li><li><a href="/guides/">Guides</a></li><li><a href="/android-screen-dimmer-below-minimum-brightness/">Dim below minimum brightness</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/troubleshooting/">Troubleshooting</a></li><li><a href="/why-screen-and-notification-dimmer/">Why this app</a></li><li><a href="/whats-new/">What's new</a></li><li class="active"><a href="/windows/" aria-current="page">Windows app</a><ul><li><a href="#what-is-night-mode-for-windows">What is Night mode for Windows?</a></li><li><a href="#how-it-dims">How it dims</a></li><li><a href="#features">Features</a></li><li><a href="#install">Install</a></li><li><a href="#keyboard-shortcuts">Keyboard shortcuts</a></li><li><a href="#requirements">Requirements</a></li><li><a href="#privacy">Privacy</a></li><li><a href="#windows-faq">Windows FAQ</a></li><li><a href="#build-from-source">Build from source</a></li></ul></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/terms-of-service/">Terms of Service</a></li></ul></nav></aside>
 <div class="md-content"><article id="main">
-<p class="crumbs"><a href="/">Night Mode Docs</a> › Windows app</p>
+<p class="crumbs"><a href="/">Screen &amp; Notification Dimmer Docs</a> › Windows app</p>
 <h1 id="night-mode-for-windows">Night mode for Windows<a class="headerlink" href="#night-mode-for-windows" title="Permanent link">¶</a></h1>
 <p>Free, open-source screen dimmer for <strong>Windows 10 and 11</strong>. It makes a laptop screen darker than its own lowest brightness. This is a separate app from the <a href="/">Android app</a>.</p>
 <p><a class="cta" href="https://github.com/madhavraj840/bunkwise-night/releases/download/v1.1.1/NightMode-1.1.1-win-x64.zip">Download for Windows (0.4 MB zip)</a> <a class="cta" href="https://github.com/madhavraj840/bunkwise-night">Source on GitHub</a></p>
@@ -296,7 +313,7 @@ dotnet build NightMode.csproj -c Release -p:DebugType=none
 <p style="font-size:.8rem;color:var(--muted)">Last updated: 7 November 2026</p>
 </article>
 <nav class="pager" aria-label="Pages"><a class="prev" href="/whats-new/"><small>Previous</small>What's new</a><a class="next" href="/privacy-policy/"><small>Next</small>Privacy Policy</a></nav>
-<footer class="md-foot"><span>© 2026 <a href="https://bunkwise.in/">Bunkwise Technologies</a>, India. Night Mode is a screen dimmer, not a medical device.</span>
+<footer class="md-foot"><span>© 2026 <a href="https://bunkwise.in/">Bunkwise Technologies</a>, India. Screen &amp; Notification Dimmer is a screen dimmer, not a medical device.</span>
 <span><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">Sitemap</a> · <a href="mailto:support@bunkwise.in">support@bunkwise.in</a> · <a href="#cookie-settings" data-cookie-settings>Cookie settings</a></span></footer>
 </div></div>
 <script src="/assets/docs.js" defer></script>

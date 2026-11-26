@@ -1,6 +1,6 @@
 # Screen & Notification Dimmer (Night Mode by Bunkwise)
 
-> Screen & Notification Dimmer (formerly listed as "Notification Screen Dimmer" and "Screen Dimmer - Night Mode"; called "Night mode" inside the app) is an Android screen dimmer by Bunkwise Technologies, India. It makes the screen darker than the phone's lowest brightness with an overlay, and with the optional Accessibility service it also dims the status bar, notification shade, keyboard and lock screen. Free to download, no account. A separate free, open-source Windows app also exists.
+> Screen & Notification Dimmer (formerly listed as "Notification Screen Dimmer" and "Screen Dimmer - Night Mode", and earlier called Night mode inside the app) is an Android screen dimmer by Bunkwise Technologies, India. It makes the screen darker than the phone's lowest brightness with an overlay, and with the optional Accessibility service it also dims the status bar, notification shade, keyboard and lock screen. Free to download, no account. A separate free, open-source Windows app also exists.
 
 ## Key facts (checked against version 8.0.2, released 21 November 2026)
 - Google Play: https://play.google.com/store/apps/details?id=com.bunkwise.nightmode (package com.bunkwise.nightmode). Requires Android 8.0 or later. Publisher: Bunkwise Technologies, India. Developer: Madhav Raj.
@@ -67,15 +67,15 @@
 ---
 URL: https://nightmode.bunkwise.in/
 
-# Night Mode: Screen Dimmer for Android
+# Screen & Notification Dimmer: Screen Dimmer for Android
 
-Welcome to the official documentation for Night Mode (Google Play name: Screen & Notification Dimmer), a screen dimmer for Android that makes your display darker than your phone’s lowest brightness setting, including the notification shade and status bar. It was previously listed as Notification Screen Dimmer. It is made by Bunkwise Technologies, India, and the current version is 8.0.2 (21 November 2026).
+Welcome to the official documentation for Screen & Notification Dimmer (formerly Night Mode), a screen dimmer for Android that makes your display darker than your phone’s lowest brightness setting, including the notification shade and status bar. It was previously listed as Notification Screen Dimmer. It is made by Bunkwise Technologies, India, and the current version is 8.0.2 (21 November 2026).
 
 Get it on Google Play
 
-## What is Night Mode?
+## What is Screen & Notification Dimmer?
 
-Night Mode draws a dark layer over your display so you can dim the screen below your phone’s normal minimum brightness. You choose how dark, and the app shows it as a percentage darker than Android’s lowest brightness. It is built for reading in bed, using a phone next to someone who is asleep, or checking a notification in a dark room without being hit by light.
+Screen & Notification Dimmer draws a dark layer over your display so you can dim the screen below your phone’s normal minimum brightness. You choose how dark, and the app shows it as a percentage darker than Android’s lowest brightness. It is built for reading in bed, using a phone next to someone who is asleep, or checking a notification in a dark room without being hit by light.
 
 ### Key features
 
@@ -93,7 +93,7 @@ Night Mode draws a dark layer over your display so you can dim the screen below 
 
 - Notification controls - −10, +10 and OFF buttons right in the notification panel (AUTO turns on Auto-Dim)
 
-- Quick Settings tiles - a Night mode on/off tile, plus a Night slider tile in Pro
+- Quick Settings tiles - an on/off tile, plus a slider tile in Pro
 
 - Emergency off - shake the phone, or press Volume Up and Volume Down together. Both are off until you turn them on in Settings > Emergency escape
 
@@ -103,9 +103,9 @@ Night Mode draws a dark layer over your display so you can dim the screen below 
 
 ## Quick start
 
-- Install Night Mode from Google Play and open it
+- Install Screen & Notification Dimmer from Google Play and open it
 
-- Grant “Display over other apps” when asked - this is what lets Night Mode draw its dark layer
+- Grant “Display over other apps” when asked - this is what lets Screen & Notification Dimmer draw its dark layer
 
 - Pick a level - tap 20, 40, 60 or 80, or drag the slider
 
@@ -166,13 +166,13 @@ URL: https://nightmode.bunkwise.in/user-guide/
 
 # User Guide
 
-Everything Night Mode can do, and how to set it up.
+Everything Screen & Notification Dimmer can do, and how to set it up.
 
 ## Getting started
 
-- Install Night Mode from Google Play and open it
+- Install Screen & Notification Dimmer from Google Play and open it
 
-- Turn on Display over other apps when asked - Night Mode needs this to draw its dark layer over your screen
+- Turn on Display over other apps when asked - Screen & Notification Dimmer needs this to draw its dark layer over your screen
 
 - Back on the home screen, pick a level or drag the slider to start dimming
 
@@ -213,7 +213,7 @@ These are suggestions. Every phone panel is different, so move the slider until 
 
 ## Slider bar and edge slider (Pro)
 
-A volume-style bar appears over the app you are using, so you can adjust dimming without leaving it. Open it from the Night slider tile, or slide along the screen edge with the edge slider. Both are Pro, or free for 12 hours with one ad. The bar has:
+A volume-style bar appears over the app you are using, so you can adjust dimming without leaving it. Open it from the slider tile, or slide along the screen edge with the edge slider. Both are Pro, or free for 12 hours with one ad. The bar has:
 
 - a vertical slider with the current level at the top
 
@@ -223,7 +223,7 @@ A volume-style bar appears over the app you are using, so you can adjust dimming
 
 ## The notification
 
-Night Mode shows a notification with the current level and four buttons:
+Screen & Notification Dimmer shows a notification with the current level and four buttons:
 
 | 
 Button | What it does
@@ -240,17 +240,17 @@ AUTO | Turns Auto-Dim on or off (Pro)
 | 
 OFF | Turns dimming off straight away
 
-If the notification shows “Tap here: allow Accessibility to dim this panel”, tap it to enable the optional Accessibility service. With Dim notification bar on (Pro, or 12 hours with an ad), Night Mode then dims the notification panel itself.
+If the notification shows “Tap here: allow Accessibility to dim this panel”, tap it to enable the optional Accessibility service. With Dim notification bar on (Pro, or 12 hours with an ad), Screen & Notification Dimmer then dims the notification panel itself.
 
 ## Quick Settings tiles
 
-Night Mode adds two tiles to your Quick Settings panel:
+Screen & Notification Dimmer adds two tiles to your Quick Settings panel:
 
-- Night mode - one tap to turn dimming on or off, and it shows its current state
+- Screen & Notification Dimmer - one tap to turn dimming on or off, and it shows its current state
 
-- Night slider - opens the dimming bar over whatever you are doing (Pro)
+- Screen & Notification Dimmer slider - opens the dimming bar over whatever you are doing (Pro)
 
-To add them, swipe down twice from the top of the screen, tap the edit (pencil) icon, then drag the Night Mode tiles into your active tiles. The exact steps vary a little between phone makers.
+To add them, swipe down twice from the top of the screen, tap the edit (pencil) icon, then drag the dimmer tiles into your active tiles. The exact steps vary a little between phone makers.
 
 ## Emergency off
 
@@ -258,7 +258,7 @@ If the screen ever gets too dark to see, use any of these:
 
 - Shake the phone - off by default; turn it on in Settings > Emergency escape
 
-- Tap OFF in the Night Mode notification
+- Tap OFF in the Screen & Notification Dimmer notification
 
 - Switch off the Quick Settings tile
 
@@ -279,7 +279,7 @@ Display over other apps | Required | Draws the dark layer over the screen. Dimmi
 | 
 Accessibility service | Optional | Dimming the status bar, notification shade and keyboard; volume-button emergency shortcut; per-app levels; Auto-Dim
 
-Night Mode does not need an account. The dimmer itself runs on the overlay permission alone, so you can leave Accessibility off and everything else still works.
+Screen & Notification Dimmer does not need an account. The dimmer itself runs on the overlay permission alone, so you can leave Accessibility off and everything else still works.
 
 ## Free and Pro
 
@@ -302,7 +302,7 @@ Notification buttons and Quick Settings tiles | Yes | Yes
 Emergency off (shake, Volume Up + Down) | Yes | Yes
 
 | 
-Edge slider and Night slider tile | 12 h per ad | Yes
+Edge slider and Screen & Notification Dimmer slider tile | 12 h per ad | Yes
 
 | 
 Auto-Dim (Android 11+) | 12 h per ad | Yes
@@ -323,13 +323,13 @@ Pro is bought through Google Play, as a weekly subscription or a one-time lifeti
 
 ## Tips for using it at night
 
-- Combine Night Mode with Android’s dark mode so white apps do not glare
+- Combine Screen & Notification Dimmer with Android’s dark mode so white apps do not glare
 
-- Lower the system brightness to its minimum first, then add Night Mode on top
+- Lower the system brightness to its minimum first, then add Screen & Notification Dimmer on top
 
 - Keep the notification enabled so the OFF button is always one tap away
 
-- Night Mode is a screen dimmer, not a medical device
+- Screen & Notification Dimmer is a screen dimmer, not a medical device
 
 Last updated: 25 November 2026
 
@@ -437,7 +437,7 @@ There is one window type that sits higher: the Accessibility overlay. Only an ap
 
 - Find Dim notification bar ("Also darkens the status bar and the pulled-down shade") and switch it on. If you do not have Pro, tap Watch an ad to unlock it for 12 hours.
 
-- The app explains what the Accessibility service does, then opens Android's Accessibility settings. Go to Downloaded apps (or Installed apps), choose Night mode - better dimming and allow it.
+- The app explains what the Accessibility service does, then opens Android's Accessibility settings. Go to Downloaded apps (or Installed apps), choose Screen & Notification Dimmer - better dimming and allow it.
 
 - Pull down the shade. It should now be as dark as the rest of the screen.
 
@@ -459,7 +459,7 @@ A few dimmers offer something similar, usually as a paid extra. According to the
 
 ### Why is my notification panel still bright when the dimmer is on?
 
-Because ordinary overlays are drawn below the notification shade. To dim it, an app needs an Accessibility overlay. In Screen & Notification Dimmer, turn on Dim notification bar and allow the "Night mode - better dimming" Accessibility service.
+Because ordinary overlays are drawn below the notification shade. To dim it, an app needs an Accessibility overlay. In Screen & Notification Dimmer, turn on Dim notification bar and allow the "Screen & Notification Dimmer - better dimming" Accessibility service.
 
 ### Can I dim the keyboard on Android?
 
@@ -510,7 +510,7 @@ Dimming is not a set-and-forget thing. A dark film scene needs less, a white web
 
 - The bar and its handle are kept above the dark layer, so they are never dimmed themselves and you can always see them.
 
-The Night slider Quick Settings tile opens the same bar. That helps if you would rather start from the pull-down panel than from the edge.
+The Screen & Notification Dimmer slider Quick Settings tile opens the same bar. That helps if you would rather start from the pull-down panel than from the edge.
 
 ## How to set it up
 
@@ -534,7 +534,7 @@ Not that I found. I read the Google Play listings of the dimmers that come up mo
 
 ### How do I change screen dimming without opening the app?
 
-Use the edge slider (slide along the screen edge), the −10 and +10 buttons on the notification, or the Night slider tile in Quick Settings.
+Use the edge slider (slide along the screen edge), the −10 and +10 buttons on the notification, or the slider tile in Quick Settings.
 
 ### Can I put the edge slider on the left side?
 
@@ -598,7 +598,7 @@ Android's adaptive brightness and apps such as Lux or Super Dim's automatic mode
 
 - Go to the Automate tab and switch on Auto-Dim. Without Pro, tap Watch an ad for a 12-hour unlock.
 
-- Allow the "Night mode - better dimming" Accessibility service when asked.
+- Allow the "Screen & Notification Dimmer - better dimming" Accessibility service when asked.
 
 - Set Strength and Reaction speed, then open a mixed app such as a browser to see it respond.
 
@@ -637,7 +637,7 @@ URL: https://nightmode.bunkwise.in/features/notification-dimmer-controls/
 By Madhav Raj, who builds Screen & Notification Dimmer · Updated 25 November 2026 · 2 min read
 
 Short answer
-While dimming is on, Screen & Notification Dimmer shows a notification with four buttons: −10 (lighter), +10 (darker), AUTO (Auto-Dim) and OFF. Pull down the shade and tap; you never need to open the app. There is also a Night mode on/off tile for Quick Settings. The notification buttons and the on/off tile are free.
+While dimming is on, Screen & Notification Dimmer shows a notification with four buttons: −10 (lighter), +10 (darker), AUTO (Auto-Dim) and OFF. Pull down the shade and tap; you never need to open the app. There is also an on/off tile for Quick Settings. The notification buttons and the on/off tile are free.
 
 Most of the time you want to change dimming while doing something else, such as reading or watching. The notification is the one place that is always a swipe away, so the controls belong there.
 
@@ -654,15 +654,15 @@ The title shows the level, for example "Dimming on - 40%". You can hide the butt
 
 Keep notifications allowed
 
-On Android 13 and newer, apps must ask before showing notifications. If you tapped "Don't allow", the buttons can't appear. Turn notifications back on in the app ("Turn on notifications to dim from the shade") or in Android Settings > Apps > Night mode > Notifications. The notification is also the most reliable way to switch dimming off, so it is worth keeping.
+On Android 13 and newer, apps must ask before showing notifications. If you tapped "Don't allow", the buttons can't appear. Turn notifications back on in the app ("Turn on notifications to dim from the shade") or in Android Settings > Apps > Screen & Notification Dimmer > Notifications. The notification is also the most reliable way to switch dimming off, so it is worth keeping.
 
 ## Quick Settings tiles
 
-- Night mode toggles dimming at your current level and shows it, for example "On · 40%". Free.
+- The on/off tile toggles dimming at your current level and shows it, for example "On · 40%". Free.
 
-- Night slider opens the volume-style dimming bar over whatever you are doing, the same bar as the edge slider. Pro, or 12 hours with an ad.
+- Screen & Notification Dimmer slider opens the volume-style dimming bar over whatever you are doing, the same bar as the edge slider. Pro, or 12 hours with an ad.
 
-To add them: swipe down twice from the top of the screen, tap the edit pencil, then drag "Night mode" and "Night slider" up into your active tiles. On Samsung the edit button sits behind the three-dot menu, and on Xiaomi HyperOS it is the edit icon in the Control Centre.
+To add them: swipe down twice from the top of the screen, tap the edit pencil, then drag "Screen & Notification Dimmer" and "Screen & Notification Dimmer slider" up into your active tiles. On Samsung the edit button sits behind the three-dot menu, and on Xiaomi HyperOS it is the edit icon in the Control Centre.
 
 ## Will the notification bother me?
 
@@ -674,15 +674,15 @@ The panel you pull down to reach these buttons is bright by default. If that bot
 
 ### Can I adjust dimming without opening the app?
 
-Yes. Use the −10 and +10 buttons on the notification, the Night mode tile in Quick Settings, or the edge slider.
+Yes. Use the −10 and +10 buttons on the notification, the on/off tile in Quick Settings, or the edge slider.
 
 ### Why did the dimmer notification disappear?
 
-It only shows while dimming is on. If dimming is on and there is no notification, notifications for the app are probably blocked. Allow them in Android Settings > Apps > Night mode > Notifications.
+It only shows while dimming is on. If dimming is on and there is no notification, notifications for the app are probably blocked. Allow them in Android Settings > Apps > Screen & Notification Dimmer > Notifications.
 
 ### Is there a screen dimmer Quick Settings tile?
 
-Yes. Screen & Notification Dimmer adds a Night mode on/off tile (free) and a Night slider tile (Pro) to Quick Settings.
+Yes. Screen & Notification Dimmer adds an on/off tile (free) and a slider tile (Pro) to Quick Settings.
 
 ## Related pages
 
@@ -714,7 +714,7 @@ Every dimmer has the same nightmare case. You drag the slider too far, the scree
 | Press Volume Up + Volume Down together | No | Off, turn on in Emergency escape (needs the Accessibility service)
 | Shake the phone firmly | No | Off, turn on in Emergency escape or from the Shake tile on Home
 | Tap OFF on the notification | A little | Always available
-| Tap the Night mode Quick Settings tile | A little | Always available
+| Tap the on/off Quick Settings tile | A little | Always available
 | Turn off in the app | Yes | Always available
 
 When an escape fires, the app tells you what happened ("You pressed Volume Up + Down together") so it never looks like a crash.
@@ -739,7 +739,7 @@ Shake-to-disable is fairly common. Penumbra and Super Dim both list it. The volu
 
 ### My screen is too dark to see. How do I turn the dimmer off?
 
-Press Volume Up and Volume Down together, or shake the phone, if you enabled those. Otherwise pull down from the top of the screen and tap OFF on the dimmer notification or tap the Night mode tile. Restarting the phone also clears the overlay, unless keep-after-restart is on.
+Press Volume Up and Volume Down together, or shake the phone, if you enabled those. Otherwise pull down from the top of the screen and tap OFF on the dimmer notification or tap the on/off tile. Restarting the phone also clears the overlay, unless keep-after-restart is on.
 
 ### Is shake to turn off on by default?
 
@@ -890,7 +890,7 @@ One level rarely fits everything. Video apps in a dark room want a lot of dimmin
 
 - Tap Choose an app, search for it, and set the level it should dim to.
 
-- Allow the "Night mode - better dimming" Accessibility service if you haven't already. It is the same permission the volume-button escape uses, so there is nothing extra to grant.
+- Allow the "Screen & Notification Dimmer - better dimming" Accessibility service if you haven't already. It is the same permission the volume-button escape uses, so there is nothing extra to grant.
 
 The page then shows a summary like "3 apps set · everything else stays at 40%".
 
@@ -2310,12 +2310,12 @@ Open Screen & Notification Dimmer and go to Settings > Is everything working?. I
 
 | Brand | What to change
 
-| Xiaomi, Redmi, POCO (HyperOS / MIUI) | Settings > Apps > Manage apps > Night mode: Autostart on; Battery saver: No restrictions; Other permissions: "Display pop-up windows while running in the background" allowed. Lock the app in Recents (pull its card down)
-| Samsung (One UI) | Settings > Apps > Night mode > Battery: Unrestricted. Settings > Battery > Background usage limits: make sure it is not in Sleeping or Deep sleeping apps
-| OnePlus (OxygenOS) | Settings > Apps > Night mode > Battery usage: allow background activity / Unrestricted
+| Xiaomi, Redmi, POCO (HyperOS / MIUI) | Settings > Apps > Manage apps > Screen & Notification Dimmer: Autostart on; Battery saver: No restrictions; Other permissions: "Display pop-up windows while running in the background" allowed. Lock the app in Recents (pull its card down)
+| Samsung (One UI) | Settings > Apps > Screen & Notification Dimmer > Battery: Unrestricted. Settings > Battery > Background usage limits: make sure it is not in Sleeping or Deep sleeping apps
+| OnePlus (OxygenOS) | Settings > Apps > Screen & Notification Dimmer > Battery usage: allow background activity / Unrestricted
 | Vivo, iQOO (Funtouch / OriginOS) | Settings > Battery > Background power consumption management: allow high background usage; Autostart on in i Manager
-| Oppo, Realme (ColorOS / Realme UI) | Settings > Apps > Night mode > Battery usage: allow background activity and auto launch
-| Pixel and stock Android | Settings > Apps > Night mode > App battery usage: Unrestricted
+| Oppo, Realme (ColorOS / Realme UI) | Settings > Apps > Screen & Notification Dimmer > Battery usage: allow background activity and auto launch
+| Pixel and stock Android | Settings > Apps > Screen & Notification Dimmer > App battery usage: Unrestricted
 
 Menu names change between versions, so use the Settings search if a path doesn't match exactly.
 
@@ -2323,7 +2323,7 @@ Menu names change between versions, so use the Settings search if a path doesn't
 
 - Battery Saver on: some phones close background apps harder while it is active.
 
-- Emergency off triggered: if you enabled shake, a shake in a pocket switches dimming off. The app shows "Night mode turned off by emergency escape" when that happens. Make the shake firmer, or use the volume buttons instead.
+- Emergency off triggered: if you enabled shake, a shake in a pocket switches dimming off. The app shows "Screen & Notification Dimmer turned off by emergency escape" when that happens. Make the shake firmer, or use the volume buttons instead.
 
 - Restarted phone: dimming doesn't come back after a reboot unless keep-after-restart (Pro) is on. The schedule does re-arm itself after a restart.
 
@@ -2376,7 +2376,7 @@ Screen & Notification Dimmer is free to use with no time limit: dimming below mi
 | Emergency off: shake, Volume Up + Down | Yes | Yes
 | Usage statistics, Is everything working? | Yes | Yes
 | Dim the status bar, shade and keyboard | 12 h per ad | Yes
-| Edge slider and Night slider tile | 12 h per ad | Yes
+| Edge slider and Screen & Notification Dimmer slider tile | 12 h per ad | Yes
 | Auto-Dim (Android 11+) | 12 h per ad | Yes
 | Per-app levels | 12 h per ad | Yes
 | Red, amber and custom filters | 12 h per ad | Yes
@@ -2481,7 +2481,7 @@ URL: https://nightmode.bunkwise.in/android-screen-dimmer-below-minimum-brightnes
 
 # Android screen dimmer: go below minimum brightness with an overlay
 
-A 2026 guide to dimming an Android phone beyond its lowest brightness setting, and how Night Mode on Google Play does it.
+A 2026 guide to dimming an Android phone beyond its lowest brightness setting, and how Screen & Notification Dimmer on Google Play does it.
 
 ## Quick answer
 
@@ -2495,9 +2495,9 @@ Phone makers set a minimum brightness so the screen stays readable in daylight. 
 
 ## How does an overlay screen dimmer work?
 
-An overlay dimmer asks for Android’s “Display over other apps” permission and then draws a semi-transparent dark layer on top of the screen. Everything underneath, including apps, websites, video and the home screen, looks dimmer. Turning it off removes the layer straight away. Night Mode shows the level as a percentage darker than Android’s lowest brightness.
+An overlay dimmer asks for Android’s “Display over other apps” permission and then draws a semi-transparent dark layer on top of the screen. Everything underneath, including apps, websites, video and the home screen, looks dimmer. Turning it off removes the layer straight away. Screen & Notification Dimmer shows the level as a percentage darker than Android’s lowest brightness.
 
-## Night Mode vs Extra dim, brightness, dark mode and blue light filters
+## Screen & Notification Dimmer vs Extra dim, brightness, dark mode and blue light filters
 
 These settings are often mixed up. They solve different problems.
 
@@ -2517,13 +2517,13 @@ Night Light / blue light filter | Warms screen colours for the evening | No
 Dark mode | Switches supported apps to dark colours | No
 
 | 
-Night Mode app | Overlay dimmer with an adjustable level, free schedule, notification buttons and a Quick Settings tile; can also dim the notification shade (Pro) | Yes, you choose how far
+Screen & Notification Dimmer app | Overlay dimmer with an adjustable level, free schedule, notification buttons and a Quick Settings tile; can also dim the notification shade (Pro) | Yes, you choose how far
 
-Night Mode and Extra dim can be a good pair. If your phone has Extra dim, try both and keep whichever feels better.
+Screen & Notification Dimmer and Extra dim can be a good pair. If your phone has Extra dim, try both and keep whichever feels better.
 
-## How to set up Night Mode on Android
+## How to set up Screen & Notification Dimmer on Android
 
-- Install Screen Dimmer - Night Mode from Google Play and open it
+- Install Screen & Notification Dimmer from Google Play and open it
 
 - Allow “Display over other apps”. This is the only permission basic dimming needs. If Android shows “Screen overlay detected”, close other apps that draw over the screen and try again
 
@@ -2537,7 +2537,7 @@ See the User Guide for every control.
 
 - Shake the phone, if you turned it on in Settings > Emergency escape
 
-- Tap OFF in the Night Mode notification, or use the Quick Settings tile
+- Tap OFF in the Screen & Notification Dimmer notification, or use the Quick Settings tile
 
 - Volume Up + Volume Down together, if you turned it on in Emergency escape (needs the optional Accessibility service)
 
@@ -2551,7 +2551,7 @@ Begin with 20 or 40 to get a feel for the levels, then go darker.
 
 - The bedtime schedule is free. Optional Pro adds notification-bar dimming, the edge slider, Auto-Dim, per-app levels and colour filters
 
-- Night Mode is a screen dimmer, not a medical or eye-care device
+- Screen & Notification Dimmer is a screen dimmer, not a medical or eye-care device
 
 If something is not working, see Troubleshooting.
 
@@ -2564,9 +2564,9 @@ URL: https://nightmode.bunkwise.in/faq/
 
 ## General
 
-### What is Night Mode?
+### What is Screen & Notification Dimmer?
 
-A screen dimmer for Android by Bunkwise Technologies (Google Play name: Screen & Notification Dimmer). It draws a dark layer over your display so you can dim the screen below your phone’s normal minimum brightness. There is no account.
+A screen dimmer for Android by Bunkwise Technologies. It draws a dark layer over your display so you can dim the screen below your phone’s normal minimum brightness. There is no account.
 
 ### Which Android versions are supported?
 
@@ -2578,47 +2578,47 @@ No. The phone app is Android only. A separate Night mode for Windows exists for 
 
 ### Does dimming with an overlay damage my screen?
 
-No. The dimming is a software layer drawn on top of what is on screen. Turning Night Mode off removes the layer straight away.
+No. The dimming is a software layer drawn on top of what is on screen. Turning Screen & Notification Dimmer off removes the layer straight away.
 
-### Is Night Mode an eye-care or medical app?
+### Is Screen & Notification Dimmer an eye-care or medical app?
 
 No. It is a screen dimmer that helps you use your phone comfortably in the dark. It makes no medical claims and is not a medical device.
 
 ## Dimming
 
-### Can Night Mode really make my screen darker than the lowest brightness setting?
+### Can Screen & Notification Dimmer really make my screen darker than the lowest brightness setting?
 
-Yes. Android’s brightness slider stops at a minimum that can still feel bright in a dark room. Night Mode’s overlay sits on top of that, so it can go further. The app shows the result as a percentage darker than Android’s lowest brightness.
+Yes. Android’s brightness slider stops at a minimum that can still feel bright in a dark room. Screen & Notification Dimmer’s overlay sits on top of that, so it can go further. The app shows the result as a percentage darker than Android’s lowest brightness.
 
 ### What do the 20, 40, 60 and 80 levels mean?
 
 They are quick levels for how much darker than Android’s lowest brightness the screen should be. Start with 20 or 40 if you are new to the app, then go darker. You can also drag the slider to any value in between.
 
-### How is Night Mode different from Android’s built-in Extra dim?
+### How is Screen & Notification Dimmer different from Android’s built-in Extra dim?
 
-Extra dim is a system setting on many phones. Whether you have it, and how strong it is, depends on your phone and Android version. Night Mode is a separate app with an adjustable level, a free schedule, notification buttons, an edge slider (Pro) and Quick Settings tiles. They can be used side by side, so try both and keep what feels better.
+Extra dim is a system setting on many phones. Whether you have it, and how strong it is, depends on your phone and Android version. Screen & Notification Dimmer is a separate app with an adjustable level, a free schedule, notification buttons, an edge slider (Pro) and Quick Settings tiles. They can be used side by side, so try both and keep what feels better.
 
-### Does Night Mode work with Android dark mode?
+### Does Screen & Notification Dimmer work with Android dark mode?
 
-Yes. Dark mode changes the colours apps use. Night Mode lowers how bright the whole screen looks, including white apps and websites, so the two do different jobs.
+Yes. Dark mode changes the colours apps use. Screen & Notification Dimmer lowers how bright the whole screen looks, including white apps and websites, so the two do different jobs.
 
 ### Will dimming my screen help me sleep better?
 
-We can’t promise that. Lower brightness at night is more comfortable for many people, but Night Mode is not a medical product. Treat it as one small part of a wind-down routine.
+We can’t promise that. Lower brightness at night is more comfortable for many people, but Screen & Notification Dimmer is not a medical product. Treat it as one small part of a wind-down routine.
 
 ## Controls
 
 ### How do I change the dimming level without opening the app?
 
-Use the buttons in the Night Mode notification (−10, +10, OFF, and AUTO for Auto-Dim), the Night mode tile in Quick Settings, or, with Pro, the edge slider and the Night slider tile.
+Use the buttons in the Screen & Notification Dimmer notification (−10, +10, OFF, and AUTO for Auto-Dim), the on/off tile in Quick Settings, or, with Pro, the edge slider and the slider tile.
 
-### How do I turn Night Mode off quickly?
+### How do I turn Screen & Notification Dimmer off quickly?
 
 Tap OFF in the notification, switch off the Quick Settings tile, If you turned them on in Settings > Emergency escape, shaking the phone or pressing Volume Up and Volume Down together also turns it off. Both are off by default.
 
 ## Permissions and privacy
 
-### Why does Night Mode need “Display over other apps”?
+### Why does Screen & Notification Dimmer need “Display over other apps”?
 
 That permission lets the app draw the dark layer over everything on screen. Without it, dimming cannot work.
 
@@ -2626,13 +2626,13 @@ That permission lets the app draw the dark layer over everything on screen. With
 
 No, it is optional. The dimmer runs on the overlay permission alone. If you turn Accessibility on, it adds dimming of the status bar and notification panel, the volume-button emergency shortcut, per-app levels and Auto-Dim.
 
-### Does Night Mode need an account?
+### Does Screen & Notification Dimmer need an account?
 
 No. There is no sign-up or login.
 
-### What data does Night Mode collect?
+### What data does Screen & Notification Dimmer collect?
 
-Night Mode never asks for your name, email or contacts, and your settings stay on your phone. It includes Google AdMob (optional rewarded ads), Firebase Analytics and Crashlytics, and Microsoft Clarity, which collect device and usage data such as app screens opened and crash reports, subject to your consent where required. Purchases are handled by Google Play. See the Privacy Policy.
+Screen & Notification Dimmer never asks for your name, email or contacts, and your settings stay on your phone. It includes Google AdMob (optional rewarded ads), Firebase Analytics and Crashlytics, and Microsoft Clarity, which collect device and usage data such as app screens opened and crash reports, subject to your consent where required. Purchases are handled by Google Play. See the Privacy Policy.
 
 ### Are there ads?
 
@@ -2640,7 +2640,7 @@ Only if you choose to watch one. Tapping Watch an ad on a locked Pro feature pla
 
 ## Pro
 
-### Is Night Mode free?
+### Is Screen & Notification Dimmer free?
 
 Yes. The core dimmer is free to use. The bedtime schedule and timer are free too. Optional Pro, a weekly subscription or a one-time lifetime purchase on Google Play (priced by country; see Free vs Pro), adds extra features, and each one can also be unlocked for 12 hours with an ad.
 
@@ -2650,7 +2650,7 @@ Dimming the notification bar, status bar and keyboard, the edge slider, Auto-Dim
 
 ## Windows
 
-### Is there a Windows version of Night Mode?
+### Is there a Windows version of the app?
 
 Yes. It is a separate, free, open-source tray app for Windows 10 and 11. See Night mode for Windows.
 
@@ -2669,13 +2669,13 @@ Fixes for the most common problems.
 
 ## The screen won’t dim
 
-- Make sure Display over other apps is allowed for Night Mode: Android Settings → Apps → Night Mode → Display over other apps
+- Make sure Display over other apps is allowed for Screen & Notification Dimmer: Android Settings → Apps → Screen & Notification Dimmer → Display over other apps
 
-- If you denied the permission once, open Night Mode and tap a level again so it asks for it
+- If you denied the permission once, open Screen & Notification Dimmer and tap a level again so it asks for it
 
-- Check that Night Mode is switched on and the level is above 0%
+- Check that Screen & Notification Dimmer is switched on and the level is above 0%
 
-- On Xiaomi, Redmi and POCO phones, also allow Display pop-up window for Night Mode in the app’s permissions
+- On Xiaomi, Redmi and POCO phones, also allow Display pop-up window for Screen & Notification Dimmer in the app’s permissions
 
 ## The screen is too dark to see
 
@@ -2683,7 +2683,7 @@ Fixes for the most common problems.
 
 - Open the notification panel and tap OFF
 
-- Switch off the Night mode Quick Settings tile
+- Switch off the on/off Quick Settings tile
 
 - If you turned it on in Emergency escape, press Volume Up and Volume Down together
 
@@ -2691,7 +2691,7 @@ Next time, start from 20 or 40 and move up in small steps.
 
 ## The notification panel isn’t dimmed
 
-Dimming the notification panel needs Dim notification bar switched on (Pro, or 12 hours free with one ad) and the optional Accessibility service. Tap the “allow Accessibility to dim this panel” prompt in the Night Mode notification and turn the service on. Everything else dims without it.
+Dimming the notification panel needs Dim notification bar switched on (Pro, or 12 hours free with one ad) and the optional Accessibility service. Tap the “allow Accessibility to dim this panel” prompt in the Screen & Notification Dimmer notification and turn the service on. Everything else dims without it.
 
 ## “Screen overlay detected” when I grant a permission
 
@@ -2699,23 +2699,23 @@ Android blocks permission screens while another app is drawing over the display.
 
 ## Dimming turns off after a while or after a restart
 
-- Keep the Night Mode notification enabled so Android does not stop it
+- Keep the Screen & Notification Dimmer notification enabled so Android does not stop it
 
-- Turn off battery optimisation for Night Mode: Android Settings → Apps → Night Mode → Battery → Unrestricted (the wording differs by phone)
+- Turn off battery optimisation for Screen & Notification Dimmer: Android Settings → Apps → Screen & Notification Dimmer → Battery → Unrestricted (the wording differs by phone)
 
 - Aggressive battery management, common on Xiaomi, Oppo, Vivo, Realme and OnePlus phones, can stop background apps. Some of these phones also have an “autostart” permission to enable
 
-- After a restart, open Night Mode once and turn dimming on again, or turn on Keep dimming after restart (Pro). The bedtime schedule re-arms itself after a restart. Brand-by-brand settings are in Why your screen dimmer turns off by itself
+- After a restart, open Screen & Notification Dimmer once and turn dimming on again, or turn on Keep dimming after restart (Pro). The bedtime schedule re-arms itself after a restart. Brand-by-brand settings are in Why your screen dimmer turns off by itself
 
 ## The volume-button shortcut doesn’t work
 
-The Volume Up + Volume Down shortcut is off by default. Turn it on in Night Mode under Settings → Emergency escape, then allow the optional Accessibility service: Android Settings → Accessibility → Downloaded apps → Night mode - better dimming. Shaking the phone and the notification OFF button work without it.
+The Volume Up + Volume Down shortcut is off by default. Turn it on in Screen & Notification Dimmer under Settings → Emergency escape, then allow the optional Accessibility service: Android Settings → Accessibility → Downloaded apps → Screen & Notification Dimmer - better dimming. Shaking the phone and the notification OFF button work without it.
 
 ## My Pro purchase isn’t recognised
 
 - Make sure you are signed in to Google Play with the same Google account you purchased with
 
-- Close and reopen Night Mode
+- Close and reopen Screen & Notification Dimmer
 
 - If Pro still does not appear, email us with your order number from Google Play
 
@@ -2787,7 +2787,7 @@ That is a small sample. The app is new, so read the current reviews on Google Pl
 
 | | 
 
-| Google Play name | Screen & Notification Dimmer (previously "Notification Screen Dimmer")
+| Google Play name | Screen & Notification Dimmer (previously "Night Mode" and "Notification Screen Dimmer")
 | Developer | Bunkwise Technologies, India
 | Android version | 8.0 or newer; Auto-Dim needs 11 or newer
 | Latest version | 8.0.2, 21 November 2026
@@ -2804,7 +2804,7 @@ Bunkwise Technologies, a small company in India. The developer is Madhav Raj.
 
 ### Is Screen & Notification Dimmer the same as Night Mode?
 
-Yes. Inside the app it is called Night mode; its Google Play name is Screen & Notification Dimmer. It was previously listed as Notification Screen Dimmer and Screen Dimmer - Night Mode.
+Yes. Night Mode was the app’s earlier name, and it was also listed on Google Play as Notification Screen Dimmer and Screen Dimmer - Night Mode. The app, its settings and its Google Play page are the same; only the name changed, to Screen & Notification Dimmer.
 
 ## Related pages
 
@@ -2824,7 +2824,7 @@ URL: https://nightmode.bunkwise.in/whats-new/
 By Madhav Raj, who builds Screen & Notification Dimmer · Updated 25 November 2026 · 2 min read
 
 Short answer
-The latest version of Screen & Notification Dimmer is 8.0.2, released on Google Play on 21 November 2026. It targets Android 16 (API 36) and supports Android 8.0 and newer. The app has had more than 40 code changes since mid-September 2026. Most of them improve reliability across phone brands, make the permission screens clearer, and add ways to use Pro features for free.
+The latest version of Screen & Notification Dimmer is 8.0.2, released on Google Play on 21 November 2026. It targets Android 16 (API 36) and supports Android 8.0 and newer. It was first released publicly on 8 October 2026, and it has had more than 40 code changes since mid-September 2026. Most of them improve reliability across phone brands, make the permission screens clearer, and add ways to use Pro features for free.
 
 ## November 2026
 
@@ -2857,10 +2857,11 @@ The latest version of Screen & Notification Dimmer is 8.0.2, released on Google 
 ### Early November
 
 - New logo and a large round of design and edge slider changes.
+- The app was renamed from Night Mode to Screen & Notification Dimmer. The app, your settings and the Google Play page stay the same.
 
 ## October 2026
 
-- Production release on Google Play (3 October).
+- Public release on Google Play (8 October).
 
 - The edge slider became a Pro feature, alongside a reworked Pro page and a fixed home header.
 
@@ -3014,7 +3015,7 @@ URL: https://nightmode.bunkwise.in/privacy-policy/
 
 # Privacy Policy
 
-How Night Mode handles your data.
+How Screen & Notification Dimmer handles your data.
 
 ## Privacy at a glance
 
@@ -3030,7 +3031,7 @@ How Night Mode handles your data.
 
 ## Full policy
 
-The complete, legally binding Night Mode privacy policy is published at bunkwise.in/privacypolicynightmode.html. If anything on this page differs from that policy, the full policy applies.
+The complete, legally binding Screen & Notification Dimmer privacy policy is published at bunkwise.in/privacypolicynightmode.html. If anything on this page differs from that policy, the full policy applies.
 
 ## Windows app
 
@@ -3053,11 +3054,11 @@ URL: https://nightmode.bunkwise.in/terms-of-service/
 
 # Terms of Service
 
-Terms for using Night Mode.
+Terms for using Screen & Notification Dimmer.
 
-## Using Night Mode
+## Using Screen & Notification Dimmer
 
-Night Mode (“Screen Dimmer - Night Mode”) is provided by Bunkwise Technologies. By installing or using the app you agree to these terms. If you do not agree, please uninstall the app.
+Screen & Notification Dimmer is provided by Bunkwise Technologies. By installing or using the app you agree to these terms. If you do not agree, please uninstall the app.
 
 ## Free use and Pro
 
@@ -3065,15 +3066,15 @@ The core dimmer is free. Optional Pro features are sold through Google Play and 
 
 ## Safe use
 
-- Night Mode makes your screen darker. Do not use it in situations where you need to see the screen clearly, such as while driving
+- Screen & Notification Dimmer makes your screen darker. Do not use it in situations where you need to see the screen clearly, such as while driving
 
 - If the screen becomes too dark, use Emergency off: shake the phone, tap OFF in the notification, or switch off the Quick Settings tile
 
-- Night Mode is a screen dimmer. It is not a medical device and makes no medical claims
+- Screen & Notification Dimmer is a screen dimmer. It is not a medical device and makes no medical claims
 
 ## Permissions
 
-Night Mode needs Display over other apps to work. The Accessibility service is optional and is used only for the features described in the User Guide. You can revoke either permission at any time in Android settings.
+Screen & Notification Dimmer needs Display over other apps to work. The Accessibility service is optional and is used only for the features described in the User Guide. You can revoke either permission at any time in Android settings.
 
 ## No warranty
 

@@ -1,4 +1,4 @@
-# Night Mode by Bunkwise: https://nightmode.bunkwise.in/
+# Screen & Notification Dimmer by Bunkwise: https://nightmode.bunkwise.in/
 # Everything on this site is public and may be crawled, indexed, quoted and used by search engines and AI assistants.
 # AI summary files: /llms.txt and /llms-full.txt
 
